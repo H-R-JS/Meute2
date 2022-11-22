@@ -1,4 +1,25 @@
-@import "./Sass/Var&Mix.scss";
+//////////// VAR & MIX /////////////////////////////////////////
+
+$font-type1: "Acme", sans-serif;
+$font-type2: "Signika", sans-serif;
+$color-font1: #222;
+$color-font2: #444;
+$color-W: #fff;
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/////////// ALL ////////////////////////////////////////////////////
 
 *,
 ::before,
@@ -13,33 +34,113 @@
 
 //////// HEADER ///////////////////////////////////////////////////////
 
+.logo-section {
+  position: absolute;
+}
+
+.logo {
+  width: 200px;
+  height: 150px;
+}
+
 .title-box {
+  display: inline-block;
   font-family: $font-type1;
   font-size: 30px;
-  color: rgb(82, 76, 76);
+  margin-top: 20px;
+  color: $color-font1;
 }
 
 .under-title {
   font-family: $font-type2;
   font-size: 20px;
-  color: rgb(58, 58, 58);
+  color: $color-font2;
 }
 
 //////// BODY ///////////////////////////////////////////////////////
+//////////////////// DandB ////////////////////
+
+.all-section-DandB {
+  @include flex-column;
+  height: 400px;
+}
+
+.descprit-text {
+  color: $color-font2;
+  font-family: $font-type2;
+  font-size: 22px;
+  width: 1000px;
+  margin-top: 50px;
+}
+
+.box-born p {
+  color: $color-font1;
+  font-family: $font-type1;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.button-born {
+  background-color: rgb(196, 123, 137);
+  color: $color-W;
+  font-family: $font-type2;
+  font-size: 23px;
+  border: none;
+  border-radius: 5%;
+  padding: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.span-button {
+  border-bottom: solid 2px $color-W;
+  border-top: solid 2px $color-W;
+  transition: padding 0.2s;
+}
+
+.span-button:hover {
+  padding: 5px 0;
+}
+
+//////////////////// PARENTS ////////////////////
+.parent-title {
+  display: inline-block;
+  color: $color-font1;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: $font-type1;
+  margin: 50px 20px;
+}
 
 .all-box-parent {
-  @include display-flex;
-  background-color: gray;
-  height: 1500px;
-  margin-top: 100px;
-  .box-parent {
-    margin: 50px 150px;
-    width: 650px;
-    height: 600px;
+  @include flex-row; /*228, 186, 194*/
+  background: linear-gradient(rgb(196, 123, 137), rgb(112, 30, 47));
+  height: 1300px;
 
-    .img-parent {
+  .container-box-parent {
+    height: 600px;
+    margin: 0 100px;
+
+    .box-parent {
+      margin: 50px 100px;
       width: 550px;
-      height: 500px;
+      height: 550px;
+
+      .img-parent {
+        width: 450px;
+        height: 400px;
+        margin: 50px 0;
+        border-radius: 10%;
+      }
+
+      .name-parent {
+        color: $color-W;
+        font-family: $font-type1;
+        font-size: 30px;
+      }
     }
   }
 }
+
+//////// BODY ///////////////////////////////////////////////////////

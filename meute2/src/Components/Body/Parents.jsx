@@ -1,12 +1,12 @@
 import React from "react";
 
 const ImgArray = [
-  { image: require("../../Images/parent1.jpg"), name: "lol" },
-  { image: require("../../Images/parent1.jpg"), name: "mdr" },
+  { image: require("../../Images/parent1.jpg"), name: "Loulou" },
+  { image: require("../../Images/parent1.jpg"), name: "Persil" },
   ,
-  { image: require("../../Images/parent1.jpg"), name: "ptdr" },
+  { image: require("../../Images/parent1.jpg"), name: "Folasse" },
   ,
-  { image: require("../../Images/parent1.jpg"), name: "lul" },
+  { image: require("../../Images/parent1.jpg"), name: "Bébé-Chat" },
 ];
 
 export class Parents extends React.Component {
@@ -14,7 +14,7 @@ export class Parents extends React.Component {
     return (
       <div key={index} className="box-parent">
         <img className="img-parent" src={item.image} />
-        <p>{item.name}</p>
+        <p className="name-parent">{item.name}</p>
       </div>
     );
   };
@@ -22,6 +22,7 @@ export class Parents extends React.Component {
   render() {
     return (
       <div>
+        <p className="parent-title">Les Parents</p>
         <ParentRats dataArray={ImgArray}>{this.renderChildrenView}</ParentRats>
       </div>
     );
@@ -34,7 +35,11 @@ class ParentRats extends React.Component {
     return (
       <div className="all-box-parent">
         {dataArray.map((value, index) => {
-          return <div key={index}>{this.props.children(value, index)}</div>;
+          return (
+            <div className="container-box-parent" key={index}>
+              {this.props.children(value, index)}
+            </div>
+          );
         })}
       </div>
     );

@@ -1,8 +1,0 @@
-$font-type1: "Acme", sans-serif;
-$font-type2: "Signika", sans-serif;
-
-@mixin display-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
