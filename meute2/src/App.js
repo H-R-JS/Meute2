@@ -1,12 +1,15 @@
 import "./App.scss";
-import { Header } from "./Components/Header";
-import { Body } from "./Components/Body";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./Components/Home";
+import { Born } from "./Components/Born";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Body />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Born" element={<Born />} />
+      </Routes>
     </div>
   );
 }

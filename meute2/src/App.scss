@@ -5,6 +5,7 @@ $font-type2: "Signika", sans-serif;
 $color-font1: #222;
 $color-font2: #444;
 $color-W: #fff;
+$color-Main: rgb(196, 123, 137);
 
 @mixin flex-row {
   display: flex;
@@ -70,7 +71,10 @@ $color-W: #fff;
   font-family: $font-type2;
   font-size: 22px;
   width: 1000px;
-  margin-top: 50px;
+  margin-top: 20px;
+  padding-top: 30px;
+  border-top: 5px solid $color-Main;
+  border-radius: 4%;
 }
 
 .box-born p {
@@ -82,7 +86,7 @@ $color-W: #fff;
 }
 
 .button-born {
-  background-color: rgb(196, 123, 137);
+  background-color: $color-Main;
   color: $color-W;
   font-family: $font-type2;
   font-size: 23px;
@@ -115,7 +119,7 @@ $color-W: #fff;
 
 .all-box-parent {
   @include flex-row; /*228, 186, 194*/
-  background: linear-gradient(rgb(196, 123, 137), rgb(112, 30, 47));
+  background: linear-gradient($color-Main, rgb(150, 116, 123));
   height: 1300px;
 
   .container-box-parent {

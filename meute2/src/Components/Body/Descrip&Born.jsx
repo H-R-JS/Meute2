@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export class DandB extends React.Component {
   render() {
@@ -16,9 +17,11 @@ export class DandB extends React.Component {
         </div>
         <div className="box-born">
           <p>Les Naissances</p>
-          <button className="button-born">
-            <span className="span-button">Les Petits Ratons</span>
-          </button>
+          <Link to="/Born">
+            <button className="button-born">
+              <span className="span-button">Les Petits Ratons</span>
+            </button>
+          </Link>
         </div>
       </div>
     );

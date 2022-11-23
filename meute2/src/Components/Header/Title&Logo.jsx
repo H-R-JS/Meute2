@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const image = require("../../Images/logo.jpg");
 
@@ -23,9 +24,11 @@ export class Title extends React.Component {
 export class Logo extends React.Component {
   render() {
     return (
-      <div className="logo-section">
-        <img className="logo" src={image} />
-      </div>
+      <Link to="/">
+        <div className="logo-section">
+          <img className="logo" src={image} />
+        </div>
+      </Link>
     );
   }
 }
