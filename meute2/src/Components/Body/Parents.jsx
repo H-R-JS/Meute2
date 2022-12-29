@@ -22,7 +22,6 @@ export class Parents extends React.Component {
   render() {
     return (
       <div>
-        <p className="parent-title">Les Parents</p>
         <ParentRats dataArray={ImgArray}>{this.renderChildrenView}</ParentRats>
       </div>
     );
@@ -33,14 +32,17 @@ class ParentRats extends React.Component {
   render() {
     const { dataArray } = this.props;
     return (
-      <div className="all-box-parent">
-        {dataArray.map((value, index) => {
-          return (
-            <div className="container-box-parent" key={index}>
-              {this.props.children(value, index)}
-            </div>
-          );
-        })}
+      <div className="section-parents">
+        <p className="parent-title">Les Parents</p>
+        <div className="all-box-parent">
+          {dataArray.map((value, index) => {
+            return (
+              <div className="container-box-parent" key={index}>
+                {this.props.children(value, index)}
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }

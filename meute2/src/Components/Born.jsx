@@ -19,9 +19,9 @@ export class Born extends React.Component {
   renderChildrenView = (item, index) => {
     return (
       <div>
-        <div key={index}>
-          <img src={item.img} />
-          <p>{item.bName}</p>
+        <div className="container-img" key={index}>
+          <img className="img" src={item.img} />
+          <p className="img-name">{item.bName}</p>
         </div>
       </div>
     );
@@ -44,7 +44,7 @@ class BornRats extends React.Component {
   render() {
     const { dataArray } = this.props;
     return (
-      <div>
+      <div className="all-img">
         {dataArray.map((value, index) => {
           return <div key={index}>{this.props.children(value, index)}</div>;
         })}

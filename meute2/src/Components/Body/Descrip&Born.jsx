@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Container from "./Parallax";
 
 export class DandB extends React.Component {
   render() {
@@ -16,12 +16,7 @@ export class DandB extends React.Component {
           </p>
         </div>
         <div className="box-born">
-          <p>Les Naissances</p>
-          <Link to="/Born">
-            <button className="button-born">
-              <span className="span-button">Les Petits Ratons</span>
-            </button>
-          </Link>
+          <Container />
         </div>
       </div>
     );
