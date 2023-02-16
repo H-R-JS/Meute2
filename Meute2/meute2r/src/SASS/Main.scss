@@ -1,5 +1,105 @@
 @import "../index.scss";
 
+.App {
+  height: 975px;
+  box-shadow: -20px -0px 50px inset #bbb, 20px 10px 80px inset #ccc;
+}
+
+//// HEADER //////////
+
 .header-page {
-  background-color: red;
+  display: inline-block;
+  width: 100%;
+  // background-color: red;
+  font-family: $main-font-family;
+  .header-title {
+    position: absolute;
+    color: $main-color;
+    left: 700px;
+    top: -65px;
+
+    h1 {
+      font-size: 96px;
+      font-weight: 300;
+    }
+    .header-line {
+      position: absolute;
+      background-color: $main-color;
+      width: 600px;
+      height: 3px;
+      right: 0px;
+      top: 180px;
+    }
+  }
+  .menu {
+    float: right;
+    // background-color: green;
+    width: 700px;
+    margin: 70px 50px;
+    .menu-content {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 26px;
+      color: $main-color;
+    }
+  }
+}
+
+a:nth-child(even) {
+  color: $second-color;
+}
+
+//// BODY //////////
+/// Acceuil
+
+.image-acc {
+  position: absolute;
+  width: 700px;
+  height: 600px;
+  left: 150px;
+  top: 170px;
+}
+
+.image-foot {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.4;
+}
+
+.imf1 {
+  left: 530px;
+  top: 670px;
+  transform: rotate(300deg);
+}
+
+.imf2 {
+  left: 800px;
+  top: 720px;
+  transform: rotate(240deg);
+}
+
+.imf3 {
+  left: 1050px;
+  top: 630px;
+  transform: rotate(270deg);
+}
+
+.imf4 {
+  left: 1300px;
+  top: 750px;
+  transform: rotate(330deg);
+}
+
+.main-content {
+  position: absolute;
+  right: 300px;
+  top: 350px;
+  width: 600px;
+  font-size: 24px;
+  color: $second-color;
+  font-family: $main-font-family;
+  span {
+    color: $main-color;
+  }
 }
