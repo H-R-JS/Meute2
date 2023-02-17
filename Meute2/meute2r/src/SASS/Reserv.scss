@@ -1,0 +1,35 @@
+h2 {
+  position: absolute;
+  color: $main-color;
+  font-family: $main-font-family;
+  font-size: 36px;
+  left: 100px;
+  top: 120px;
+}
+.reserv-line {
+  position: absolute;
+  background-color: $main-color;
+  width: 250px;
+  height: 3px;
+  left: 100px;
+  top: 195px;
+}
+.reserv-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 1900px;
+  height: 700px;
+  margin: 50px 00px;
+  .reserv-box-content {
+    width: 350px;
+    height: 320px;
+    padding: 5px;
+    margin-left: 50px;
+
+    .reserv-img {
+      width: 340px;
+      height: 310px;
+    }
+  }
+}

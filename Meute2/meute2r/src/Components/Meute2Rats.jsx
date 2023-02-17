@@ -5,7 +5,6 @@ import { Body } from "./Body";
 export const Meute2Rats = () => {
   return (
     <div>
-      <Header />
       <Body />
     </div>
   );

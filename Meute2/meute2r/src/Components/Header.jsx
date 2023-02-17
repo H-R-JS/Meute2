@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import { Navbar } from "./Header/Navbar";
 
 export const Header = () => {
   return (
@@ -7,15 +9,7 @@ export const Header = () => {
         <h1>Meute2Rats</h1>
         <div className="header-line"></div>
       </div>
-      <div className="menu">
-        <div className="menu-content">
-          <a>Réservation</a>
-          <a>Réseaux</a>
-          <a>Tarifs</a>
-          <a>Portée</a>
-          <a>À propos</a>
-        </div>
-      </div>
+      <Navbar />
     </div>
   );
 };

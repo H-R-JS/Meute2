@@ -1,4 +1,5 @@
 @import "../index.scss";
+@import "./Reserv.scss";
 
 .App {
   height: 975px;
@@ -31,24 +32,37 @@
       top: 180px;
     }
   }
+
+  ///////////// NAVBAR ///////////////
   .menu {
     float: right;
-    // background-color: green;
     width: 700px;
     margin: 70px 50px;
     .menu-content {
       display: flex;
       justify-content: space-evenly;
       font-size: 26px;
-      color: $main-color;
     }
   }
 }
 
-a:nth-child(even) {
+.link-d {
+  text-decoration: none;
+  color: $main-color;
+}
+
+.link-g {
+  text-decoration: none;
   color: $second-color;
 }
 
+.no-select {
+  background-color: red;
+}
+
+.select-menu {
+  background-color: green;
+}
 //// BODY //////////
 /// Acceuil
 
@@ -87,7 +101,7 @@ a:nth-child(even) {
 
 .imf4 {
   left: 1300px;
-  top: 750px;
+  top: 730px;
   transform: rotate(330deg);
 }
 
