@@ -1,41 +1,41 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { NavItems } from "./NavItems";
+import { DropDownR, DropDownP } from "./DropDown";
 
 export const Navbar = () => {
-  const [menuClicked, isMenuClicked] = useState(false);
-  const [selectMenu, isSelectMenu] = useState("no-select");
-
-  const toggleSelectMenu = (e) => {
-    const targetClass = e.target.className;
-    console.log(e.target.innerHTML);
-    if (!menuClicked) {
-      isSelectMenu("select-menu");
-    } else {
-      isSelectMenu("no-select");
-    }
-    isMenuClicked(!menuClicked);
-  };
+  const [menuDownR, setMenuDownR] = useState(false);
+  const [menuDownP, setMenuDownP] = useState(false);
 
   return (
-    <div className="menu">
-      <div className="menu-content">
-        <NavLink to="/reservation" className="link-d">
-          Réservation
-        </NavLink>
-        <div className={selectMenu}>
-          <NavLink className="link-g" onClick={toggleSelectMenu}>
-            Réseaux
-          </NavLink>
-        </div>
+    <div>
+      <div className="menu">
+        <ul className="menu-content">
+          {NavItems.map((item) => {
+            if (item.id === "2") {
+              return (
+                <li
+                  key={item.id}
+                  onMouseEnter={() => setMenuDownR(true)}
+                  onMouseLeave={() => setMenuDownR(false)}
+                >
+                  <Link to={item.path} className={item.class}>
+                    {item.title}
+                  </Link>
+                  {menuDownR && <DropDownR />}
+                </li>
+              );
+            }
 
-        <NavLink to="/tarifs" className="link-d ">
-          Tarifs
-        </NavLink>
-        <div className={selectMenu}>
-          <NavLink className="link-g">Portée</NavLink>
-        </div>
-
-        <NavLink className="link-d">À propos</NavLink>
+            return (
+              <li key={item.id}>
+                <Link to={item.path} className={item.class}>
+                  {item.title}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );

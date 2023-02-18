@@ -1,68 +1,12 @@
 @import "../index.scss";
 @import "./Reserv.scss";
+@import "./Header&Nav.scss";
 
 .App {
   height: 975px;
   box-shadow: -20px -0px 50px inset #bbb, 20px 10px 80px inset #ccc;
 }
 
-//// HEADER //////////
-
-.header-page {
-  display: inline-block;
-  width: 100%;
-  // background-color: red;
-  font-family: $main-font-family;
-  .header-title {
-    position: absolute;
-    color: $main-color;
-    left: 700px;
-    top: -65px;
-
-    h1 {
-      font-size: 96px;
-      font-weight: 300;
-    }
-    .header-line {
-      position: absolute;
-      background-color: $main-color;
-      width: 600px;
-      height: 3px;
-      right: 0px;
-      top: 180px;
-    }
-  }
-
-  ///////////// NAVBAR ///////////////
-  .menu {
-    float: right;
-    width: 700px;
-    margin: 70px 50px;
-    .menu-content {
-      display: flex;
-      justify-content: space-evenly;
-      font-size: 26px;
-    }
-  }
-}
-
-.link-d {
-  text-decoration: none;
-  color: $main-color;
-}
-
-.link-g {
-  text-decoration: none;
-  color: $second-color;
-}
-
-.no-select {
-  background-color: red;
-}
-
-.select-menu {
-  background-color: green;
-}
 //// BODY //////////
 /// Acceuil
 
