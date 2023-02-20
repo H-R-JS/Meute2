@@ -7,7 +7,7 @@ export const DropDownR = () => {
     <ul className="dropdown-r-content">
       {DropDownNetWork.map((item) => {
         return (
-          <li key={item.id}>
+          <li key={item.id} className={item.classLi}>
             <Link to={item.path} className={item.class}>
               {item.title}
             </Link>
@@ -23,7 +23,7 @@ export const DropDownP = () => {
     <ul className="dropdown-p-content">
       {DropDownPortees.map((item) => {
         return (
-          <li key={item.id}>
+          <li key={item.id} className={item.classLi}>
             <Link to={item.path} className={item.class}>
               {item.title}
             </Link>

@@ -25,6 +25,19 @@ export const Navbar = () => {
                   {menuDownR && <DropDownR />}
                 </li>
               );
+            } else if (item.id === "4") {
+              return (
+                <li
+                  key={item.id}
+                  onMouseEnter={() => setMenuDownP(true)}
+                  onMouseLeave={() => setMenuDownP(false)}
+                >
+                  <Link to={item.path} className={item.class}>
+                    {item.title}
+                  </Link>
+                  {menuDownP && <DropDownP />}
+                </li>
+              );
             }
 
             return (

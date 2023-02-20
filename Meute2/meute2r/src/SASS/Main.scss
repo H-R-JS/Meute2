@@ -1,6 +1,8 @@
 @import "../index.scss";
 @import "./Reserv.scss";
 @import "./Header&Nav.scss";
+@import "./Prices.scss";
+@import "./BabiesAct.scss";
 
 .App {
   height: 975px;
@@ -53,8 +55,8 @@
   position: absolute;
   right: 300px;
   top: 350px;
-  width: 600px;
-  font-size: 24px;
+  width: 620px;
+  font-size: 26px;
   color: $second-color;
   font-family: $main-font-family;
   span {

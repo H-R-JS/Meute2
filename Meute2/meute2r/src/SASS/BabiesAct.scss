@@ -1,0 +1,34 @@
+.babiesAc-container {
+  display: flex;
+  .babiesAc-img {
+    width: 800px;
+    height: 500px;
+    margin: 100px 100px;
+  }
+  .babiesAc-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $second-color;
+    font-family: $main-font-family;
+    font-size: 28px;
+    width: 800px;
+    span {
+      color: $main-color;
+    }
+    .act-babies {
+      width: 500px;
+      height: 400px;
+      .noActu-box {
+        width: 500px;
+        height: 400px;
+        font-size: 24px;
+        border: 5px solid $main-color;
+        border-radius: 20px;
+        p {
+          margin: 140px 85px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.prices-container {
+  display: flex;
+  background-color: red;
+  margin-top: 0px;
+  .prices-img {
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    left: 100px;
+    top: -50px;
+  }
+  .prices-unit-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 800px;
+
+    .unit {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 40px;
+      font-family: $main-font-family;
+      color: $second-color;
+      width: 600px;
+      height: 300px;
+      margin-left: 100px;
+      span {
+        color: $main-color;
+        font-size: 96px;
+        margin-left: 190px;
+      }
+    }
+  }
+}
