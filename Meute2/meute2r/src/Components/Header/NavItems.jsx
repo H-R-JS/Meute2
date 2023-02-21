@@ -9,7 +9,7 @@ export const NavItems = [
   },
   {
     title: "Réseaux",
-    path: "/network",
+    path: "",
     class: "item-nav g",
     id: "2",
   },
@@ -22,7 +22,7 @@ export const NavItems = [
 
   {
     title: "Portées",
-    path: "/portees",
+    path: "",
     class: "item-nav g",
     id: "4",
   },

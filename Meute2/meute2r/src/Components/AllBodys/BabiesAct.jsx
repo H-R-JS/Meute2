@@ -25,6 +25,23 @@ export const BabiesAct = () => {
           <div className="act-babies">
             <NoActu />
           </div>
+          <div className="act-sign">
+            <p>
+              Si vous souhaitez être informé de la prochaine portée,
+              <span> écrivez votre adresse email dans le champ ci-dessous</span>
+              , un email vous sera envoyé lors de la prochaine portée.
+            </p>
+            <form className="act-form">
+              <input
+                type="email"
+                className="champ-email"
+                placeholder="Votre email :)"
+              />
+              <button type="submit" className="champ-btn-submit">
+                M'avertir
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

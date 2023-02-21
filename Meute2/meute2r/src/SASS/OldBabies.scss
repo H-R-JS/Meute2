@@ -1,0 +1,19 @@
+.old-content {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    margin: 20px 100px;
+  }
+  .old-text {
+    font-size: 24px;
+    color: $second-color;
+    span {
+      color: $main-color;
+    }
+  }
+}
+
+.old-img {
+  width: 400px;
+  height: 300px;
+}

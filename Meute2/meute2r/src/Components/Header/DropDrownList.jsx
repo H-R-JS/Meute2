@@ -13,7 +13,7 @@ export const DropDownNetWork = [
 export const DropDownPortees = [
   {
     title: "Actualité",
-    path: "/BabiesAct",
+    path: "/babiesAct",
     class: "portee-li",
     classLi: "li-por",
     id: "1",

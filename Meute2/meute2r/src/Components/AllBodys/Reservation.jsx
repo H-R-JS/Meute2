@@ -31,7 +31,3 @@ export const Reservation = () => {
     </div>
   );
 };
-/**
- *  <ContentReserv dataArray={reservArray} />
- * const ContentReserv
- */

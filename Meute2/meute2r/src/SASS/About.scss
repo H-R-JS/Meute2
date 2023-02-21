@@ -1,0 +1,55 @@
+.back-img {
+  position: absolute;
+}
+
+.back-img.a {
+  top: 300px;
+  left: 830px;
+  width: 470px;
+  height: 300px;
+}
+.back-img.b {
+  bottom: 0px;
+  right: 0px;
+  width: 550px;
+  height: 380px;
+  transform: scaleX(-1);
+}
+
+.about-content {
+  display: flex;
+  margin-top: 50px;
+  .about-text {
+    width: 740px;
+    font-size: 20px;
+    color: $second-color;
+    margin-left: 100px;
+  }
+  .about-parent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 175px;
+    width: 700px;
+    .about-title {
+      position: absolute;
+      font-size: 28px;
+      top: 150px;
+      left: 1140px;
+    }
+    .about-line {
+      position: absolute;
+      background-color: $main-color;
+      width: 350px;
+      height: 3px;
+      top: 215px;
+      right: 430px;
+    }
+    .parent {
+      background-color: $second-color;
+      width: 450px;
+      height: 250px;
+      margin-top: 20px;
+    }
+  }
+}
