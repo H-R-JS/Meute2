@@ -18,6 +18,7 @@ export const Navbar = () => {
                   key={item.id}
                   onMouseEnter={() => setMenuDownR(true)}
                   onMouseLeave={() => setMenuDownR(false)}
+                  className="nav-li"
                 >
                   <Link to={item.path} className={item.class}>
                     {item.title}
@@ -31,6 +32,7 @@ export const Navbar = () => {
                   key={item.id}
                   onMouseEnter={() => setMenuDownP(true)}
                   onMouseLeave={() => setMenuDownP(false)}
+                  className="nav-li"
                 >
                   <Link to={item.path} className={item.class}>
                     {item.title}
@@ -41,7 +43,7 @@ export const Navbar = () => {
             }
 
             return (
-              <li key={item.id}>
+              <li key={item.id} className="nav-li">
                 <Link to={item.path} className={item.class}>
                   {item.title}
                 </Link>

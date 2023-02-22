@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const oldArray = [
   {
@@ -35,7 +36,12 @@ const oldArray = [
 
 export const OldBabies = () => {
   return (
-    <ul className="old-content">
+    <motion.ul
+      className="old-content"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.2, delay: 0.5 } }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+    >
       {oldArray.map((item) => {
         return (
           <li>
@@ -47,6 +53,6 @@ export const OldBabies = () => {
           </li>
         );
       })}
-    </ul>
+    </motion.ul>
   );
 };

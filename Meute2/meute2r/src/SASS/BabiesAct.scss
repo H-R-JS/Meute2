@@ -62,13 +62,11 @@
   margin-top: 20px;
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 0px #222;
   cursor: pointer;
-  transition: margin-top 0.2s, box-shadow 0.2s;
+  transition: margin-top 0.2s;
 }
 .champ-btn-submit:hover {
   margin-top: 17px;
-  box-shadow: 0px 1px 3px #bbb;
 }
 
 .champ-btn-submit:active {

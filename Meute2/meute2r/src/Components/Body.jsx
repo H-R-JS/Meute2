@@ -1,11 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const imgAcc = require("../Images/ratAcc.jpeg");
 const imgFoot = require("../Images/pattes.jpeg");
 
 export const Body = () => {
   return (
-    <div className="body-page">
+    <motion.div
+      className="body-page"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.2, delay: 0.5 } }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+    >
       <div className="body-container">
         <div className="img-content">
           <img src={imgAcc} className="image-acc" />
@@ -17,10 +23,13 @@ export const Body = () => {
         <div className="main-content">
           <p>
             Bienvenue dans <span>ma meute de rat</span>, éléveuse de ceux-ci, je
-            vous propose de <span>réserver les rats qui vous plaisent !</span>
+            vous propose de{" "}
+            <span className="underline">
+              réserver les rats qui vous plaisent !
+            </span>
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

@@ -5,13 +5,15 @@
   font-family: $main-font-family;
   .header-title {
     position: absolute;
-    color: $main-color;
     left: 700px;
     top: -65px;
-
-    h1 {
-      font-size: 96px;
-      font-weight: 300;
+    .h1-header {
+      font-size: 50px;
+      text-decoration: none;
+      color: $main-color;
+      h1 {
+        font-weight: 200;
+      }
     }
     .header-line {
       position: absolute;
@@ -36,13 +38,24 @@
   }
 }
 
+.nav-li {
+  transform: translateY(0px);
+  transition: transform 0.2s;
+}
+
+.nav-li:hover {
+  transform: translateY(-5px);
+}
+
 .item-nav {
+  position: relative;
   text-decoration: none;
   padding: 5px;
   color: $main-color;
 }
 .item-nav.g {
   color: $second-color;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .item-nav.g:hover {
@@ -51,12 +64,12 @@
 }
 
 .dropdown-r-content {
-  position: absolute;
+  position: fixed;
   background-color: $main-color;
   width: 55px;
   height: 40px;
-  right: 425px;
-  top: 110px;
+  top: 35px;
+  transition: background-color 0.2s;
 }
 .li-net {
   position: relative;
@@ -71,11 +84,8 @@
   }
 }
 
-.li-net:hover {
-  background-color: $main-color-hover;
-}
-
 .dropdown-p-content {
+  position: fixed;
   width: 44px;
   background-color: $main-color;
 }
@@ -90,10 +100,6 @@
     color: $color-white;
     margin-left: 10px;
   }
-}
-
-.li-por:hover {
-  background-color: $main-color-hover;
 }
 
 li {

@@ -27,6 +27,11 @@
   width: 200px;
   height: 200px;
   opacity: 0.4;
+  transition: opacity 0.2s;
+}
+
+.image-foot:hover {
+  opacity: 0.6;
 }
 
 .imf1 {
@@ -63,5 +68,11 @@
   font-family: $main-font-family;
   span {
     color: $main-color;
+    transition: text-decoration 0.4s;
+    text-decoration: none;
   }
+}
+
+.underline:hover {
+  text-decoration: underline;
 }

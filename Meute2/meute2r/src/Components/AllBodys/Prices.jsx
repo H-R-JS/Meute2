@@ -1,10 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const imgPrices = require("../../Images/ratTar.jpeg");
 
 export const Prices = () => {
   return (
-    <div classname="prices-page">
+    <motion.div
+      classname="prices-page"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.2, delay: 0.5 } }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+    >
       <div className="prices-container">
         <div className="prices-img-content">
           <img src={imgPrices} className="prices-img" />
@@ -21,6 +27,6 @@ export const Prices = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../Header";
+import { motion } from "framer-motion";
 
 const reservArray = [
   require("../../Images/ratAcc.jpeg"),
@@ -14,7 +14,11 @@ const reservArray = [
 
 export const Reservation = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.2, delay: 0.5 } }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+    >
       <div className="reserv-container">
         <h2>Portée Aurore</h2>
         <div className="reserv-line"></div>
@@ -28,6 +32,6 @@ export const Reservation = () => {
           })}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

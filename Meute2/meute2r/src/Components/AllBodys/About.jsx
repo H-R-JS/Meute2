@@ -1,11 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const backgroundImg1 = require("../../Images/ratPro1.png");
 const backgroundImg2 = require("../../Images/ratPro2.png");
 
 export const About = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.2, delay: 0.5 } }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+    >
       <div className="about-container">
         <img src={backgroundImg1} className="back-img a" />
         <img src={backgroundImg2} className="back-img b" />
@@ -48,6 +53,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

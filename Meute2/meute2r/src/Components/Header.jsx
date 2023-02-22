@@ -6,7 +6,9 @@ export const Header = () => {
   return (
     <div className="header-page">
       <div className="header-title">
-        <h1>Meute2Rats</h1>
+        <Link to="/" className="h1-header">
+          <h1>Meute2Rats</h1>
+        </Link>
         <div className="header-line"></div>
       </div>
       <Navbar />
