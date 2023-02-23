@@ -36,23 +36,28 @@ const oldArray = [
 
 export const OldBabies = () => {
   return (
-    <motion.ul
-      className="old-content"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.2, delay: 0.5 } }}
+    <motion.div
+      initial={{ opacity: 0, display: "none" }}
+      animate={{
+        opacity: 1,
+        display: "block",
+        transition: { duration: 0.2, delay: 0.5 },
+      }}
       exit={{ opacity: 0, transition: { duration: 0.2 } }}
     >
-      {oldArray.map((item) => {
-        return (
-          <li>
-            <div className="old-text">
-              {item.title}
-              <span className="old-date">{item.date}</span>
-            </div>
-            <img src={item.img} className="old-img" />
-          </li>
-        );
-      })}
-    </motion.ul>
+      <ul className="old-content">
+        {oldArray.map((item) => {
+          return (
+            <li>
+              <div className="old-text">
+                {item.title}
+                <span className="old-date">{item.date}</span>
+              </div>
+              <img src={item.img} className="old-img" />
+            </li>
+          );
+        })}
+      </ul>
+    </motion.div>
   );
 };

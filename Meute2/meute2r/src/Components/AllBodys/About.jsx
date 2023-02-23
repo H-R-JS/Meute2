@@ -7,8 +7,12 @@ const backgroundImg2 = require("../../Images/ratPro2.png");
 export const About = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.2, delay: 0.5 } }}
+      initial={{ opacity: 0, display: "none" }}
+      animate={{
+        opacity: 1,
+        display: "block",
+        transition: { duration: 0.2, delay: 0.5 },
+      }}
       exit={{ opacity: 0, transition: { duration: 0.2 } }}
     >
       <div className="about-container">

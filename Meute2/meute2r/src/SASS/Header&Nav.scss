@@ -55,7 +55,7 @@
 }
 .item-nav.g {
   color: $second-color;
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.15s, color 0.2s;
 }
 
 .item-nav.g:hover {
@@ -65,7 +65,7 @@
 
 .dropdown-r-content {
   position: fixed;
-  background-color: $main-color;
+
   width: 55px;
   height: 40px;
   top: 35px;
@@ -73,6 +73,7 @@
 }
 .li-net {
   position: relative;
+  background-color: $main-color;
   width: 95px;
   height: 40px;
   left: -40px;
@@ -87,10 +88,10 @@
 .dropdown-p-content {
   position: fixed;
   width: 44px;
-  background-color: $main-color;
 }
 .li-por {
   position: relative;
+  background-color: $main-color;
   width: 84px;
   height: 40px;
   left: -40px;
