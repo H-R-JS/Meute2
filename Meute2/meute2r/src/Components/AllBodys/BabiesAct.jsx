@@ -16,18 +16,36 @@ const NoActu = () => {
 
 export const BabiesAct = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, display: "none" }}
-      animate={{
-        opacity: 1,
-        display: "block",
-        transition: { duration: 0.2, delay: 0.5 },
-      }}
-      exit={{ opacity: 0, transition: { duration: 0.2 } }}
-    >
+    <div>
       <div className="babiesAc-container">
-        <img src={imgBabiesAc} className="babiesAc-img" />
-        <div className="babiesAc-content">
+        <motion.img
+          src={imgBabiesAc}
+          className="babiesAc-img"
+          initial={{
+            opacity: 0,
+            display: "none",
+            x: -50,
+          }}
+          animate={{
+            opacity: 1,
+            display: "block",
+            left: "200px",
+            x: 0,
+            transition: { duration: 0.2, delay: 0.5 },
+          }}
+          exit={{ opacity: 0, transition: { duration: 0.2 } }}
+        />
+        <motion.div
+          className="babiesAc-content"
+          initial={{ opacity: 0, display: "none", y: 50 }}
+          animate={{
+            opacity: 1,
+            display: "block",
+            y: 0,
+            transition: { duration: 0.2, delay: 0.7 },
+          }}
+          exit={{ opacity: 0, transition: { duration: 0.2 } }}
+        >
           <p>
             Portée actuelle: <span> 16/11/2023</span>
           </p>
@@ -51,8 +69,8 @@ export const BabiesAct = () => {
               </button>
             </form>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };

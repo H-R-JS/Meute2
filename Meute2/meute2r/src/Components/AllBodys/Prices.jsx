@@ -5,21 +5,37 @@ const imgPrices = require("../../Images/ratTar.jpeg");
 
 export const Prices = () => {
   return (
-    <motion.div
-      classname="prices-page"
-      initial={{ opacity: 0, display: "none" }}
-      animate={{
-        opacity: 1,
-        display: "block",
-        transition: { duration: 0.2, delay: 0.5 },
-      }}
-      exit={{ opacity: 0, transition: { duration: 0.2 } }}
-    >
+    <div classname="prices-page">
       <div className="prices-container">
-        <div className="prices-img-content">
+        <motion.div
+          className="prices-img-content"
+          initial={{
+            opacity: 0,
+            display: "none",
+            x: -50,
+          }}
+          animate={{
+            opacity: 1,
+            display: "block",
+            left: "200px",
+            x: 0,
+            transition: { duration: 0.2, delay: 0.5 },
+          }}
+          exit={{ opacity: 0, transition: { duration: 0.2 } }}
+        >
           <img src={imgPrices} className="prices-img" />
-        </div>
-        <div className="prices-unit-content">
+        </motion.div>
+        <motion.div
+          className="prices-unit-content"
+          initial={{ opacity: 0, display: "none", y: 50 }}
+          animate={{
+            opacity: 1,
+            display: "block",
+            y: 0,
+            transition: { duration: 0.2, delay: 0.7 },
+          }}
+          exit={{ opacity: 0, transition: { duration: 0.2 } }}
+        >
           <div className="unit 1">
             <p>Prix par raton couleur(s) classique(s):</p>
             <span>10 €</span>
@@ -29,8 +45,8 @@ export const Prices = () => {
             <p>Prix par raton husky et dumbo:</p>
             <span>13 €</span>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };

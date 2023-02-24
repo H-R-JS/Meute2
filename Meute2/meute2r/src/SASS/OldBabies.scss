@@ -17,3 +17,19 @@
   width: 400px;
   height: 300px;
 }
+
+.info-box {
+  position: absolute;
+  background-color: rgba(40, 40, 40, 0.9);
+  color: $color-white;
+  font-family: $main-font-family;
+  font-size: 25px;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  margin-top: -300px;
+
+  span {
+    color: $main-color;
+  }
+}

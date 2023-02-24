@@ -1,23 +1,70 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const backgroundImg1 = require("../../Images/ratPro1.png");
-const backgroundImg2 = require("../../Images/ratPro2.png");
+const aboutImgFoot = require("../../Images/foot.png");
 
 export const About = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, display: "none" }}
-      animate={{
-        opacity: 1,
-        display: "block",
-        transition: { duration: 0.2, delay: 0.5 },
-      }}
-      exit={{ opacity: 0, transition: { duration: 0.2 } }}
-    >
-      <div className="about-container">
-        <img src={backgroundImg1} className="back-img a" />
-        <img src={backgroundImg2} className="back-img b" />
+    <div>
+      <motion.div
+        className="back-img a"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { duration: 0.2, delay: 0.8 },
+        }}
+        exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      />
+      <motion.img
+        src={aboutImgFoot}
+        className="back-img-foot foot1"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 0.4,
+          transition: { duration: 0.2, delay: 0.6 },
+        }}
+        exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      />
+      <motion.img
+        src={aboutImgFoot}
+        className="back-img-foot foot2"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 0.4,
+          transition: { duration: 0.2, delay: 0.5 },
+        }}
+        exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      />
+      <motion.img
+        src={aboutImgFoot}
+        className="back-img-foot foot3"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 0.4,
+          transition: { duration: 0.2, delay: 0.4 },
+        }}
+        exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      />
+      <motion.img
+        src={aboutImgFoot}
+        className="back-img-foot foot4"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 0.4,
+          transition: { duration: 0.2, delay: 0.3 },
+        }}
+        exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      />
+      <motion.div
+        className="about-container"
+        initial={{ opacity: 0, display: "none" }}
+        animate={{
+          opacity: 1,
+          display: "block",
+          transition: { duration: 0.2, delay: 1 },
+        }}
+        exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      >
         <div className="about-content">
           <div className="about-text">
             <p>
@@ -56,7 +103,7 @@ export const About = () => {
             <img className="parent 2" />
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
