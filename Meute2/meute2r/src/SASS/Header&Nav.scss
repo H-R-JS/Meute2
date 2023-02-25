@@ -5,7 +5,7 @@
   font-family: $main-font-family;
   .header-title {
     position: absolute;
-    left: 700px;
+    left: 36%;
     top: -65px;
     .h1-header {
       font-size: 50px;
@@ -34,6 +34,11 @@
       display: flex;
       justify-content: space-evenly;
       font-size: 26px;
+    }
+  }
+  @media screen and (max-width: 1850px) {
+    .menu {
+      margin-top: 100px;
     }
   }
 }
@@ -105,4 +110,100 @@
 
 li {
   list-style: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-page {
+    .header-title {
+      left: 15%;
+      top: 0px;
+      .h1-header {
+        font-size: 30px;
+      }
+      .header-line {
+        width: 300px;
+        height: 2px;
+        top: 110px;
+      }
+    }
+    .menu {
+      float: right;
+      width: 100px;
+      margin: 45px 50px;
+      .menu-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 26px;
+      }
+    }
+  }
+  .nav-li {
+    transform: translateY(0px);
+    transition: transform 0.2s;
+  }
+
+  .nav-li:hover {
+    transform: translateY(-5px);
+  }
+
+  .item-nav {
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    color: $main-color;
+  }
+  .item-nav.g {
+    color: $second-color;
+    transition: background-color 0.15s, color 0.2s;
+  }
+
+  .item-nav.g:hover {
+    background-color: $main-color;
+    color: $color-white;
+  }
+
+  .dropdown-r-content {
+    position: fixed;
+
+    width: 55px;
+    height: 40px;
+    top: 35px;
+    transition: background-color 0.2s;
+  }
+  .li-net {
+    position: relative;
+    background-color: $main-color;
+    width: 95px;
+    height: 40px;
+    left: -40px;
+    .network-li {
+      text-decoration: none;
+      font-size: 18px;
+      color: $color-white;
+      margin-left: 12px;
+    }
+  }
+
+  .dropdown-p-content {
+    position: fixed;
+    width: 44px;
+  }
+  .li-por {
+    position: relative;
+    background-color: $main-color;
+    width: 84px;
+    height: 40px;
+    left: -40px;
+    .portee-li {
+      text-decoration: none;
+      font-size: 18px;
+      color: $color-white;
+      margin-left: 10px;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
 }

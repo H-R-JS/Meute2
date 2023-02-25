@@ -5,6 +5,7 @@
 @import "./BabiesAct.scss";
 @import "./About.scss";
 @import "./OldBabies.scss";
+@import "./MenuPhone.scss";
 
 .App {
   height: 975px;
@@ -14,86 +15,101 @@
 //// BODY //////////
 /// Acceuil
 
-.image-acc {
-  position: absolute;
-  width: 700px;
-  height: 600px;
-  left: 150px;
-  top: 170px;
-}
+@media screen and (min-width: 1000px) {
+  .image-acc {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    left: 150px;
+    top: 170px;
+  }
 
-.image-foot {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  opacity: 0.4;
-  transition: opacity 0.2s;
-}
+  .image-foot {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+  }
 
-.image-foot:hover {
-  opacity: 0.6;
-}
+  .image-foot:hover {
+    opacity: 0.6;
+  }
 
-.imf1 {
-  left: 530px;
-  top: 670px;
-  transform: rotate(300deg);
-}
+  .imf1 {
+    left: 530px;
+    top: 670px;
+    transform: rotate(300deg);
+  }
 
-.imf2 {
-  left: 800px;
-  top: 720px;
-  transform: rotate(240deg);
-}
+  .imf2 {
+    left: 800px;
+    top: 720px;
+    transform: rotate(240deg);
+  }
 
-.imf3 {
-  left: 1050px;
-  top: 630px;
-  transform: rotate(270deg);
-}
+  .imf3 {
+    left: 1050px;
+    top: 630px;
+    transform: rotate(270deg);
+  }
 
-.imf4 {
-  left: 1300px;
-  top: 730px;
-  transform: rotate(330deg);
-}
+  .imf4 {
+    left: 1300px;
+    top: 730px;
+    transform: rotate(330deg);
+  }
 
-.main-content {
-  position: absolute;
-  right: 300px;
-  top: 350px;
-  width: 620px;
-  font-size: 26px;
-  color: $second-color;
-  font-family: $main-font-family;
-  span {
-    color: $main-color;
-    transition: text-decoration 0.4s;
+  .main-content {
+    position: absolute;
+    right: 300px;
+    top: 350px;
+    width: 620px;
+    font-size: 26px;
+    color: $second-color;
+    font-family: $main-font-family;
+    span {
+      color: $main-color;
+      transition: text-decoration 0.4s;
+      text-decoration: none;
+    }
+  }
+
+  .underline {
+    display: inline-block;
+    position: relative;
     text-decoration: none;
+    color: $main-color;
+  }
+
+  .underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $main-color;
+    transform-origin: right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 }
 
-.underline {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  color: $main-color;
+@media screen and (max-width: 1600px) {
+  .main-content {
+    width: 250px;
+    right: 100px;
+  }
 }
 
-.underline::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: $main-color;
-  transform-origin: right;
-  transition: transform 0.25s ease-out;
-}
-
-.underline:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+@media screen and (max-width: 1000px) {
+  .body-page {
+    display: none;
+  }
 }
