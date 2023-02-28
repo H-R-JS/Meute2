@@ -12,6 +12,14 @@
   box-shadow: -20px -0px 50px inset #bbb, 20px 10px 80px inset #ccc;
 }
 
+@media screen and (max-width: 1000px) {
+  .App {
+    height: 844px;
+    width: 100%;
+    box-shadow: -20px -0px 50px inset #bbb, 20px 10px 80px inset #ccc;
+  }
+}
+
 //// BODY //////////
 /// Acceuil
 

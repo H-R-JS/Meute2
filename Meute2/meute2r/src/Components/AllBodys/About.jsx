@@ -5,7 +5,7 @@ const aboutImgFoot = require("../../Images/foot.png");
 
 export const About = () => {
   return (
-    <div>
+    <div className="about-page">
       <motion.div
         className="back-img a"
         initial={{ opacity: 0 }}

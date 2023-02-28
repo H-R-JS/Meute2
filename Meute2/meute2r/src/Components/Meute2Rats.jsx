@@ -11,7 +11,6 @@ export const Meute2Rats = () => {
           return matches ? <MenuPhone /> : <Body />;
         }}
       </Media>
-      ;
     </div>
   );
 };

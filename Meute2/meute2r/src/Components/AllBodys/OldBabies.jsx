@@ -86,22 +86,22 @@ export const OldBabies = () => {
       }}
       exit={{ opacity: 0, transition: { duration: 0.2 } }}
     >
-      <ul className="old-content">
-        {oldArray.map((item) => {
-          return (
-            <li key={item.id} className="li-old">
-              <div className="old-text">
-                {item.title}
-                <span className="old-date">{item.date}</span>
-              </div>
-
-              <img src={item.img} className="old-img" />
-
-              {item.infoBox}
-            </li>
-          );
-        })}
-      </ul>
+      <div className="old-page">
+        <ul className="old-content">
+          {oldArray.map((item) => {
+            return (
+              <li key={item.id} className="li-old">
+                <div className="old-text">
+                  {item.title}
+                  <span>{item.date}</span>
+                </div>
+                <img src={item.img} className="old-img" />
+                {item.infoBox}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </motion.div>
   );
 };

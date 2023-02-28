@@ -33,3 +33,49 @@
     color: $main-color;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .old-page {
+    display: inline-block;
+  }
+  .old-content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    width: 350px;
+
+    height: 800px;
+    li {
+      margin: 0px 20px;
+    }
+    .old-text {
+      font-size: 24px;
+      color: $second-color;
+      span {
+        color: $main-color;
+      }
+    }
+  }
+
+  .old-img {
+    width: 300px;
+    height: 220px;
+  }
+
+  .info-box {
+    position: absolute;
+    background-color: rgba(40, 40, 40, 0.9);
+    color: $color-white;
+    font-family: $main-font-family;
+    font-size: 25px;
+    text-align: center;
+    width: 300px;
+    height: 220px;
+    margin-top: -0px;
+    span {
+      color: $main-color;
+    }
+  }
+}

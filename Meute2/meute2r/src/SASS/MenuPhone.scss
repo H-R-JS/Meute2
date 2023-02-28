@@ -3,36 +3,38 @@
   height: 200px;
   .menu-title {
     position: absolute;
-    left: 11%;
+    left: 18%;
     top: 0px;
     h1 {
-      font-size: 40px;
+      font-size: 52px;
       font-family: $main-font-family;
       color: $main-color;
     }
     .menu-line {
       position: absolute;
       background-color: $main-color;
-      width: 194px;
+      width: 253px;
       height: 2px;
-      top: 75px;
+      top: 95px;
     }
   }
 
   @media screen and (max-width: 1000px) {
     .menu {
-      float: right;
-      width: 100px;
-      margin: 45px 100px;
+      display: inline-block;
+
+      width: 800px;
+      height: 700px;
       .menu-content {
-        text-align: center;
-        font-family: $main-font-family;
-        height: 400px;
-        width: 200px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        font-size: 26px;
+        text-align: center;
+        font-family: $main-font-family;
+        height: 600px;
+        width: 200px;
+        margin: 100px 70px;
+        font-size: 32px;
       }
     }
   }
@@ -72,12 +74,12 @@
   .li-net {
     position: relative;
     background-color: $main-color;
-    width: 96px;
-    height: 40px;
-    left: -40px;
+    width: 114px;
+    height: 50px;
+    left: -49px;
     .network-li {
       text-decoration: none;
-      font-size: 18px;
+      font-size: 20px;
       color: $color-white;
       margin-left: 5px;
     }
@@ -90,12 +92,12 @@
   .li-por {
     position: relative;
     background-color: $main-color;
-    width: 84px;
-    height: 40px;
-    left: 18px;
+    width: 102px;
+    height: 50px;
+    left: 9px;
     .portee-li {
       text-decoration: none;
-      font-size: 18px;
+      font-size: 20px;
       color: $color-white;
       margin-left: 0px;
     }

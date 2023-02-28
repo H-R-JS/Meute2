@@ -16,11 +16,9 @@ const NoActu = () => {
 
 export const BabiesAct = () => {
   return (
-    <div>
+    <div className="babiesAc-page">
       <div className="babiesAc-container">
-        <motion.img
-          src={imgBabiesAc}
-          className="babiesAc-img"
+        <motion.div
           initial={{
             opacity: 0,
             display: "none",
@@ -34,7 +32,9 @@ export const BabiesAct = () => {
             transition: { duration: 0.2, delay: 0.5 },
           }}
           exit={{ opacity: 0, transition: { duration: 0.2 } }}
-        />
+        >
+          <img src={imgBabiesAc} className="babiesAc-img" />
+        </motion.div>
         <motion.div
           className="babiesAc-content"
           initial={{ opacity: 0, display: "none", y: 50 }}
