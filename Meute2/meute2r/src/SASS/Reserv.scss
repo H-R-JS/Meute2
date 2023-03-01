@@ -41,11 +41,13 @@ h2 {
 @media screen and (max-width: 1000px) {
   .reserv-container {
     display: inline-block;
+    height: 750px;
+    margin-top: 0px;
   }
   h2 {
     font-size: 36px;
     left: 100px;
-    top: 10px;
+    top: 0px;
   }
   .reserv-line {
     width: 200px;
@@ -60,7 +62,7 @@ h2 {
     flex-wrap: nowrap;
     overflow-y: scroll;
     width: 300px;
-    height: 700px;
+    height: 650px;
     margin-top: 100px;
     margin-left: 50px;
     .reserv-box-content {

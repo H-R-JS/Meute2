@@ -45,10 +45,10 @@
     justify-content: flex-start;
     overflow-y: scroll;
     width: 350px;
-
-    height: 800px;
+    height: 700px;
+    margin-top: 30px;
     li {
-      margin: 0px 20px;
+      margin: 5px 20px;
     }
     .old-text {
       font-size: 24px;
@@ -60,20 +60,21 @@
   }
 
   .old-img {
-    width: 300px;
-    height: 220px;
+    width: 250px;
+    height: 190px;
   }
 
   .info-box {
-    position: absolute;
+    position: relative;
     background-color: rgba(40, 40, 40, 0.9);
     color: $color-white;
     font-family: $main-font-family;
     font-size: 25px;
     text-align: center;
-    width: 300px;
-    height: 220px;
-    margin-top: -0px;
+    width: 250px;
+    height: 190px;
+    margin-top: -215px;
+    z-index: 2;
     span {
       color: $main-color;
     }

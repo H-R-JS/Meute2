@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { MotionImg } from "./MotionDiv/AllMotionDiv";
 
 const imgAcc = require("../Images/ratAcc.jpeg");
 const imgFoot = require("../Images/foot.png");

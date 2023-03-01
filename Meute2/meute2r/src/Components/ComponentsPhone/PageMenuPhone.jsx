@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from "../HeaderComponents/Navbar";
 
-export const MenuPhone = () => {
+export const PageMenuPhone = () => {
   return (
     <div>
       <div className="menu-page">

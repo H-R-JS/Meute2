@@ -5,7 +5,8 @@
 @import "./BabiesAct.scss";
 @import "./About.scss";
 @import "./OldBabies.scss";
-@import "./MenuPhone.scss";
+@import "./Phone/MenuPhone.scss";
+@import "./Phone/NavPhone.scss";
 
 .App {
   height: 975px;
@@ -14,8 +15,8 @@
 
 @media screen and (max-width: 1000px) {
   .App {
-    height: 844px;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     box-shadow: -20px -0px 50px inset #bbb, 20px 10px 80px inset #ccc;
   }
 }

@@ -3,7 +3,7 @@ import React from "react";
 export const NavItems = [
   {
     title: "Réservation",
-    path: "/reservation",
+    path: `/reservation`,
     class: "item-nav",
     id: "1",
   },

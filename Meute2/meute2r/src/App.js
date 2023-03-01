@@ -1,6 +1,6 @@
 import "./SASS/Main.scss";
 import { AnimationsRouters } from "./Components/React-router/AnimationsRouters";
-import { Header } from "./Components/Header";
+import { PhoneRouter } from "./Components/React-router/PhoneRouter";
 import Media from "react-media";
 
 function App() {
@@ -8,10 +8,9 @@ function App() {
     <div className="App">
       <Media query="(max-width: 1000px)">
         {(matches) => {
-          return matches ? null : <Header />;
+          return matches ? <PhoneRouter /> : <AnimationsRouters />;
         }}
       </Media>
-      <AnimationsRouters />
     </div>
   );
 }
