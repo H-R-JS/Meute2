@@ -10,7 +10,6 @@ import { AnimatePresence } from "framer-motion";
 
 export const AnimationsRouters = () => {
   const location = useLocation();
-  console.log(location);
   return (
     <div>
       <AnimatePresence>

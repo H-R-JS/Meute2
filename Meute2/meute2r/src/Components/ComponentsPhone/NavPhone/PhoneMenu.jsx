@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
-import { IconMenu } from "./IconMenu";
 import { NavbarPhone } from "./NavbarPhone";
 
 export const PhoneMenu = () => {
+  const [menuOn, setMenuOn] = useState(false);
+
+  const toggleMenuPhone = () => {
+    if (menuOn == !true) {
+      setMenuOn(true);
+    } else {
+      setMenuOn(false);
+    }
+  };
   return (
     <div>
-      <IconMenu />
-      <NavbarPhone />
+      <div className="div-icon-menu" onClick={toggleMenuPhone}>
+        <span className="material-symbols-outlined" id="icon-menu-phone">
+          menu
+        </span>
+      </div>
+      {menuOn && <NavbarPhone />}
       <Outlet />
     </div>
   );

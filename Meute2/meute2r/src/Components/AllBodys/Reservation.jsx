@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { IconMenu } from "../ComponentsPhone/NavPhone/IconMenu";
-import { NavbarPhone } from "../ComponentsPhone/NavPhone/NavbarPhone";
 import Media from "react-media";
 
 const reservArray = [

@@ -1,16 +1,16 @@
 import React from "react";
 
+const phoneVersion = "/phone/";
+
 export const NavItemsPhone = [
-  { title: "Acceuil", path: "/", class: "item-nav-phone", id: "1" },
   {
     title: "Réservation",
-    path: `/phone/reservation`,
+    path: phoneVersion + "reservation",
     class: "item-nav-phone",
     id: "1",
   },
   {
     title: "Réseaux",
-    path: "",
     class: "item-nav-phone g",
     id: "2",
   },
@@ -23,7 +23,6 @@ export const NavItemsPhone = [
 
   {
     title: "Portées",
-    path: "",
     class: "item-nav-phone g",
     id: "4",
   },

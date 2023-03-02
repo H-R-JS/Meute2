@@ -11,7 +11,6 @@ import { AnimatePresence } from "framer-motion";
 
 export const PhoneRouter = () => {
   const location = useLocation();
-  console.log(location);
   return (
     <div>
       <AnimatePresence>

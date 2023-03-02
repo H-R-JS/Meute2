@@ -1,14 +1,15 @@
-#icon-menu-phone {
+.div-icon-menu {
   position: absolute;
   color: #444;
-  font-size: 42px;
   right: 5px;
+  #icon-menu-phone {
+    font-size: 42px;
+  }
 }
 
 .nav-phone {
   position: fixed;
   background-color: $main-color;
-
   left: 0px;
   width: 45vw;
   height: 100vh;
