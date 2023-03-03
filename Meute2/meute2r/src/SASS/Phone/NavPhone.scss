@@ -1,9 +1,16 @@
+.nav-page-phone-background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  //filter: blur(4px);
+}
+
 .div-icon-menu {
   position: absolute;
-  color: #444;
-  right: 5px;
+  color: #777;
+  left: 5px;
   #icon-menu-phone {
-    font-size: 42px;
+    font-size: 54px;
   }
 }
 
@@ -11,7 +18,7 @@
   position: fixed;
   background-color: $main-color;
   left: 0px;
-  width: 45vw;
+  width: 60vw;
   height: 100vh;
   z-index: 3;
   .nav-phone-content {
@@ -26,7 +33,7 @@
 
 .item-nav-phone {
   color: $color-white;
-  font-size: 26px;
+  font-size: 32px;
   font-family: $main-font-family;
   text-decoration: none;
 }
