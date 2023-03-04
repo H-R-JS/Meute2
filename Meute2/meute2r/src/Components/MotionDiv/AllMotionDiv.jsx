@@ -1,20 +1,116 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { PropTypes } from "prop-types";
+
+// init style
+const exitStyle = { opacity: 0, transition: { duration: 0.2 } };
+//
+const downMenuAnimation = {
+  noOpen: {
+    opacity: 0,
+    transform: "scaleY(0)",
+    transformOrigin: "top left",
+  },
+  open: {
+    opacity: 1,
+    transform: "scaleY(1)",
+    transition: { duration: 0.2 },
+  },
+};
 
 export const MotionDivDown = ({ children }) => {
   return (
+    <motion.div variants={downMenuAnimation} initial="noOpen" animate="open">
+      {children}
+    </motion.div>
+  );
+};
+
+const onePageAnimation = {
+  out: {
+    opacity: 0,
+    display: "none",
+  },
+
+  open: {
+    opacity: 1,
+    display: "block",
+    transition: { duration: 0.2, delay: 0.5 },
+  },
+
+  exit: {
+    exitStyle,
+  },
+};
+
+export const MotionOnePageAnimation = ({ children }) => {
+  return (
     <motion.div
-      initial={{
-        opacity: 0,
-        transform: "scaleY(0)",
-        transformOrigin: "top left",
-      }}
-      animate={{
-        opacity: 1,
-        transform: "scaleY(1)",
-        transition: { duration: 0.2 },
-      }}
+      variants={onePageAnimation}
+      initial="out"
+      animate="open"
+      exit="exit"
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const multipleAnimationImg = {
+  imgOut: {
+    opacity: 0,
+    display: "none",
+    x: -50,
+  },
+  imgOpen: {
+    opacity: 1,
+    display: "block",
+    left: "200px",
+    x: 0,
+    transition: { duration: 0.2, delay: 0.5 },
+  },
+
+  exit: {
+    exitStyle,
+  },
+};
+
+export const MotionMultipleAnimationImg = ({ children }) => {
+  return (
+    <motion.div
+      variants={multipleAnimationImg}
+      initial="textOut"
+      animate="textOpen"
+      exit="exit"
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const multipleAnimationText = {
+  textOut: {
+    opacity: 0,
+    display: "none",
+    y: 50,
+  },
+  textOpen: {
+    opacity: 1,
+    display: "block",
+    y: 0,
+    transition: { duration: 0.2, delay: 0.7 },
+  },
+  exit: {
+    exitStyle,
+  },
+};
+
+export const MotionMultipleAnimationText = ({ children }) => {
+  return (
+    <motion.div
+      variants={multipleAnimationText}
+      initial="textOut"
+      animate="textOpen"
+      exit="exit"
     >
       {children}
     </motion.div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { MotionOnePageAnimation } from "../MotionDiv/AllMotionDiv";
 
 function InfoBox(props) {
   const { dataParent, dataMale, dataFemale } = props;
@@ -77,15 +78,7 @@ const oldArray = [
 
 export const OldBabies = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, display: "none" }}
-      animate={{
-        opacity: 1,
-        display: "block",
-        transition: { duration: 0.2, delay: 0.5 },
-      }}
-      exit={{ opacity: 0, transition: { duration: 0.2 } }}
-    >
+    <MotionOnePageAnimation>
       <div className="old-page">
         <ul className="old-content">
           {oldArray.map((item) => {
@@ -102,6 +95,6 @@ export const OldBabies = () => {
           })}
         </ul>
       </div>
-    </motion.div>
+    </MotionOnePageAnimation>
   );
 };

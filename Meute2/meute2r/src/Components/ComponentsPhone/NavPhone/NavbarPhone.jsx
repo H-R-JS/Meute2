@@ -7,16 +7,18 @@ import { DropDownRPhone, DropDownPPhone } from "./DropDownPhone";
 export const NavbarPhone = () => {
   const [menuDownR, setMenuDownR] = useState(false);
   const [menuDownP, setMenuDownP] = useState(false);
-
-  const [menuOn, setMenuOn] = useState(false);
-  const [displayOn, setDisplayOn] = useState(false);
-
+  // Animation menu
   let ref = useRef();
+  const controls = useAnimation();
 
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (!ref.current.contains(e.target)) {
-        setMenuOn(false);
+        controls.start({
+          x: -240,
+          transition: { duration: 0.3 },
+        });
+        console.log("clicked Outside DIV...");
       } else {
         console.log("clicked Inside DIV...");
       }
@@ -26,22 +28,11 @@ export const NavbarPhone = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
-
-  const toggleMenu = () => {
-    if (menuOn == !true) {
-      setMenuOn(true);
-      setDisplayOn(true);
-    } else {
-      setMenuOn(false);
-    }
-  };
-
-  const controls = useAnimation();
-
+  //
   return (
     <div ref={ref}>
       <div
-        /*onClick={toggleMenu}*/ onClick={() => {
+        onClick={() => {
           controls.start({
             display: "block",
             x: 0,
@@ -56,9 +47,8 @@ export const NavbarPhone = () => {
       </div>
       <motion.div
         className="nav-phone"
-        initial={{ display: "none" }}
+        initial={{ display: "none", x: -240 }}
         animate={controls}
-        exit={{ opacity: 0, transition: { duration: 0.4 } }}
       >
         <ul className="nav-phone-content">
           {NavItemsPhone.map((item) => {

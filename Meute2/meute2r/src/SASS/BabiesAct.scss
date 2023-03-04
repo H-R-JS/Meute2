@@ -90,60 +90,62 @@
       font-size: 24px;
       width: 300px;
       margin: 20px 50px;
-      .act-babies {
-        width: 300px;
-        height: 200px;
-        .noActu-box {
-          text-align: center;
-          width: 300px;
-          height: 200px;
-          font-size: 20px;
-          margin: 50px 0;
-          border: 5px solid $main-color;
-          border-radius: 20px;
-          p {
-            margin: 20px 85px;
-          }
-        }
-      }
-      .act-sign {
-        width: 300px;
-        text-align: center;
-        margin-top: 50px;
-        p {
-          font-size: 18px;
-        }
-        .act-form {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          margin-top: 50px;
-          .champ-email {
-            text-align: center;
-            width: 250px;
-            padding: 5px;
-          }
-        }
-      }
     }
-    .champ-btn-submit {
-      color: $color-white;
-      background-color: $main-color;
-      font-size: 20px;
-      width: 120px;
-      height: 50px;
-      margin-top: 50px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: margin-top 0.2s;
-    }
-    .champ-btn-submit:hover {
-      margin-top: 17px;
-    }
+  }
 
-    .champ-btn-submit:active {
-      background-color: $main-color-hover;
+  .act-babies {
+    width: 300px;
+    height: 200px;
+    .noActu-box {
+      text-align: center;
+      width: 300px;
+      height: 200px;
+      font-size: 20px;
+      margin: 50px 0;
+      border: 5px solid $main-color;
+      border-radius: 20px;
+      p {
+        margin: 20px 85px;
+      }
     }
+  }
+  .act-sign {
+    width: 300px;
+    text-align: center;
+    font-family: $main-font-family;
+    margin-top: 50px;
+    p {
+      font-size: 18px;
+    }
+    .act-form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+      .champ-email {
+        text-align: center;
+        width: 250px;
+        padding: 5px;
+      }
+    }
+  }
+  .champ-btn-submit {
+    color: $color-white;
+    background-color: $main-color;
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: margin-top 0.2s;
+  }
+  .champ-btn-submit:hover {
+    margin-top: 17px;
+  }
+
+  .champ-btn-submit:active {
+    background-color: $main-color-hover;
   }
 }

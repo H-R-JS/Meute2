@@ -1,6 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
-import Media from "react-media";
+import { MotionOnePageAnimation } from "../MotionDiv/AllMotionDiv";
 
 const reservArray = [
   require("../../Images/ratAcc.jpeg"),
@@ -15,15 +14,7 @@ const reservArray = [
 
 export const Reservation = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, display: "none" }}
-      animate={{
-        opacity: 1,
-        display: "block",
-        transition: { duration: 0.2, delay: 0.5 },
-      }}
-      exit={{ opacity: 0, transition: { duration: 0.2 } }}
-    >
+    <MotionOnePageAnimation>
       <div className="reserv-container">
         <h2>Portée Aurore</h2>
         <div className="reserv-line"></div>
@@ -37,6 +28,6 @@ export const Reservation = () => {
           })}
         </div>
       </div>
-    </motion.div>
+    </MotionOnePageAnimation>
   );
 };
