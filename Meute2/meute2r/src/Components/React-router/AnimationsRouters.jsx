@@ -7,11 +7,13 @@ import { BabiesAct } from "../AllBodys/BabiesAct";
 import { About } from "../AllBodys/About";
 import { OldBabies } from "../AllBodys/OldBabies";
 import { AnimatePresence } from "framer-motion";
+import { Header } from "../Header";
 
 export const AnimationsRouters = () => {
   const location = useLocation();
   return (
     <div>
+      <Header />
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Meute2Rats />} />

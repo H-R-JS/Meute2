@@ -38,7 +38,8 @@ const onePageAnimation = {
   },
 
   exit: {
-    exitStyle,
+    opacity: 0,
+    transition: { duration: 0.2 },
   },
 };
 
@@ -70,7 +71,8 @@ export const multipleAnimationImg = {
   },
 
   exit: {
-    exitStyle,
+    opacity: 0,
+    transition: { duration: 0.2 },
   },
 };
 
@@ -78,8 +80,8 @@ export const MotionMultipleAnimationImg = ({ children }) => {
   return (
     <motion.div
       variants={multipleAnimationImg}
-      initial="textOut"
-      animate="textOpen"
+      initial="imgOut"
+      animate="imgOpen"
       exit="exit"
     >
       {children}
@@ -100,7 +102,8 @@ export const multipleAnimationText = {
     transition: { duration: 0.2, delay: 0.7 },
   },
   exit: {
-    exitStyle,
+    opacity: 0,
+    transition: { duration: 0.2 },
   },
 };
 

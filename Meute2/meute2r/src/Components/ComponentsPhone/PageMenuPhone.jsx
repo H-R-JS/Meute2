@@ -1,10 +1,11 @@
 import React from "react";
 import { Navbar } from "../HeaderComponents/Navbar";
 import { NavItemsPhone } from "./NavPhone/NavItemsPhone";
+import { MotionOnePageAnimation } from "../MotionDiv/AllMotionDiv";
 
 export const PageMenuPhone = () => {
   return (
-    <div>
+    <MotionOnePageAnimation>
       <div className="menu-page">
         <div className="menu-title">
           <h1>Meute2Rats</h1>
@@ -12,6 +13,6 @@ export const PageMenuPhone = () => {
         </div>
         <Navbar dataArray={NavItemsPhone} />
       </div>
-    </div>
+    </MotionOnePageAnimation>
   );
 };

@@ -1,5 +1,4 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
 import {
   MotionMultipleAnimationImg,
   MotionMultipleAnimationText,
@@ -19,6 +18,7 @@ const NoActu = () => {
 };
 
 export const BabiesAct = () => {
+  const [email, setEmail] = useState("");
   return (
     <div className="babiesAc-page">
       <div className="babiesAc-container">
@@ -26,7 +26,7 @@ export const BabiesAct = () => {
           <img src={imgBabiesAc} className="babiesAc-img" />
         </MotionMultipleAnimationImg>
         <MotionMultipleAnimationText className="babiesAc-content">
-          <p>
+          <p className="babiesAc-port-actu">
             Portée actuelle: <span> 16/11/2023</span>
           </p>
           <div className="act-babies">
@@ -43,6 +43,10 @@ export const BabiesAct = () => {
                 type="email"
                 className="champ-email"
                 placeholder="Votre email :)"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
               />
               <button type="submit" className="champ-btn-submit">
                 M'avertir

@@ -10,7 +10,7 @@
   color: #777;
   left: 5px;
   #icon-menu-phone {
-    font-size: 54px;
+    font-size: 46px;
   }
 }
 
@@ -36,4 +36,12 @@
   font-size: 32px;
   font-family: $main-font-family;
   text-decoration: none;
+}
+
+#nav-phone-home {
+  color: $color-white;
+  font-size: 80px;
+  position: relative;
+  top: 200px;
+  left: 82px;
 }

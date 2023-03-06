@@ -90,6 +90,11 @@ export const NavbarPhone = () => {
             );
           })}
         </ul>
+        <Link to="/">
+          <span className="material-symbols-outlined" id="nav-phone-home">
+            home
+          </span>
+        </Link>
       </motion.div>
     </div>
   );
