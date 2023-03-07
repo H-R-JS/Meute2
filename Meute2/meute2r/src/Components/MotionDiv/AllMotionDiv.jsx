@@ -1,9 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// init style
-const exitStyle = { opacity: 0, transition: { duration: 0.2 } };
-//
 const downMenuAnimation = {
   noOpen: {
     opacity: 0,
@@ -34,7 +31,7 @@ const onePageAnimation = {
   open: {
     opacity: 1,
     display: "block",
-    transition: { duration: 0.2, delay: 0.5 },
+    transition: { duration: 0.2, delay: 0.4 },
   },
 
   exit: {
@@ -64,10 +61,10 @@ export const multipleAnimationImg = {
   },
   imgOpen: {
     opacity: 1,
-    display: "block",
+    display: "inline-block",
     left: "200px",
     x: 0,
-    transition: { duration: 0.2, delay: 0.5 },
+    transition: { duration: 0.3, delay: 0.6, timingFunction: "ease-out" },
   },
 
   exit: {
@@ -97,9 +94,9 @@ export const multipleAnimationText = {
   },
   textOpen: {
     opacity: 1,
-    display: "block",
+    display: "inline-block",
     y: 0,
-    transition: { duration: 0.2, delay: 0.7 },
+    transition: { duration: 0.5, delay: 0.8, timingFunction: "ease-out" },
   },
   exit: {
     opacity: 0,

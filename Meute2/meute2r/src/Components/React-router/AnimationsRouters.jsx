@@ -14,16 +14,18 @@ export const AnimationsRouters = () => {
   return (
     <div>
       <Header />
-      <AnimatePresence>
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Meute2Rats />} />
-          <Route path="/reservation" element={<Reservation />} />
-          <Route path="/prices" element={<Prices />} />
-          <Route path="/babiesAct" element={<BabiesAct />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/oldBabies" element={<OldBabies />} />
-        </Routes>
-      </AnimatePresence>
+      <body>
+        <AnimatePresence>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Meute2Rats />} />
+            <Route path="/reservation" element={<Reservation />} />
+            <Route path="/prices" element={<Prices />} />
+            <Route path="/babiesAct" element={<BabiesAct />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/oldBabies" element={<OldBabies />} />
+          </Routes>
+        </AnimatePresence>
+      </body>
     </div>
   );
 };

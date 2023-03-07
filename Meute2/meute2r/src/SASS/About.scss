@@ -41,25 +41,30 @@
 
 .about-content {
   display: flex;
-  margin-top: 50px;
+  margin-top: 30px;
   .about-text {
     width: 740px;
     font-size: 20px;
     padding: 5px;
+    font-family: $main-font-family;
     color: $second-color;
     margin-left: 100px;
+    font-weight: 400;
+    span {
+      color: $main-color;
+    }
   }
   .about-parent {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 175px;
+    margin-left: 170px;
     width: 700px;
     .about-title {
       position: absolute;
       font-size: 28px;
       top: 150px;
-      left: 1140px;
+      left: 1145px;
     }
     .about-line {
       position: absolute;
@@ -67,7 +72,7 @@
       width: 350px;
       height: 3px;
       top: 215px;
-      right: 430px;
+      right: 425px;
     }
     .parent {
       background-color: $second-color;

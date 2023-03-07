@@ -2,13 +2,14 @@ import React from "react";
 import {
   MotionMultipleAnimationImg,
   MotionMultipleAnimationText,
+  MotionOnePageAnimation,
 } from "../MotionDiv/AllMotionDiv";
 
 const imgPrices = require("../../Images/ratTar.jpeg");
 
 export const Prices = () => {
   return (
-    <div className="prices-page">
+    <MotionOnePageAnimation className="prices-page">
       <div className="prices-container">
         <MotionMultipleAnimationImg className="prices-img-content">
           <img src={imgPrices} className="prices-img" />
@@ -25,6 +26,6 @@ export const Prices = () => {
           </div>
         </MotionMultipleAnimationText>
       </div>
-    </div>
+    </MotionOnePageAnimation>
   );
 };

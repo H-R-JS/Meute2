@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import {
   MotionMultipleAnimationImg,
   MotionMultipleAnimationText,
+  MotionOnePageAnimation,
 } from "../MotionDiv/AllMotionDiv";
+import Axios, * as others from "axios";
 
 const imgBabiesAc = require("../../Images/ratPort.jpg");
 
@@ -18,9 +20,19 @@ const NoActu = () => {
 };
 
 export const BabiesAct = () => {
+  // add email in sql db
   const [email, setEmail] = useState("");
+  const addEmail = (e) => {
+    e.preventDefault();
+    Axios.post("http://localhost:7000/api/m2r", {
+      email: email,
+    }).then(() => {
+      console.log("succes");
+    });
+  };
+
   return (
-    <div className="babiesAc-page">
+    <MotionOnePageAnimation className="babiesAc-page">
       <div className="babiesAc-container">
         <MotionMultipleAnimationImg>
           <img src={imgBabiesAc} className="babiesAc-img" />
@@ -48,13 +60,17 @@ export const BabiesAct = () => {
                   setEmail(e.target.value);
                 }}
               />
-              <button type="submit" className="champ-btn-submit">
+              <button
+                type="submit"
+                className="champ-btn-submit"
+                onClick={addEmail}
+              >
                 M'avertir
               </button>
             </form>
           </div>
         </MotionMultipleAnimationText>
       </div>
-    </div>
+    </MotionOnePageAnimation>
   );
 };
