@@ -22,6 +22,27 @@ export const MotionDivDown = ({ children }) => {
   );
 };
 
+const footandRatAnimation = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
+
+export const MotionFootandRatPage = ({ children }) => {
+  return (
+    <motion.div
+      variants={footandRatAnimation}
+      initial="hidden"
+      animate="visible"
+    >
+      {children}
+    </motion.div>
+  );
+};
+
 const onePageAnimation = {
   out: {
     opacity: 0,
@@ -31,6 +52,7 @@ const onePageAnimation = {
   open: {
     opacity: 1,
     display: "block",
+
     transition: { duration: 0.2, delay: 0.4 },
   },
 

@@ -1,40 +1,76 @@
 .prices-container {
   display: flex;
   margin-top: 10px;
+}
+.prices-img {
+  position: relative;
+  width: 1000px;
+  height: 700px;
+  left: 100px;
+  top: -50px;
+}
+.prices-unit-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 800px;
+  margin-left: 200px;
+}
+.unit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 40px;
+  font-family: $main-font-family;
+  color: $second-color;
+  width: 600px;
+  height: 300px;
+  margin-left: 100px;
+  span {
+    color: $main-color;
+    font-size: 96px;
+    margin-left: 190px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .prices-container {
+    display: inline-block;
+    margin-top: 10px;
+  }
   .prices-img {
-    position: relative;
-    width: 1000px;
-    height: 700px;
-    left: 100px;
-    top: -50px;
+    display: none;
   }
   .prices-unit-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 800px;
-    margin-left: 200px;
+    background-color: red;
+    width: 300px;
+    height: 300px;
   }
   .unit {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     flex-direction: column;
-    font-size: 40px;
+    text-align: center;
+    font-size: 24px;
     font-family: $main-font-family;
     color: $second-color;
-    width: 600px;
+    width: 300px;
+
     height: 300px;
-    margin-left: 100px;
+    margin: 40px 30px;
     span {
       color: $main-color;
       font-size: 96px;
-      margin-left: 190px;
+      margin-left: 20px;
     }
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .prices-page {
+/**
+.prices-page {
     display: inline-block;
   }
   .prices-container {
@@ -44,31 +80,32 @@
       display: none;
     }
   }
-}
 
-.prices-unit-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 300px;
-}
+  .prices-unit-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+  }
 
-.unit {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 30px;
-  font-family: $main-font-family;
-  color: $second-color;
-  width: 300px;
-  height: 300px;
-  margin-left: 50px;
-  p {
-    text-align: center;
+  .unit {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: $main-font-family;
+    color: $second-color;
+    width: 10vw;
+    height: 300px;
+    margin-left: 50px;
+    p {
+      text-align: center;
+    }
+    span {
+      color: $main-color;
+      font-size: 60px;
+      margin-left: 100px;
+    }
   }
-  span {
-    color: $main-color;
-    font-size: 60px;
-    margin-left: 100px;
-  }
-}
+*/

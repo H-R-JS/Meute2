@@ -35,7 +35,7 @@ export const BabiesAct = () => {
     <MotionOnePageAnimation className="babiesAc-page">
       <div className="babiesAc-container">
         <MotionMultipleAnimationImg>
-          <img src={imgBabiesAc} className="babiesAc-img" />
+          <img src={imgBabiesAc} className="babiesAc-img" alt="" />
         </MotionMultipleAnimationImg>
         <MotionMultipleAnimationText className="babiesAc-content">
           <p className="babiesAc-port-actu">

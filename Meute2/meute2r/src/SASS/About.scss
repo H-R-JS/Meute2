@@ -2,12 +2,12 @@
   position: absolute;
 }
 
-.back-img.a {
+.back-img {
   background-image: url(../Images/ratAbout1.jpg);
   background-size: 170%;
   background-repeat: no-repeat;
   top: 610px;
-  left: 870px;
+  left: 890px;
   width: 270px;
   height: 280px;
   transform: scaleX(-1);
@@ -17,6 +17,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
+  opacity: 0.5;
 }
 .foot1 {
   top: 810px;
@@ -42,45 +43,45 @@
 .about-content {
   display: flex;
   margin-top: 30px;
-  .about-text {
-    width: 740px;
-    font-size: 20px;
-    padding: 5px;
-    font-family: $main-font-family;
-    color: $second-color;
-    margin-left: 100px;
-    font-weight: 400;
-    span {
-      color: $main-color;
-    }
+}
+.about-text {
+  width: 740px;
+  font-size: 20px;
+  padding: 5px;
+  font-family: $main-font-family;
+  color: $second-color;
+  margin-left: 100px;
+  font-weight: 400;
+  span {
+    color: $main-color;
   }
-  .about-parent {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 170px;
-    width: 700px;
-    .about-title {
-      position: absolute;
-      font-size: 28px;
-      top: 150px;
-      left: 1145px;
-    }
-    .about-line {
-      position: absolute;
-      background-color: $main-color;
-      width: 350px;
-      height: 3px;
-      top: 215px;
-      right: 425px;
-    }
-    .parent {
-      background-color: $second-color;
-      width: 450px;
-      height: 250px;
-      margin-top: 20px;
-    }
-  }
+}
+.about-parent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 170px;
+  width: 700px;
+}
+.about-title {
+  position: absolute;
+  font-size: 28px;
+  top: 150px;
+  left: 1145px;
+}
+.about-line {
+  position: absolute;
+  background-color: $main-color;
+  width: 350px;
+  height: 3px;
+  top: 215px;
+  right: 425px;
+}
+.parent {
+  background-color: $second-color;
+  width: 450px;
+  height: 250px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -101,38 +102,38 @@
     overflow-y: scroll;
     height: 700px;
     margin-top: 50px;
-    .about-text {
-      width: 300px;
-      font-size: 20px;
-      margin-left: 50px;
-    }
-    .about-parent {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-left: 50px;
-      margin-bottom: 0px;
-      width: 300px;
-      .about-title {
-        position: relative;
-        font-size: 28px;
-        top: 0px;
-        left: 0px;
-      }
-      .about-line {
-        position: relative;
-        background-color: $main-color;
-        width: 255px;
-        height: 3px;
-        top: -20px;
-        right: 0px;
-      }
-      .parent {
-        background-color: $second-color;
-        width: 280px;
-        height: 200px;
-        margin-top: 20px;
-      }
-    }
+  }
+  .about-text {
+    width: 300px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .about-parent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    width: 300px;
+  }
+  .about-title {
+    position: relative;
+    font-size: 28px;
+    top: 0px;
+    left: 0px;
+  }
+  .about-line {
+    position: relative;
+    background-color: $main-color;
+    width: 255px;
+    height: 3px;
+    top: -20px;
+    right: 0px;
+  }
+  .parent {
+    background-color: $second-color;
+    width: 280px;
+    height: 200px;
+    margin-top: 20px;
   }
 }

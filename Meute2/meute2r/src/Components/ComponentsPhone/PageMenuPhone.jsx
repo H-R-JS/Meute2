@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "../HeaderComponents/Navbar";
+import { Navbar } from "../HeaderComponents/Navbar/Navbar";
 import { NavItemsPhone } from "./NavPhone/NavItemsPhone";
 import { MotionOnePageAnimation } from "../MotionDiv/AllMotionDiv";
 

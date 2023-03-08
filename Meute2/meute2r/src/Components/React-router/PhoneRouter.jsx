@@ -2,11 +2,11 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { PageMenuPhone } from "../ComponentsPhone/PageMenuPhone";
 import { PhoneMenu } from "../ComponentsPhone/NavPhone/PhoneMenu";
-import { Reservation } from "../AllBodys/Reservation";
-import { Prices } from "../AllBodys/Prices";
-import { BabiesAct } from "../AllBodys/BabiesAct";
-import { About } from "../AllBodys/About";
-import { OldBabies } from "../AllBodys/OldBabies";
+import { Reservation } from "../BodyComponents/Reservation";
+import { Prices } from "../BodyComponents/Prices";
+import { BabiesAct } from "../BodyComponents/BabiesAct";
+import { About } from "../BodyComponents/About";
+import { OldBabies } from "../BodyComponents/OldBabies";
 import { AnimatePresence } from "framer-motion";
 
 export const PhoneRouter = () => {

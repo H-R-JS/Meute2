@@ -1,5 +1,5 @@
 import React from "react";
-import { Version } from "./NavItems";
+import { Version } from "../NavItems";
 
 export const DropDownNetWork = [
   {

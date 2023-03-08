@@ -12,15 +12,15 @@ export const Prices = () => {
     <MotionOnePageAnimation className="prices-page">
       <div className="prices-container">
         <MotionMultipleAnimationImg className="prices-img-content">
-          <img src={imgPrices} className="prices-img" />
+          <img src={imgPrices} className="prices-img" alt="" />
         </MotionMultipleAnimationImg>
         <MotionMultipleAnimationText className="prices-unit-content">
-          <div className="unit 1">
+          <div className="unit">
             <p>Prix par raton couleur(s) classique(s):</p>
             <span>10 €</span>
           </div>
 
-          <div className="unit 2">
+          <div className="unit">
             <p>Prix par raton husky et dumbo:</p>
             <span>13 €</span>
           </div>
