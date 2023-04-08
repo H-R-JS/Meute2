@@ -1,18 +1,18 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Home } from "../BodyComponents/Home";
-import { Reservation } from "../BodyComponents/Reservation";
+import { Reservation } from "../BodyComponents/Reserv/Reservation";
 import { Prices } from "../BodyComponents/Prices";
 import { BabiesAct } from "../BodyComponents/BabiesAct";
 import { About } from "../BodyComponents/About";
-import { OldBabies } from "../BodyComponents/OldBabies";
+import { OldBabies } from "../BodyComponents/OldBabies/OldBabies";
 import { AnimatePresence } from "framer-motion";
 import { Header } from "../HeaderComponents/Header";
 
-export const AnimationsRouters = () => {
+export const Meute2Router = () => {
   const location = useLocation();
   return (
-    <body>
+    <div>
       <Header />
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
@@ -24,6 +24,6 @@ export const AnimationsRouters = () => {
           <Route path="/oldBabies" element={<OldBabies />} />
         </Routes>
       </AnimatePresence>
-    </body>
+    </div>
   );
 };

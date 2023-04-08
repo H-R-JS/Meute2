@@ -28,6 +28,7 @@ export const BabiesAct = () => {
       email: email,
     }).then(() => {
       console.log("succes");
+      return <div className="post-succes">Email envoyé !</div>;
     });
   };
 

@@ -3,46 +3,50 @@
   width: 100%;
   // background-color: red;
   font-family: $main-font-family;
-  .header-title {
-    position: absolute;
-    left: 36%;
-    top: -65px;
-    .h1-header {
-      font-size: 50px;
-      text-decoration: none;
-      color: $main-color;
-      h1 {
-        font-weight: 200;
-      }
-    }
-    .header-line {
-      position: absolute;
-      background-color: $main-color;
-      width: 600px;
-      height: 3px;
-      right: 0px;
-      top: 180px;
-    }
-  }
-
-  ///////////// NAVBAR ///////////////
-  .menu {
-    float: right;
-    width: 700px;
-    margin: 45px 50px;
-    .menu-content {
-      display: flex;
-      justify-content: space-evenly;
-      font-size: 26px;
-    }
-  }
-  @media screen and (max-width: 1850px) {
-    .menu {
-      margin-top: 100px;
-    }
-  }
+}
+.header-title {
+  position: absolute;
+  left: 36%;
+  top: -65px;
 }
 
+.header-line {
+  position: absolute;
+  background-color: $main-color;
+  width: 600px;
+  height: 3px;
+  right: 0px;
+  top: 180px;
+}
+
+.h1-header {
+  font-size: 50px;
+  text-decoration: none;
+  color: $main-color;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+///////////// NAVBAR ///////////////
+
+@media screen and (max-width: 1850px) {
+  .menu {
+    margin-top: 100px;
+  }
+}
+.menu {
+  float: right;
+  width: 700px;
+  margin: 45px 50px;
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 26px;
+}
 .nav-li {
   transform: translateY(0px);
   transition: transform 0.2s;

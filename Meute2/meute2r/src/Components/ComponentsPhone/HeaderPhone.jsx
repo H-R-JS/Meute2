@@ -3,7 +3,7 @@ import { Navbar } from "../HeaderComponents/Navbar/Navbar";
 import { NavItemsPhone } from "./NavPhone/NavItemsPhone";
 import { MotionOnePageAnimation } from "../MotionDiv/AllMotionDiv";
 
-export const PageMenuPhone = () => {
+export const HeaderPhone = () => {
   return (
     <MotionOnePageAnimation>
       <div className="menu-page">

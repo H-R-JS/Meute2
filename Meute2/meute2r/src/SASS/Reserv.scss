@@ -32,6 +32,9 @@ h2 {
     margin-left: 50px;
 
     .reserv-img {
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
       width: 340px;
       height: 310px;
     }
@@ -69,11 +72,13 @@ h2 {
       width: 240px;
       height: 210px;
       margin: 10px 25px;
-
-      .reserv-img {
-        width: 240px;
-        height: 210px;
-      }
     }
+  }
+  .reserv-img {
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 210px;
   }
 }
