@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { NavItemsPhone } from "./NavItemsPhone";
+import { NavItems } from "../../HeaderComponents/Navbar/NavItems";
 import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { DropDownRPhone, DropDownPPhone } from "./DropDownPhone";
@@ -51,7 +51,7 @@ export const NavbarPhone = () => {
         animate={controls}
       >
         <ul className="nav-phone-content">
-          {NavItemsPhone.map((item) => {
+          {NavItems.map((item) => {
             if (item.id === "2") {
               return (
                 <li
@@ -99,53 +99,3 @@ export const NavbarPhone = () => {
     </div>
   );
 };
-/** {menuOn ? (
-          <div>
-            <motion.div
-              style={{ opacity: 1 }}
-              animate={{ opacity: 1, transition: { duration: 0.3 } }}
-            >
-              <span className="material-symbols-outlined" id="icon-menu-phone">
-                menu
-              </span>
-            </motion.div>
-          </div>
-        ) : (
-          <div>
-            <motion.div
-              style={{ opacity: 1 }}
-              animate={{ opacity: 1, transition: { duration: 0.3 } }}
-            >
-              <span className="material-symbols-outlined" id="icon-menu-phone">
-                menu
-              </span>
-            </motion.div>
-            <motion.div
-              style={{ x: 0 }}
-              animate={{
-                x: iconOn ? 0 : -100,
-                transition: { duration: 0.5 },
-              }}
-            >
-              <span
-                class="material-symbols-outlined"
-                id="icon-menu-phone-close"
-              >
-                close
-              </span>
-            </motion.div>
-          </div>
-        )} 
-        
-        
-        
-        
-        if (menuOn == !true) {
-      setMenuOn(true);
-      setTimeout(() => {
-        setIconOn(true);
-      }, 400);
-    } else {
-      setMenuOn(false);
-      setIconOn(false);
-    }*/

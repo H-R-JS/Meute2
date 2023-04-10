@@ -8,18 +8,18 @@
 @import "./Phone/MenuPhone.scss";
 @import "./Phone/NavPhone.scss";
 
-.App {
+/*.App {
   height: 975px;
   box-shadow: -20px -0px 50px inset #bbb, 20px 10px 80px inset #ccc;
-}
+}*/
 
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
   .App {
     height: 100vh;
     width: 100vw;
     box-shadow: -20px -0px 50px inset #bbb, 20px 10px 80px inset #ccc;
   }
-}
+}*/
 
 //// BODY //////////
 /// Acceuil
@@ -82,7 +82,7 @@
     position: absolute;
     right: 300px;
     top: 350px;
-    width: 660px;
+    width: 35%;
     font-size: 26px;
     color: $second-color;
     font-family: $main-font-family;
@@ -121,13 +121,6 @@
 
 @media screen and (max-width: 1600px) {
   .main-content {
-    width: 250px;
     right: 100px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .body-page {
-    display: none;
   }
 }

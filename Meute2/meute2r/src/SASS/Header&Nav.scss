@@ -1,28 +1,24 @@
 .header-page {
-  display: inline-block;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
   width: 100%;
-  // background-color: red;
+  height: 100px;
   font-family: $main-font-family;
 }
-.header-title {
-  position: absolute;
-  left: 36%;
-  top: -65px;
-}
 
-.header-line {
-  position: absolute;
-  background-color: $main-color;
+.header-title {
+  display: flex;
   width: 600px;
-  height: 3px;
-  right: 0px;
-  top: 180px;
+  border-bottom: 4px solid $main-color;
 }
 
 .h1-header {
   font-size: 50px;
   text-decoration: none;
   color: $main-color;
+  margin-top: -90px;
+  margin-left: 110px;
 }
 
 h1 {
@@ -31,15 +27,11 @@ h1 {
 
 ///////////// NAVBAR ///////////////
 
-@media screen and (max-width: 1850px) {
-  .menu {
-    margin-top: 100px;
-  }
-}
 .menu {
-  float: right;
+  position: relative;
   width: 700px;
-  margin: 45px 50px;
+  min-width: 530px;
+  margin: 20px 50px;
 }
 
 .menu-content {
@@ -117,4 +109,20 @@ h1 {
 
 li {
   list-style: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .header-title {
+    display: flex;
+    width: 600px;
+    height: 90px;
+    border-bottom: 3px solid $main-color;
+  }
+  .h1-header {
+    font-size: 35px;
+    text-decoration: none;
+    color: $main-color;
+    margin-top: -45px;
+    margin-left: 110px;
+  }
 }
