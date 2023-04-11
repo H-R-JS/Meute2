@@ -33,12 +33,12 @@ export const BabiesAct = () => {
   };
 
   return (
-    <MotionOnePageAnimation className="babiesAc-page">
+    <MotionOnePageAnimation>
       <div className="babiesAc-container">
         <MotionMultipleAnimationImg>
           <img src={imgBabiesAc} className="babiesAc-img" alt="" />
         </MotionMultipleAnimationImg>
-        <MotionMultipleAnimationText className="babiesAc-content">
+        <MotionMultipleAnimationText>
           <p className="babiesAc-port-actu">
             Portée actuelle: <span> 16/11/2023</span>
           </p>

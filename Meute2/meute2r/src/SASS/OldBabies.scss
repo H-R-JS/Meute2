@@ -1,15 +1,17 @@
 .old-content {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  top: 150px;
   li {
     margin: 20px 100px;
   }
-  .old-text {
-    font-size: 24px;
-    color: $second-color;
-    span {
-      color: $main-color;
-    }
+}
+.old-text {
+  font-size: 24px;
+  color: $second-color;
+  span {
+    color: $main-color;
   }
 }
 
@@ -38,33 +40,28 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .old-page {
-    display: inline-block;
-  }
   .old-content {
+    position: relative;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    overflow-y: scroll;
-    width: 350px;
-    height: 700px;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    top: 150px;
     li {
-      margin: 5px 20px;
+      margin: 20px 15px;
     }
-    .old-text {
-      font-size: 24px;
-      color: $second-color;
-      span {
-        color: $main-color;
-      }
+  }
+  .old-text {
+    font-size: 24px;
+    color: $second-color;
+
+    span {
+      color: $main-color;
     }
   }
 
   .old-img {
-    width: 250px;
+    width: 280px;
     height: 190px;
+    margin-top: 10px;
   }
 
   .info-box {

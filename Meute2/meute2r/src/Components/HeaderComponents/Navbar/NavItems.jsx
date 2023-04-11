@@ -1,15 +1,9 @@
 import React from "react";
-import Media from "react-media";
-
-const media1000 = window.matchMedia("(max-width: 1000px)");
-export const Version = media1000.matches ? "/phone/" : "/";
-
-console.log(Version, media1000);
 
 export const NavItems = [
   {
     title: "Réservation",
-    path: Version + "reservation",
+    path: "reservation",
     class: "item-nav",
     id: "1",
   },
@@ -21,7 +15,7 @@ export const NavItems = [
   },
   {
     title: "Tarifs",
-    path: Version + "prices",
+    path: "prices",
     class: "item-nav",
     id: "3",
   },
@@ -35,7 +29,7 @@ export const NavItems = [
 
   {
     title: "À propos",
-    path: Version + "about",
+    path: "about",
     class: "item-nav",
     id: "5",
   },

@@ -1,5 +1,4 @@
 import React from "react";
-import { Version } from "../NavItems";
 
 export const DropDownNetWork = [
   {
@@ -14,14 +13,14 @@ export const DropDownNetWork = [
 export const DropDownPortees = [
   {
     title: "Actualité",
-    path: Version + "babiesAct",
+    path: "babiesAct",
     class: "portee-li",
     classLi: "li-por",
     id: "1",
   },
   {
     title: "Archives",
-    path: Version + "oldBabies",
+    path: "oldBabies",
     class: "portee-li",
     classLi: "li-por",
     id: "2",

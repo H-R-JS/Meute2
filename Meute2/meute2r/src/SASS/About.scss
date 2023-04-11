@@ -1,12 +1,15 @@
-.back-img {
-  position: absolute;
+.about-container {
+  position: relative;
+
+  top: 150px;
 }
 
 .back-img {
+  position: absolute;
   background-image: url(../Images/ratAbout1.jpg);
   background-size: 170%;
   background-repeat: no-repeat;
-  top: 610px;
+  top: 450px;
   left: 890px;
   width: 270px;
   height: 280px;
@@ -20,22 +23,22 @@
   opacity: 0.5;
 }
 .foot1 {
-  top: 810px;
+  top: 650px;
   right: 700px;
   rotate: (260deg);
 }
 .foot2 {
-  top: 850px;
+  top: 690px;
   right: 500px;
   rotate: (280deg);
 }
 .foot3 {
-  top: 810px;
+  top: 650px;
   right: 300px;
   rotate: (240deg);
 }
 .foot4 {
-  top: 870px;
+  top: 690px;
   right: 100px;
   rotate: (280deg);
 }
@@ -64,19 +67,13 @@
   width: 700px;
 }
 .about-title {
-  position: absolute;
+  position: relative;
   font-size: 28px;
-  top: 150px;
-  left: 1145px;
+  border-bottom: 3px solid $main-color;
+  top: 0px;
+  left: -95px;
 }
-.about-line {
-  position: absolute;
-  background-color: $main-color;
-  width: 350px;
-  height: 3px;
-  top: 215px;
-  right: 425px;
-}
+
 .parent {
   background-color: $second-color;
   width: 450px;
@@ -84,16 +81,19 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 1000px) {
-  .about-page {
-    display: inline-block;
-  }
+@media screen and (max-width: 1910px) {
   .back-img {
     display: none;
   }
 
   .back-img-foot {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-page {
+    display: inline-block;
   }
 
   .about-content {
