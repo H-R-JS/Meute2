@@ -13,7 +13,6 @@ export const Meute2Router = () => {
   const location = useLocation();
   return (
     <div>
-      <Header />
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />

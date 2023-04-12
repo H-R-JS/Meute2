@@ -1,7 +1,7 @@
 .about-container {
-  position: relative;
-
-  top: 150px;
+  display: flex;
+  height: 800px;
+  margin-top: 16px;
 }
 
 .back-img {
@@ -9,9 +9,9 @@
   background-image: url(../Images/ratAbout1.jpg);
   background-size: 170%;
   background-repeat: no-repeat;
-  top: 450px;
+  top: 650px;
   left: 890px;
-  width: 270px;
+  width: 250px;
   height: 280px;
   transform: scaleX(-1);
 }
@@ -23,29 +23,29 @@
   opacity: 0.5;
 }
 .foot1 {
-  top: 650px;
+  top: 800px;
   right: 700px;
   rotate: (260deg);
 }
 .foot2 {
-  top: 690px;
+  top: 850px;
   right: 500px;
   rotate: (280deg);
 }
 .foot3 {
-  top: 650px;
+  top: 790px;
   right: 300px;
   rotate: (240deg);
 }
 .foot4 {
-  top: 690px;
+  top: 850px;
   right: 100px;
   rotate: (280deg);
 }
 
 .about-content {
   display: flex;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 .about-text {
   width: 740px;
@@ -53,6 +53,7 @@
   padding: 5px;
   font-family: $main-font-family;
   color: $second-color;
+  margin-top: 100px;
   margin-left: 100px;
   font-weight: 400;
   span {
@@ -83,30 +84,34 @@
 
 @media screen and (max-width: 1910px) {
   .back-img {
+    background-color: red;
     display: none;
   }
 
   .back-img-foot {
+    background-color: red;
     display: none;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .about-page {
-    display: inline-block;
+  .about-container {
+    display: flex;
+    height: 800px;
+    margin-top: 0px;
   }
-
   .about-content {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     height: 700px;
-    margin-top: 50px;
+    margin-top: 100px;
   }
   .about-text {
     width: 300px;
     font-size: 20px;
     margin-left: 50px;
+    margin-top: 0;
   }
   .about-parent {
     display: flex;

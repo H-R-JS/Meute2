@@ -60,7 +60,7 @@ export const NavbarPhone = () => {
                   onMouseLeave={() => setMenuDownR(false)}
                   className="nav-li"
                 >
-                  <Link to={item.path} className={item.class}>
+                  <Link to={item.path} className="item-nav-phone drop">
                     {item.title}
                   </Link>
                   {menuDownR && <DropDownRPhone />}
@@ -74,7 +74,7 @@ export const NavbarPhone = () => {
                   onMouseLeave={() => setMenuDownP(false)}
                   className="nav-li"
                 >
-                  <Link to={item.path} className={item.class}>
+                  <Link to={item.path} className="item-nav-phone drop">
                     {item.title}
                   </Link>
                   {menuDownP && <DropDownPPhone />}
@@ -83,7 +83,7 @@ export const NavbarPhone = () => {
             }
             return (
               <li key={item.id}>
-                <Link to={item.path} className={item.class}>
+                <Link to={item.path} className="item-nav-phone">
                   {item.title}
                 </Link>
               </li>

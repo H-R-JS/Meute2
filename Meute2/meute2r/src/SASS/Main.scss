@@ -28,7 +28,7 @@
     background-image: url("../Images/ratAcc.jpeg");
     background-size: 99%;
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     width: 700px;
     height: 560px;
     left: 150px;
@@ -121,5 +121,102 @@
 @media screen and (max-width: 1600px) {
   .main-content {
     right: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .body-container {
+    display: flex;
+    height: 800px;
+  }
+
+  .image-acc {
+    background-image: url("../Images/ratAcc2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 380px;
+    height: 350px;
+    left: 10px;
+    top: 50px;
+    z-index: -2;
+    transition: top 0.2s;
+  }
+
+  .image-foot {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+    z-index: -2;
+  }
+
+  .imf1 {
+    left: 260px;
+    top: 720px;
+    transform: rotate(340deg);
+    z-index: 2;
+  }
+
+  .imf2 {
+    left: 190px;
+    top: 640px;
+    transform: rotate(320deg);
+  }
+
+  .imf3 {
+    left: 105px;
+    top: 560px;
+    transform: rotate(300deg);
+  }
+
+  .imf4 {
+    left: 0px;
+    top: 530px;
+    transform: rotate(260deg);
+  }
+
+  .main-content {
+    position: relative;
+    text-align: center;
+    left: 0px;
+    top: 310px;
+    width: 330px;
+    font-size: 24px;
+    color: $second-color;
+    font-family: $main-font-family;
+    z-index: -2;
+    span {
+      color: $main-color;
+      transition: text-decoration 0.4s;
+      text-decoration: none;
+    }
+  }
+
+  .underline {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: $main-color;
+  }
+
+  .underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $main-color;
+    transform-origin: right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 }

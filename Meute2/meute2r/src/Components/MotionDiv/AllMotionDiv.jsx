@@ -52,7 +52,7 @@ const onePageAnimation = {
   open: {
     opacity: 1,
     display: "block",
-
+    zIndex: -2,
     transition: { duration: 0.2, delay: 0.4 },
   },
 
@@ -86,6 +86,7 @@ export const multipleAnimationImg = {
     display: "inline-block",
     left: "200px",
     x: 0,
+    zIndex: -2,
     transition: { duration: 0.3, delay: 0.6, timingFunction: "ease-out" },
   },
 
@@ -118,6 +119,7 @@ export const multipleAnimationText = {
     opacity: 1,
     display: "inline-block",
     y: 0,
+    zIndex: -2,
     transition: { duration: 0.5, delay: 0.8, timingFunction: "ease-out" },
   },
   exit: {

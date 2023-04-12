@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   top: 150px;
+  z-index: -2;
 }
 .babiesAc-port-actu {
   font-family: $main-font-family;

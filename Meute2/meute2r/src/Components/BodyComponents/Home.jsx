@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { HomePhone } from "../ComponentsPhone/HomePhone";
-import Media from "react-media";
 
 const imgFoot = require("../../Images/foot.png");
 
@@ -14,16 +12,6 @@ const imgFootArray = [
 ];
 
 export const Home = () => {
-  return (
-    <div className="body-page">
-      <Media query="(max-width: 1000px)">
-        {(matches) => (matches ? <HomePhone /> : <HomePc />)}
-      </Media>
-    </div>
-  );
-};
-
-const HomePc = () => {
   const varianttest = {
     hidden: { opacity: 0 },
     visible: {
@@ -43,12 +31,7 @@ const HomePc = () => {
   };
   return (
     <div className="body-container">
-      <motion.ul
-        variants={varianttest}
-        initial="hidden"
-        animate="visible"
-        className="img-content"
-      >
+      <motion.ul variants={varianttest} initial="hidden" animate="visible">
         {imgFootArray.map((item, index) => {
           return (
             <motion.li variants={itemo} key={index}>
