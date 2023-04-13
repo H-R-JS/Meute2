@@ -1,7 +1,6 @@
 .about-container {
   display: flex;
   height: 800px;
-  margin-top: 16px;
 }
 
 .back-img {
@@ -48,7 +47,7 @@
   margin-top: 100px;
 }
 .about-text {
-  width: 740px;
+  width: 40%;
   font-size: 20px;
   padding: 5px;
   font-family: $main-font-family;

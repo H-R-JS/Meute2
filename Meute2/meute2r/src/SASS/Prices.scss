@@ -1,18 +1,26 @@
-.prices-page {
-  display: flex;
-  height: 800px;
-}
-.prices-img {
+.prices-container {
   position: relative;
-  width: 1000px;
-  height: 700px;
-  left: 100px;
-  top: 100px;
+  display: flex;
+  justify-content: space-around;
+  width: 1800px;
+  top: 200px;
+}
+
+.prices-img {
+  background-image: url("../Images/ratTar.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 800px;
+  height: 650px;
+  left: 150px;
+  bottom: 100px;
 }
 .unit-container {
-  position: relative;
+  width: 800px;
   left: 1000px;
-  bottom: 500px;
+  bottom: 100px;
   z-index: -2;
 }
 
@@ -40,8 +48,8 @@
   }
   .unit-container {
     position: relative;
-    left: 250px;
-    top: 200px;
+    left: 0px;
+    top: 00px;
   }
   .unit {
     display: flex;
@@ -63,6 +71,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .prices-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    top: 0px;
+    z-index: -2;
+  }
   .prices-img {
     display: none;
   }

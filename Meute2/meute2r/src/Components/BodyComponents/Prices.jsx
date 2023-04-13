@@ -5,14 +5,12 @@ import {
   MotionOnePageAnimation,
 } from "../MotionDiv/AllMotionDiv";
 
-const imgPrices = require("../../Images/ratTar.jpeg");
-
 export const Prices = () => {
   return (
-    <section className="prices-page">
-      <MotionOnePageAnimation>
+    <MotionOnePageAnimation>
+      <div className="prices-container">
         <MotionMultipleAnimationImg>
-          <img src={imgPrices} className="prices-img" alt="" />
+          <div className="prices-img" />
         </MotionMultipleAnimationImg>
         <div className="unit-container">
           <MotionMultipleAnimationText>
@@ -27,7 +25,7 @@ export const Prices = () => {
             </div>
           </MotionMultipleAnimationText>
         </div>
-      </MotionOnePageAnimation>
-    </section>
+      </div>
+    </MotionOnePageAnimation>
   );
 };

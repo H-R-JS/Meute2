@@ -15,8 +15,8 @@ export const NavbarPhone = () => {
     const handleClickOutside = (e) => {
       if (!ref.current.contains(e.target)) {
         controls.start({
-          x: -240,
-          transition: { duration: 0.3 },
+          x: -500,
+          transition: { duration: 0.2 },
         });
         console.log("clicked Outside DIV...");
       } else {
@@ -36,7 +36,7 @@ export const NavbarPhone = () => {
           controls.start({
             display: "block",
             x: 0,
-            transition: { duration: 0.3 },
+            transition: { duration: 0.2 },
           });
         }}
         className="div-icon-menu"
@@ -47,7 +47,7 @@ export const NavbarPhone = () => {
       </div>
       <motion.div
         className="nav-phone"
-        initial={{ display: "none", x: -240 }}
+        initial={{ display: "none", x: -400 }}
         animate={controls}
       >
         <ul className="nav-phone-content">
@@ -60,9 +60,7 @@ export const NavbarPhone = () => {
                   onMouseLeave={() => setMenuDownR(false)}
                   className="nav-li"
                 >
-                  <Link to={item.path} className="item-nav-phone drop">
-                    {item.title}
-                  </Link>
+                  <div className="item-nav-phone drop">{item.title}</div>
                   {menuDownR && <DropDownRPhone />}
                 </li>
               );
@@ -74,9 +72,7 @@ export const NavbarPhone = () => {
                   onMouseLeave={() => setMenuDownP(false)}
                   className="nav-li"
                 >
-                  <Link to={item.path} className="item-nav-phone drop">
-                    {item.title}
-                  </Link>
+                  <div className="item-nav-phone drop">{item.title}</div>
                   {menuDownP && <DropDownPPhone />}
                 </li>
               );

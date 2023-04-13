@@ -25,8 +25,10 @@ export const MotionDivDown = ({ children }) => {
 const footandRatAnimation = {
   hidden: {
     opacity: 0,
+    display: "none",
   },
   visible: {
+    display: "inline-block",
     opacity: 1,
   },
 };
@@ -45,13 +47,13 @@ export const MotionFootandRatPage = ({ children }) => {
 
 const onePageAnimation = {
   out: {
-    opacity: 0,
     display: "none",
+    opacity: 0,
   },
 
   open: {
+    display: "flex",
     opacity: 1,
-    display: "block",
     zIndex: -2,
     transition: { duration: 0.2, delay: 0.4 },
   },
