@@ -3,11 +3,14 @@
 }
 
 .old-content {
+  background-color: red;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   top: 150px;
   z-index: -2;
+  pointer-events: unset;
+
   li {
     margin: 20px 100px;
   }
@@ -15,6 +18,7 @@
 .old-text {
   font-size: 24px;
   color: $second-color;
+  pointer-events: none;
   span {
     color: $main-color;
   }
@@ -26,9 +30,12 @@
   background-repeat: no-repeat;
   width: 400px;
   height: 300px;
+  pointer-events: none;
+  z-index: -2;
 }
 
 .info-box {
+  background-color: red;
   position: absolute;
   background-color: rgba(40, 40, 40, 0.9);
   color: $color-white;
@@ -37,8 +44,8 @@
   text-align: center;
   width: 400px;
   height: 300px;
-  margin-top: -300px;
-
+  bottom: 10px;
+  z-index: 2;
   span {
     color: $main-color;
   }

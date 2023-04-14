@@ -20,7 +20,7 @@ const NoActu = () => {
 };
 
 export const BabiesAct = () => {
-  // add email in sql db
+  const [succes, setSucces] = useState("");
   const [email, setEmail] = useState("");
   const addEmail = (e) => {
     e.preventDefault();
@@ -28,7 +28,7 @@ export const BabiesAct = () => {
       email: email,
     }).then(() => {
       console.log("succes");
-      return <div className="post-succes">Email envoyé !</div>;
+      setSucces("L'email est bien envoyé !");
     });
   };
 
@@ -52,6 +52,7 @@ export const BabiesAct = () => {
               , un email vous sera envoyé lors de la prochaine portée.
             </p>
             <form className="act-form">
+              <div className="post-succes">{succes}</div>
               <input
                 type="email"
                 className="champ-email"
