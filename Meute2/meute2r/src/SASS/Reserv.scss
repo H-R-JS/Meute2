@@ -26,6 +26,17 @@ h2 {
   width: 1900px;
   height: 700px;
   margin-top: 220px;
+  p {
+    text-align: center;
+    font-family: $main-font-family;
+    color: $second-color;
+    font-size: 40px;
+    width: 800px;
+    margin-top: 200px;
+    span {
+      color: $main-color;
+    }
+  }
 }
 .reserv-box-content {
   width: 350px;

@@ -4,27 +4,20 @@ import { motion } from "framer-motion";
 function InfoBox(props) {
   const { dataParent, dataMale, dataFemale } = props;
   return (
-    <motion.div
-      className="info-box"
-      initial={{ opacity: 0 }}
-      whileHover={{ opacity: 1, transition: { duration: 0.5 } }}
-      exit={{ opacity: 0 }}
-    >
-      <div>
-        <p>
-          Les Parents: <br />
-          <span>{dataParent}</span>
-        </p>
-        <p>
-          Mâle: <br />
-          <span>{dataMale}</span>
-        </p>
-        <p>
-          Femelle: <br />
-          <span>{dataFemale}</span>
-        </p>
-      </div>
-    </motion.div>
+    <div>
+      <p>
+        Les Parents: <br />
+        <span>{dataParent}</span>
+      </p>
+      <p>
+        Mâle: <br />
+        <span>{dataMale}</span>
+      </p>
+      <p>
+        Femelle: <br />
+        <span>{dataFemale}</span>
+      </p>
+    </div>
   );
 }
 

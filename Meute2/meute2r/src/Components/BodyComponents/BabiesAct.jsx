@@ -22,14 +22,21 @@ const NoActu = () => {
 export const BabiesAct = () => {
   const [succes, setSucces] = useState("");
   const [email, setEmail] = useState("");
+
+  const validation =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   const addEmail = (e) => {
     e.preventDefault();
-    Axios.post("http://localhost:7000/api/m2r", {
-      email: email,
-    }).then(() => {
-      console.log("succes");
-      setSucces("L'email est bien envoyé !");
-    });
+    if (validation.test(email)) {
+      Axios.post("http://localhost:7000/api/m2r", {
+        email: email,
+      }).then(() => {
+        console.log("succes");
+        setSucces("L'Email est bien envoyé !");
+      });
+    } else {
+      setSucces("L'Email n'est pas valide .");
+    }
   };
 
   return (
