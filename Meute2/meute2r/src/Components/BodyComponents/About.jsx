@@ -104,8 +104,8 @@ export const About = () => {
               </div>
               <div className="about-parent">
                 <h2 className="about-title">Les Rats reproducteurs</h2>
-                <img className="parent 1" />
-                <img className="parent 2" />
+                <img className="parent one" />
+                <img className="parent two" />
               </div>
             </div>
           </motion.div>

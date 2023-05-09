@@ -6,10 +6,10 @@ let cors = require("cors");
 const PORT = 7000;
 
 const db = mysql.createConnection({
-  user: "root",
-  host: "localhost",
-  password: "root",
-  database: "m2_email_r",
+  user: "rat31_",
+  host: "127.0.0.1:3306",
+  password: "Louna31470",
+  database: "m2r_database",
 });
 
 app.use(cors());

@@ -76,9 +76,19 @@
 
 .parent {
   background-color: $second-color;
+  background-size: cover;
+  background-position: center;
   width: 450px;
   height: 250px;
   margin-top: 20px;
+}
+
+.parent.one {
+  background-image: url("../Images/parent1.jpg");
+}
+
+.parent.two {
+  background-image: url("../Images/parent2.jpg");
 }
 
 @media screen and (max-width: 1910px) {
