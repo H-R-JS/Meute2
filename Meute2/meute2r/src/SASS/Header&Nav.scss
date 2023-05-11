@@ -1,11 +1,13 @@
 .header-page {
   position: fixed;
   display: flex;
+  background-color: #fff;
   justify-content: flex-end;
   font-family: $main-font-family;
   width: 100%;
   height: 100px;
   margin-top: 10px;
+  z-index: 5;
 }
 
 .header-title {

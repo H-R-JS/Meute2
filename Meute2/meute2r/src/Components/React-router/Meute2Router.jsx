@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { Home } from "../BodyComponents/Home";
 import { Reservation } from "../BodyComponents/Reserv/Reservation";
 import { Prices } from "../BodyComponents/Prices";
-import { BabiesAct } from "../BodyComponents/BabiesAct";
+import { BabiesAct } from "../BodyComponents/BabiesAct/BabiesAct";
 import { About } from "../BodyComponents/About";
 import { OldBabies } from "../BodyComponents/OldBabies/OldBabies";
 import { AnimatePresence } from "framer-motion";
