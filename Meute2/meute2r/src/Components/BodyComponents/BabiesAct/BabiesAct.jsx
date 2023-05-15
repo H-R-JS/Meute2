@@ -30,10 +30,10 @@ export const BabiesAct = () => {
         </MotionMultipleAnimationImg>
         <MotionMultipleAnimationText>
           <p className="babiesAc-port-actu">
-            Portée actuelle: <span> 16/11/2023</span>
+            Portée actuelle: <span> 18/04/2023</span>
           </p>
           <div className="act-babies">
-            <NoActu />
+            <div className="actu-box" />
           </div>
           <div className="act-sign">
             <p>
@@ -50,43 +50,3 @@ export const BabiesAct = () => {
     </MotionOnePageAnimation>
   );
 };
-
-/**const [succes, setSucces] = useState("");
-  const [email, setEmail] = useState("");
-
-  const validation =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  const addEmail = (e) => {
-    e.preventDefault();
-    if (validation.test(email)) {
-      Axios.post("http://localhost:7000/api/m2r", {
-        email: email,
-      }).then(() => {
-        console.log("succes");
-        setSucces("L'Email est bien envoyé !");
-      });
-    } else {
-      setSucces("L'Email n'est pas valide .");
-    }
-  }; 
-  
-  
-   <form className="act-form">
-              <div className="post-succes">{succes}</div>
-              <input
-                type="email"
-                className="champ-email"
-                placeholder="Votre email :)"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-              />
-              <button
-                type="submit"
-                className="champ-btn-submit"
-                onClick={addEmail}
-              >
-                M'avertir
-              </button>
-            </form>*/

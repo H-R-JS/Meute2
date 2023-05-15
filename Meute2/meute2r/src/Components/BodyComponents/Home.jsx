@@ -47,10 +47,10 @@ export const Home = () => {
           </motion.li>
           <motion.li variants={itemo} className="main-content">
             <p>
-              Bienvenue dans <span>ma meute de rat</span>, éléveuse de ces
-              petits rongeurs, je vous propose de{" "}
+              Bienvenue dans ma meute de rats, petit élevage familial <br />
+              situé dans le Gers (1h de Toulouse){" "}
               <Link to="/reservation" className="underline">
-                réserver les rats qui vous plaisent !
+                je vous propose de découvrir ma petite meute !
               </Link>
             </p>
           </motion.li>

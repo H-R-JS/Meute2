@@ -48,58 +48,44 @@ export const About = () => {
             <div className="about-content">
               <div className="about-text">
                 <p>
-                  Bonjour à tous !<br /> <br /> Je m'appelle Alexandra et je
-                  suis <span>une grande passionée d'animaux en générale.</span>{" "}
-                  J'aime m'en occuper, leur apporter un peu d'amour et avoir une
-                  complicité avec eux , c'est pourquoi j'ai eu l'idée de vouloir
-                  travailler dans le domaine.{" "}
+                  Bonjour à tous ! Je m'appelle Alexandra et{" "}
                   <span>
-                    Pourquoi spécialement les rats ? Pour leurs petites tailles
-                    ? Pour leurs petits yeux doux ? Pour leur soyeuse petite
-                    fourrure ? Je ne serais dire exactement ce qui m'attire chez
-                    eux, mais ils ont réussi à prendre mon coeur.
+                    je suis une grande passionée d'animaux en générale.
                   </span>{" "}
-                  Ce n'est qu'il y a quelques années que j'ai décidé de prendre
-                  des rats, les nourrires, les voir vivre et cohabiter entre
-                  eux, tous en échangeant des caresses et des petits regards
-                  doux.{" "}
+                  J'aime m'en occuper, leur apporter de l’amour et avoir une
+                  complicité avec eux, c'est pourquoi faire{" "}
+                  <span>mon élevage de rats était pour moi une évidence.</span>
+                  <br /> Pourquoi spécialement les rats ? Pour leurs petites
+                  tailles ? Pour leurs petits yeux doux ? Pour leur soyeuse
+                  petite fourrure ? Je ne serais dire exactement ce qui m'attire
+                  chez eux, mais ils ont réussi à prendre mon coeur.
+                  <br /> Ce n'est qu'il y a quelques années que j'ai décidé de
+                  prendre des rats.{" "}
                   <span>
-                    Très vite, j'ai décidé de me renseigner sur le rat, c'est là
-                    que j'ai appris qu'ils étaient grégaires donc une adoption
-                    de rat peut aboutir à plusieurs adoptions, il est important
-                    de le notifier.
+                    C'est dans un élevage que je pris les rats, que je
+                    recommande de priorisé
                   </span>{" "}
-                  C'est dans un élevage que je pris les rats,{" "}
-                  <span>
-                    que je recommande de priorisé si vous ne voulez pas de
-                    mauvaises surprises.
-                  </span>{" "}
-                  C'est plus tard que je me suis tourner vers l'élévage, voir
-                  une rate mettre bat et toujours aussi beau, ce moment me rend
-                  toujours joyeuse et surtout très prudente de leur santé, même
-                  si la mère gère très bien, les erreurs arrive, un petit
-                  oublier par ci, un autre gesticulant par là, ils sont si
-                  minuscule que le compte est parfois compliqué à avoir.{" "}
-                  <span>Pourtant, je n'en retire que des bons moments !</span>{" "}
+                  si vous ne voulez pas de mauvaises surprises (mauvais sevrage,
+                  problème de santé, problème de comportement et j’en passe…)
+                  <br /> C'est plus tard que je me suis tourner vers l'élévage,{" "}
+                  <span>voir une rate mettre bat et toujours aussi beau</span>,
+                  ce moment me rend toujours joyeuse et surtout très prudente de
+                  leur santé, pourtant, je n'en retire que des bons moments !
                   <br />
                   <br />
-                  Mes rats sont élevées dans un bon environnement, entouré
-                  d'autres rats il ne manque pas de vivre ni de bien être.{" "}
                   <span>
-                    J'espère sincèrement que chacun de mes rats trouveront une
-                    famille qui n'apportera que du bien être pour l'animal
-                  </span>
-                  , je vous peut vous donner des conseils si nécessaire ayant
-                  fait des recherches et observer leur comportement.{" "}
-                  <span>
-                    {" "}
-                    si vous avez besoin de me contacter, il suffit de m'envoyer
-                    des messages privées sur mon instagram dans la catégorie
-                    "Réseaux".
+                    Mes rats sont élevées dans un bon environnement, entouré
+                    d'autres rats il ne manque pas de vivre ni de bien être.
                   </span>{" "}
+                  J'espère sincèrement que chacun de mes rats trouveront une
+                  famille qui n'apportera que du bien être pour l'animal, je
+                  vous donne des conseils si nécessaire ayant fait des
+                  recherches et observer leur comportement. si vous avez besoin
+                  de me contacter, il suffit de m'envoyer des messages privées
+                  sur <span>mon instagram dans la catégorie "Réseaux".</span>
                   <br />
-                  <br />
-                  Je vous souhaite de trouver votre futur petit compagnon !
+                  <br /> Je vous souhaite de trouver{" "}
+                  <span>votre futur petit compagnon !</span>
                 </p>
               </div>
               <div className="about-parent">
