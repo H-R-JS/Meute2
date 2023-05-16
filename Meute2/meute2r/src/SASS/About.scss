@@ -66,12 +66,22 @@
   margin-left: 170px;
   width: 700px;
 }
-.about-title {
+.about-h2 {
   position: relative;
+  color: $main-color;
+  font-family: $main-font-family;
   font-size: 28px;
-  border-bottom: 3px solid $main-color;
-  top: 0px;
+  top: 20px;
   left: -95px;
+}
+
+.about-h2::before {
+  content: "";
+  position: absolute;
+  background-color: $main-color;
+  width: 255px;
+  height: 3px;
+  bottom: 0px;
 }
 
 .parent {
@@ -106,44 +116,42 @@
 @media screen and (max-width: 1000px) {
   .about-container {
     display: flex;
-    height: 800px;
+    height: 100vh;
     margin-top: 0px;
   }
   .about-content {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    height: 700px;
+    height: 70vh;
     margin-top: 100px;
   }
   .about-text {
     width: 300px;
     font-size: 20px;
-    margin-left: 50px;
+    margin: 0 20px;
     margin-top: 0;
   }
   .about-parent {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-bottom: 0px;
     width: 300px;
   }
-  .about-title {
-    position: relative;
-    font-size: 28px;
+  .about-h2 {
+    font-size: 24px;
     top: 0px;
     left: 0px;
   }
-  .about-line {
-    position: relative;
-    background-color: $main-color;
-    width: 255px;
+
+  .about-h2::before {
+    width: 220px;
     height: 3px;
-    top: -20px;
-    right: 0px;
+    bottom: 0px;
   }
+
   .parent {
     background-color: $second-color;
     width: 280px;

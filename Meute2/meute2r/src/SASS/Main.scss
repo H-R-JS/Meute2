@@ -116,7 +116,7 @@
 @media screen and (max-width: 1000px) {
   .body-container {
     display: flex;
-    height: 800px;
+    height: 100vh;
   }
 
   .image-acc {
@@ -125,10 +125,10 @@
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    width: 380px;
-    height: 350px;
+    width: 350px;
+    height: 320px;
     left: 10px;
-    top: 50px;
+    top: 30px;
     z-index: -2;
     transition: top 0.2s;
   }
@@ -144,25 +144,25 @@
 
   .imf1 {
     left: 0px;
-    top: 530px;
+    top: 450px;
     transform: rotate(260deg);
   }
 
   .imf2 {
     left: 105px;
-    top: 560px;
+    top: 480px;
     transform: rotate(300deg);
   }
 
   .imf3 {
     left: 190px;
-    top: 640px;
-    transform: rotate(320deg);
+    top: 520px;
+    transform: rotate(330deg);
   }
 
   .imf4 {
     left: 260px;
-    top: 720px;
+    top: 580px;
     transform: rotate(340deg);
   }
 
@@ -170,9 +170,9 @@
     position: relative;
     text-align: center;
     left: 0px;
-    top: 310px;
-    width: 330px;
-    font-size: 24px;
+    top: 250px;
+    width: 300px;
+    font-size: 20px;
     color: $second-color;
     font-family: $main-font-family;
     z-index: -2;

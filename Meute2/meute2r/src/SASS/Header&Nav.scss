@@ -135,7 +135,7 @@ li {
     position: fixed;
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 90%;
     height: 100px;
     font-family: $main-font-family;
   }
@@ -144,17 +144,18 @@ li {
     display: flex;
     width: 300px;
     height: 70px;
-    margin-left: 10px;
-    border-bottom: 4px solid $main-color;
+    margin-left: 20px;
+    border-bottom: 3px solid $main-color;
   }
 
   .h1-header {
-    font-size: 26px;
+    font-size: 24px;
     text-decoration: none;
     color: $main-color;
-    margin-top: -30px;
-    margin-left: 30px;
+    margin-top: -20px;
+    margin-left: 20px;
   }
+
   .menu {
     position: relative;
     width: 40%;

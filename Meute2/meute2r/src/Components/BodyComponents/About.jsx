@@ -89,7 +89,7 @@ export const About = () => {
                 </p>
               </div>
               <div className="about-parent">
-                <h2 className="about-title">Les Rats reproducteurs</h2>
+                <h2 className="about-h2">Les Rats reproducteurs</h2>
                 <img className="parent one" />
                 <img className="parent two" />
               </div>

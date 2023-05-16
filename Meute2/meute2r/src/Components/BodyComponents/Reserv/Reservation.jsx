@@ -10,8 +10,7 @@ const InReserv = () => {
   return (
     <MotionOnePageAnimation>
       <div className="reserv-container">
-        <h2>Portée Printemps</h2>
-        <div className="reserv-line"></div>
+        <h2 className="reserv-h2">Portée Printemps</h2>
         <div className="reserv-content">
           {reservArray.map((item, index) => {
             return (

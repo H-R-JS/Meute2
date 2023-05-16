@@ -1,0 +1,4 @@
+- Le header est décalé de 10px ce qui permet de voir les élément l'or d'un scroll au dessus du header
+- Rajouter de la sécurité sur emailJS
+- Décalage sur BabiesAct lors du chargement de la page
+- Rajouter une setion avis

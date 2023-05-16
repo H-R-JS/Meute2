@@ -85,7 +85,7 @@
 
   .unit-container {
     position: relative;
-    left: 0px;
+    left: -20px;
     top: 100px;
   }
 
@@ -94,15 +94,15 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-family: $main-font-family;
     color: $second-color;
     width: 200px;
-    height: 280px;
+    height: 200px;
 
     span {
       color: $main-color;
-      font-size: 70px;
+      font-size: 50px;
       margin-left: 20px;
     }
   }

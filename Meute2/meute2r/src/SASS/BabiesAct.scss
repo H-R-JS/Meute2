@@ -132,7 +132,7 @@
     position: relative;
     display: flex;
     top: 100px;
-    left: 50px;
+    left: 30px;
   }
 
   .babiesAc-port-actu {
@@ -162,13 +162,19 @@
       }
     }
   }
+
+  .actu-box {
+    width: 300px;
+    height: 200px;
+  }
+
   .act-sign {
     width: 300px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
     p {
       font-family: $main-font-family;
-      font-size: 22px;
+      font-size: 20px;
       color: $second-color;
       span {
         color: $main-color;
@@ -180,7 +186,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 30px;
     .champ-email {
       text-align: center;
       width: 250px;
@@ -195,7 +201,7 @@
     font-size: 20px;
     width: 120px;
     height: 50px;
-    margin-top: 30px;
+    margin: 30px;
     border: none;
     border-radius: 10px;
     cursor: pointer;

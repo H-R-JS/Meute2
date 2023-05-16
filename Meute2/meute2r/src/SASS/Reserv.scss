@@ -2,7 +2,7 @@
   display: flex;
 }
 
-h2 {
+.reserv-h2 {
   position: absolute;
   color: $main-color;
   font-family: $main-font-family;
@@ -10,14 +10,13 @@ h2 {
   left: 100px;
   top: 120px;
 }
-.reserv-line {
+.reserv-h2::before {
+  content: "";
   position: absolute;
   background-color: $main-color;
   width: 250px;
   height: 3px;
-  left: 100px;
-  top: 195px;
-  z-index: -2;
+  bottom: 0px;
 }
 .reserv-content {
   display: flex;
@@ -55,20 +54,18 @@ h2 {
 @media screen and (max-width: 1000px) {
   .reserv-container {
     display: inline-block;
-    height: 750px;
-    margin-top: 90px;
+    margin-top: 60px;
   }
-  h2 {
-    font-size: 36px;
-    left: 100px;
-    top: 70px;
+  .reserv-h2 {
+    font-size: 22px;
+    left: 70px;
+    top: 90px;
   }
-  .reserv-line {
-    width: 200px;
+  .reserv-h2::before {
+    width: 154px;
     height: 2px;
-    left: 100px;
-    top: 145px;
   }
+
   .reserv-content {
     display: flex;
     justify-content: flex-start;
@@ -76,7 +73,7 @@ h2 {
     flex-wrap: nowrap;
     overflow-y: scroll;
     width: 300px;
-    height: 650px;
+    height: 60vh;
     margin-top: 100px;
     margin-left: 50px;
   }
@@ -84,13 +81,13 @@ h2 {
   .reserv-box-content {
     width: 150px;
     height: 210px;
-    margin: 10px 25px;
+    margin: 10px 15px;
   }
   .reserv-img {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    width: 240px;
-    height: 210px;
+    width: 220px;
+    height: 190px;
   }
 }
