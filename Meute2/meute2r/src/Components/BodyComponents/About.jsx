@@ -53,36 +53,32 @@ export const About = () => {
                     je suis une grande passionée d'animaux en générale.
                   </span>{" "}
                   J'aime m'en occuper, leur apporter de l’amour et avoir une
-                  complicité avec eux, c'est pourquoi faire{" "}
-                  <span>mon élevage de rats était pour moi une évidence.</span>
-                  <br /> Pourquoi spécialement les rats ? Pour leurs petites
-                  tailles ? Pour leurs petits yeux doux ? Pour leur soyeuse
-                  petite fourrure ? Je ne serais dire exactement ce qui m'attire
-                  chez eux, mais ils ont réussi à prendre mon coeur.
-                  <br /> Ce n'est qu'il y a quelques années que j'ai décidé de
-                  prendre des rats.{" "}
+                  complicité avec eux, c'est pourquoi{" "}
                   <span>
-                    C'est dans un élevage que je pris les rats, que je
-                    recommande de priorisé
+                    faire mon élevage de rats était pour moi une évidence.
                   </span>{" "}
-                  si vous ne voulez pas de mauvaises surprises (mauvais sevrage,
-                  problème de santé, problème de comportement et j’en passe…)
-                  <br /> C'est plus tard que je me suis tourner vers l'élévage,{" "}
-                  <span>voir une rate mettre bat et toujours aussi beau</span>,
-                  ce moment me rend toujours joyeuse et surtout très prudente de
-                  leur santé, pourtant, je n'en retire que des bons moments !
+                  Pourquoi spécialement les rats ? Pour leurs petites tailles ?
+                  Pour leurs petits yeux doux ? Pour leur soyeuse petite
+                  fourrure ? Je ne serais dire exactement ce qui m'attire chez
+                  eux, mais ils ont réussi à prendre mon coeur.
                   <br />
-                  <br />
+                  <br /> Ce n'est qu'il y a quelques années que j'ai décidé de
+                  prendre des rats. C'est plus tard que je me suis tourner vers
+                  l'élévage.{" "}
                   <span>
                     Mes rats sont élevées dans un bon environnement, entouré
-                    d'autres rats il ne manque pas de vivre ni de bien être.
+                    d'autres rats
                   </span>{" "}
-                  J'espère sincèrement que chacun de mes rats trouveront une
-                  famille qui n'apportera que du bien être pour l'animal, je
-                  vous donne des conseils si nécessaire ayant fait des
-                  recherches et observer leur comportement. si vous avez besoin
-                  de me contacter, il suffit de m'envoyer des messages privées
-                  sur <span>mon instagram dans la catégorie "Réseaux".</span>
+                  il ne manque pas de vivre ni de bien être, manipuler tous les
+                  jours et en bonne santé.{" "}
+                  <span>
+                    Je me réserve le droit d’accepter ou non votre demande
+                    d’adoption.
+                  </span>{" "}
+                  Je vous donne des conseils si nécessaire. <br />
+                  Si vous avez besoin de me contacter, il suffit de m'envoyer
+                  des messages privées sur mon instagram ou par mail dans la
+                  catégorie "Réseaux".
                   <br />
                   <br /> Je vous souhaite de trouver{" "}
                   <span>votre futur petit compagnon !</span>
