@@ -3,7 +3,7 @@ import {
   MotionMultipleAnimationImg,
   MotionMultipleAnimationText,
   MotionOnePageAnimation,
-} from "../MotionDiv/AllMotionDiv";
+} from "../../MotionDiv/AllMotionDiv";
 
 export const Prices = () => {
   return (

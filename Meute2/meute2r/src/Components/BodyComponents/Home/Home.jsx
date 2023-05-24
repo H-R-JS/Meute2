@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { MotionOnePageAnimation } from "../MotionDiv/AllMotionDiv";
+import { MotionOnePageAnimation } from "../../MotionDiv/AllMotionDiv";
+import { Notice } from "./Notice/Notice";
 
-const imgFoot = require("../../Images/foot.png");
+const imgFoot = require("../../../Images/foot.png");
 
 const imgFootArray = [
   { src: imgFoot, class: "image-foot imf4" },
@@ -53,6 +54,9 @@ export const Home = () => {
                 je vous propose de découvrir ma petite meute !
               </Link>
             </p>
+          </motion.li>
+          <motion.li variants={itemo}>
+            <Notice />
           </motion.li>
         </motion.ul>
       </div>

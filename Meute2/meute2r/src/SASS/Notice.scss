@@ -1,0 +1,85 @@
+.notice-link {
+  position: relative;
+  bottom: 450px;
+  left: 1690px;
+  width: 130px;
+  height: 70px;
+  span {
+    color: $main-color;
+    font-size: 30px;
+  }
+}
+
+.star {
+  color: $main-color;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.box-notice-link {
+  position: relative;
+  background-color: #fff;
+  border-bottom: 2px solid $main-color;
+  padding-left: 15px;
+  cursor: pointer;
+  z-index: 3;
+  .link-notice {
+    text-decoration: none;
+  }
+}
+
+.notice-hover-text {
+  position: relative;
+  color: $second-color;
+  font-size: 18px;
+  margin-left: 3px;
+  z-index: 0;
+}
+
+//////////////// Notice Page
+
+.notice-descript-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 390px;
+  height: 850px;
+  background-color: $second-color;
+  font-family: $main-font-family;
+  z-index: 1;
+  .p1 {
+    width: 300px;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 30px;
+  }
+  .p2 {
+    width: 300px;
+    margin: 170px 50px;
+    color: rgb(221, 221, 221);
+    font-size: 22px;
+  }
+}
+
+.interface {
+  background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 300px;
+  label {
+    color: #fff;
+    font-family: $main-font-family;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+.notice-input-text {
+  font-family: $main-font-family;
+  font-size: 24px;
+  resize: none;
+}

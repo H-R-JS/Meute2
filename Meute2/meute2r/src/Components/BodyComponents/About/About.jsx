@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { MotionOnePageAnimation } from "../MotionDiv/AllMotionDiv";
+import { MotionOnePageAnimation } from "../../MotionDiv/AllMotionDiv";
 
-const aboutImgFoot = require("../../Images/foot.png");
+const aboutImgFoot = require("../../../Images/foot.png");
 
 const imgFootArray2 = [
   { src: aboutImgFoot, class: "back-img-foot foot4" },
