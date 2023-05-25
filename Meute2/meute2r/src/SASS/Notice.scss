@@ -64,8 +64,7 @@
 .interface {
   background-color: $main-color;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 0;
   width: 80%;
@@ -78,8 +77,90 @@
     margin-bottom: 30px;
   }
 }
+
+.interface-box-connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .notice-input-text {
   font-family: $main-font-family;
   font-size: 24px;
   resize: none;
+}
+
+.text-write-submit {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80vw;
+}
+
+.btn-submit {
+  padding: 30px;
+  background-color: #fff;
+  color: $main-color;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: $main-font-family;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: $main-color;
+  color: #fff;
+}
+
+.btn-connect {
+  margin-top: 80px;
+  padding: 30px;
+  background-color: #fff;
+  color: $main-color;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: $main-font-family;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-connect:hover {
+  background-color: $main-color;
+  color: #fff;
+}
+
+.notice-connect.none {
+  display: none;
+}
+
+.notice-box-display {
+  position: relative;
+  top: 100px;
+  margin-left: 50px;
+  //background-color: aqua;
+  width: 80%;
+  height: 470px;
+}
+
+.notice-content {
+  // background-color: red;
+  overflow-y: hidden;
+  width: 80%;
+  margin-left: 100px;
+  h6 {
+    font-size: 26px;
+    color: $main-color;
+    font-family: $main-font-family;
+  }
+  p {
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+    width: 70%;
+    font-size: 20px;
+    color: $second-color;
+    font-family: $main-font-family;
+  }
 }
