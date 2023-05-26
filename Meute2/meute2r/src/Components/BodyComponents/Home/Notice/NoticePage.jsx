@@ -1,42 +1,65 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MotionOnePageAnimation } from "../../../MotionDiv/AllMotionDiv";
-import { auth, googleProvider } from "../../../../FirebaseConfig/Config";
+import { auth, googleProvider, db } from "../../../../FirebaseConfig/Config";
 import { signInWithPopup } from "firebase/auth";
 import { Connect } from "./Connect/Connect";
 import { NotConnect } from "./Connect/NotConnect";
 import { NoticeDataDisplay } from "./NoticeDataDisplay";
+import { collection, getDocs, addDoc } from "firebase/firestore";
 
 export const NoticePage = () => {
-  const [textSub, setTextSub] = useState("");
+  const [textSub, setTextSub] = useState("sfsf");
 
-  const [connectComponent, setConnectComponent] = useState(null);
+  const [connectClass, setConnectClass] = useState(
+    "interface-box-connect none"
+  );
   const [display, setDisplay] = useState("notice-connect");
 
-  const logWithGoogle = async () => {
+  const [noticeList, setNoticeList] = useState([]);
+  const noticeCollectRef = collection(db, "avis");
+
+  const getNoticeList = async () => {
     try {
-      await signInWithPopup(auth, googleProvider);
-      console.log(auth.currentUser.photoURL);
-      setConnectComponent(<Connect />);
-      setDisplay("notice-connect none");
+      const data = await getDocs(noticeCollectRef);
+      const filteredData = data.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id,
+      }));
+      setNoticeList(filteredData);
     } catch (err) {
       console.error(err);
     }
   };
 
-  /*const ConnectOrNot = () => {
-    if (!auth.currentUser) {
-      return <NotConnect logWithGoogle={logWithGoogle} />;
-    } else {
-      return <Connect setTetxSub={setTextSub} />;
+  const submitNotice = async () => {
+    try {
+      await addDoc(noticeCollectRef, {
+        text: textSub,
+        user: auth.currentUser.displayName,
+      });
+      getNoticeList();
+      console.log("yeeeeees");
+    } catch (err) {
+      console.error(err);
     }
-  };*/
+  };
+
+  const logWithGoogle = async () => {
+    try {
+      await signInWithPopup(auth, googleProvider);
+      setDisplay("notice-connect none");
+      setConnectClass("interface-box-connect");
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   return (
     <MotionOnePageAnimation>
       <motion.section>
         <div className="notice-box-display">
-          <NoticeDataDisplay />
+          <NoticeDataDisplay {...{ getNoticeList, noticeList }} />
         </div>
 
         <div className="notice-descript-box">
@@ -57,7 +80,9 @@ export const NoticePage = () => {
 
         <div className="interface">
           <NotConnect {...{ logWithGoogle, display }} />
-          {connectComponent}
+          <Connect
+            {...{ setTextSub, submitNotice, connectClass, noticeList }}
+          />
         </div>
       </motion.section>
     </MotionOnePageAnimation>
