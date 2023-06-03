@@ -2,43 +2,28 @@ import React, { useState } from "react";
 import { auth } from "../../../../../FirebaseConfig/Config";
 
 export const Connect = ({
+  textSub,
   setTextSub,
   submitNotice,
   connectClass,
+  writeClass,
+  forbidClass,
   noticeList,
 }) => {
-  const [forbidClass, setForbidClass] = useState("forbid-box none");
-  const [writeClass, setWriteClass] = useState("write-box ");
-
-  const test = () => {
-    if (auth.currentUser) {
-      if (auth.currentUser.displayName === noticeList[1].user) {
-        console.log("I DID IT");
-        //setForbidClass("forbid-box ");
-        // setWriteClass("write-box none");
-      } else {
-        console.log("FUCK");
-      }
-    } else {
-      return null;
-    }
-  };
-
-  test();
-
-  //console.log(noticeList[0].user);
-
-  /**CRéer une boucle if i++ de vérification, pour bloquer l'utilisateur ou non */
-
   return (
     <div className={connectClass}>
+      <WriteNotice {...{ textSub, setTextSub, submitNotice, writeClass }} />
       <ForbiddenWrite {...{ forbidClass }} />
-      <WriteNotice {...{ setTextSub, submitNotice, writeClass }} />
     </div>
   );
 };
 
-const WriteNotice = ({ setTextSub, submitNotice, writeClass }) => {
+export const WriteNotice = ({
+  textSub,
+  setTextSub,
+  submitNotice,
+  writeClass,
+}) => {
   return (
     <div
       className={writeClass}
@@ -58,12 +43,13 @@ const WriteNotice = ({ setTextSub, submitNotice, writeClass }) => {
         <button className="btn-submit" onClick={submitNotice}>
           Poster
         </button>
+        {textSub}
       </div>
     </div>
   );
 };
 
-const ForbiddenWrite = ({ forbidClass }) => {
+export const ForbiddenWrite = ({ forbidClass }) => {
   return (
     <div className={forbidClass}>
       <p>

@@ -5,7 +5,6 @@ import {
   MotionOnePageAnimation,
 } from "../../MotionDiv/AllMotionDiv";
 import Axios, * as others from "axios";
-import emailjs from "@emailjs/browser";
 import { EmailJS } from "./EmailJS";
 
 const imgBabiesAc = require("../../../Images/ratPort.jpg");

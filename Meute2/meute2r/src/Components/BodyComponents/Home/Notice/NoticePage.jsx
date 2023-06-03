@@ -6,7 +6,13 @@ import { signInWithPopup } from "firebase/auth";
 import { Connect } from "./Connect/Connect";
 import { NotConnect } from "./Connect/NotConnect";
 import { NoticeDataDisplay } from "./NoticeDataDisplay";
-import { collection, getDocs, addDoc } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  addDoc,
+  connectFirestoreEmulator,
+} from "firebase/firestore";
+import { WriteNotice, ForbiddenWrite } from "./Connect/Connect";
 
 export const NoticePage = () => {
   const [textSub, setTextSub] = useState("sfsf");
@@ -45,11 +51,28 @@ export const NoticePage = () => {
     }
   };
 
+  const [forbidClass, setForbidClass] = useState("forbid-box none");
+  const [writeClass, setWriteClass] = useState();
+
+  const toggleClass = () => {
+    setWriteClass("looool");
+  };
+
   const logWithGoogle = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
       setDisplay("notice-connect none");
       setConnectClass("interface-box-connect");
+      toggleClass();
+      console.log(writeClass);
+
+      for (let i = 0; i < noticeList.length; i++) {
+        if (noticeList[i].user === auth.currentUser.displayName) {
+          console.log(writeClass);
+        } else {
+          console.log(noticeList);
+        }
+      }
     } catch (err) {
       console.error(err);
     }
@@ -81,7 +104,15 @@ export const NoticePage = () => {
         <div className="interface">
           <NotConnect {...{ logWithGoogle, display }} />
           <Connect
-            {...{ setTextSub, submitNotice, connectClass, noticeList }}
+            {...{
+              textSub,
+              setTextSub,
+              submitNotice,
+              connectClass,
+              forbidClass,
+              writeClass,
+              noticeList,
+            }}
           />
         </div>
       </motion.section>
