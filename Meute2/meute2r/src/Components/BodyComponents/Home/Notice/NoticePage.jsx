@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { MotionOnePageAnimation } from "../../../MotionDiv/AllMotionDiv";
 import { auth, googleProvider, db } from "../../../../FirebaseConfig/Config";
@@ -12,10 +12,9 @@ import {
   addDoc,
   connectFirestoreEmulator,
 } from "firebase/firestore";
-import { WriteNotice, ForbiddenWrite } from "./Connect/Connect";
 
 export const NoticePage = () => {
-  const [textSub, setTextSub] = useState("sfsf");
+  const [textSub, setTextSub] = useState("");
 
   const [connectClass, setConnectClass] = useState(
     "interface-box-connect none"
@@ -41,8 +40,8 @@ export const NoticePage = () => {
   const submitNotice = async () => {
     try {
       await addDoc(noticeCollectRef, {
-        text: textSub,
         user: auth.currentUser.displayName,
+        text: textSub,
       });
       getNoticeList();
       console.log("yeeeeees");
@@ -52,26 +51,22 @@ export const NoticePage = () => {
   };
 
   const [forbidClass, setForbidClass] = useState("forbid-box none");
-  const [writeClass, setWriteClass] = useState();
-
-  const toggleClass = () => {
-    setWriteClass("looool");
-  };
+  const [writeClass, setWriteClass] = useState("write-box");
 
   const logWithGoogle = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
       setDisplay("notice-connect none");
       setConnectClass("interface-box-connect");
-      toggleClass();
-      console.log(writeClass);
-
+      const dataUserValide = [];
       for (let i = 0; i < noticeList.length; i++) {
-        if (noticeList[i].user === auth.currentUser.displayName) {
-          console.log(writeClass);
-        } else {
-          console.log(noticeList);
-        }
+        dataUserValide.push(noticeList[i].user);
+      }
+      if (dataUserValide.includes(auth.currentUser.displayName)) {
+        setWriteClass("write-box none");
+        setForbidClass("forbid-box");
+      } else {
+        return null;
       }
     } catch (err) {
       console.error(err);

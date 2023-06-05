@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { auth } from "../../../../../FirebaseConfig/Config";
 
 export const Connect = ({
   textSub,
@@ -8,7 +7,6 @@ export const Connect = ({
   connectClass,
   writeClass,
   forbidClass,
-  noticeList,
 }) => {
   return (
     <div className={connectClass}>
@@ -24,26 +22,34 @@ export const WriteNotice = ({
   submitNotice,
   writeClass,
 }) => {
+  const [btnSubmit, setBtnSubmit] = useState("btn-submit");
+  const [result, setResult] = useState("submit-result none");
+
+  const subAndToggle = () => {
+    if (textSub !== "") {
+      submitNotice();
+      setBtnSubmit("btn-submit none");
+      setResult("submit-result");
+    } else {
+      return null;
+    }
+  };
+
   return (
-    <div
-      className={writeClass}
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
-      <label htmlFor="notice"> Écrivez votre avis</label>
+    <div className={writeClass}>
       <div className="text-write-submit">
         <textarea
           className="notice-input-text"
           name="notice"
           placeholder="Votre avis..."
           onChange={(e) => setTextSub(e.target.value)}
-          max-rows="5"
           cols="64"
           rows="6"
         ></textarea>
-        <button className="btn-submit" onClick={submitNotice}>
+        <button className={btnSubmit} onClick={subAndToggle}>
           Poster
         </button>
-        {textSub}
+        <span className={result}>Merci !</span>
       </div>
     </div>
   );
