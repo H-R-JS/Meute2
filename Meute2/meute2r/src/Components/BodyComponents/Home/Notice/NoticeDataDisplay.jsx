@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 export const NoticeDataDisplay = ({ getNoticeList, noticeList }) => {
   useEffect(() => {
@@ -6,15 +6,15 @@ export const NoticeDataDisplay = ({ getNoticeList, noticeList }) => {
   }, []);
 
   return (
-    <div className="notice-container">
+    <section className="notice-container">
       {noticeList.map((notice, index) => {
         return (
-          <div key={index} className="notice-content">
+          <article key={index} className="notice-content">
             <h6>{notice.user}</h6>
             <p>{notice.text}</p>
-          </div>
+          </article>
         );
       })}
-    </div>
+    </section>
   );
 };

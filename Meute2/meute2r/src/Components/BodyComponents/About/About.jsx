@@ -32,21 +32,28 @@ export const About = () => {
 
   return (
     <MotionOnePageAnimation>
-      <div className="about-container">
-        <motion.div variants={varianttest2} initial="hidden" animate="visible">
+      <main className="about-container">
+        <motion.section
+          variants={varianttest2}
+          initial="hidden"
+          animate="visible"
+        >
           {imgFootArray2.map((item, index) => {
             return (
-              <motion.div variants={itemo2} key={index}>
+              <motion.figure variants={itemo2} key={index}>
                 <img src={item.src} className={item.class} />
-              </motion.div>
+              </motion.figure>
             );
           })}
+          <motion.figure variants={itemo2}>
+            <img
+              src={require("../../../Images/ratAbout1.jpg")}
+              className="back-img"
+            />
+          </motion.figure>
           <motion.div variants={itemo2}>
-            <div className="back-img" />
-          </motion.div>
-          <motion.div variants={itemo2}>
-            <div className="about-content">
-              <div className="about-text">
+            <article className="about-content">
+              <section className="about-text">
                 <p>
                   Bonjour à tous ! Je m'appelle Alexandra et{" "}
                   <span>
@@ -83,17 +90,24 @@ export const About = () => {
                   <br /> Je vous souhaite de trouver{" "}
                   <span>votre futur petit compagnon !</span>
                 </p>
-              </div>
-              <div className="about-parent">
+              </section>
+              <section className="about-parent">
                 <h2 className="about-h2">Les Rats reproducteurs</h2>
-                <img className="parent one" />
-                <img className="parent two" />
-              </div>
-            </div>
+                <img
+                  src={require("../../../Images/parent1.jpg")}
+                  alt="Photo de rat"
+                  className="parent one"
+                />
+                <img
+                  src={require("../../../Images/parent2.jpg")}
+                  alt="Photo de rat"
+                  className="parent two"
+                />
+              </section>
+            </article>
           </motion.div>
-        </motion.div>
-        <div></div>
-      </div>
+        </motion.section>
+      </main>
     </MotionOnePageAnimation>
   );
 };

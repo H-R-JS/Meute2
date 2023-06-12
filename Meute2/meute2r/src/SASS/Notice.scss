@@ -36,6 +36,10 @@
 
 //////////////// Notice Page
 
+.notice-page {
+  display: inline-block;
+}
+
 .notice-descript-box {
   position: absolute;
   top: 125px;
@@ -44,6 +48,7 @@
   height: 850px;
   background-color: $second-color;
   font-family: $main-font-family;
+  transform-origin: bottom;
   z-index: 1;
   .p1 {
     width: 300px;
@@ -67,6 +72,7 @@
   top: 675px;
   width: 80%;
   height: 300px;
+  transform-origin: left;
 }
 
 .interface-box-connect {
@@ -197,7 +203,8 @@
   flex-direction: column;
   overflow-y: scroll;
   height: 58vh;
-  width: 90%;
+  width: 75%;
+  margin-top: 100px;
 }
 
 .notice-content {

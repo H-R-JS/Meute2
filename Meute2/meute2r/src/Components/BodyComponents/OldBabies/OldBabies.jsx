@@ -20,11 +20,11 @@ export const OldBabies = () => {
   }, [control]);
   return (
     <MotionOnePageAnimation>
-      <div className="old-container">
-        <div className="old-content">
+      <main className="old-container">
+        <ul className="old-content">
           {oldArray.map((item, index) => {
             return (
-              <div
+              <li
                 key={index}
                 className="li-old"
                 onMouseEnter={() => {
@@ -35,26 +35,23 @@ export const OldBabies = () => {
                   control.start("hidden");
                 }}
               >
-                <div className="old-text">
+                <header className="old-text">
                   {item.title}
                   <span>{item.date}</span>
-                </div>
-                <motion.div
+                </header>
+                <motion.section
                   className="info-box"
                   variants={variantOld}
                   animate={control}
                 >
                   {item.infoBox}
-                </motion.div>
-                <div
-                  className="old-img"
-                  style={{ backgroundImage: `url(${item.img})` }}
-                />
-              </div>
+                </motion.section>
+                <img className="old-img" src={item.img} />
+              </li>
             );
           })}
-        </div>
-      </div>
+        </ul>
+      </main>
     </MotionOnePageAnimation>
   );
 };

@@ -41,10 +41,8 @@
   }
 }
 .actu-box {
-  background-image: url("../Components/BodyComponents/BabiesAct/actuImg.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 485px;
+  object-fit: cover;
+  width: 500px;
   height: 400px;
 }
 

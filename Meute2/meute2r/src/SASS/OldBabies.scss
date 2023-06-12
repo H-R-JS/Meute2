@@ -27,11 +27,11 @@
 }
 
 .old-img {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: cover;
   width: 400px;
   height: 300px;
+  height: 320px;
+  margin-top: 10px;
 }
 
 .info-box {
@@ -43,8 +43,8 @@
   font-size: 25px;
   text-align: center;
   width: 400px;
-  height: 300px;
-
+  height: 320px;
+  margin-top: 10px;
   pointer-events: none;
   span {
     color: $main-color;

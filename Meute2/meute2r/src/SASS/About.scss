@@ -5,13 +5,11 @@
 
 .back-img {
   position: absolute;
-  background-image: url(../Images/ratAbout1.jpg);
-  background-size: 170%;
-  background-repeat: no-repeat;
+  object-fit: cover;
   top: 650px;
-  left: 890px;
-  width: 250px;
-  height: 280px;
+  left: 800px;
+  width: 310px;
+  height: 250px;
   transform: scaleX(-1);
 }
 
@@ -85,11 +83,9 @@
 }
 
 .parent {
-  background-color: $second-color;
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
   width: 450px;
-  height: 250px;
+  height: 270px;
   margin-top: 20px;
 }
 

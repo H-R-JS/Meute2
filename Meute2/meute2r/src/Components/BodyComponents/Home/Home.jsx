@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { MotionOnePageAnimation } from "../../MotionDiv/AllMotionDiv";
 import { Notice } from "./Notice/Notice";
 
 const imgFoot = require("../../../Images/foot.png");
@@ -14,7 +13,26 @@ const imgFootArray = [
 ];
 
 export const Home = () => {
-  const varianttest = {
+  const onePageAnimation = {
+    out: {
+      display: "none",
+      opacity: 0,
+    },
+
+    open: {
+      display: "flex",
+      opacity: 1,
+      zIndex: -2,
+      transition: { duration: 0.2, delay: 0.4 },
+    },
+
+    exit: {
+      opacity: 0,
+      transition: { duration: 0.2 },
+    },
+  };
+
+  const variantFoot = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -26,40 +44,44 @@ export const Home = () => {
     },
   };
 
-  const itemo = {
+  const variFootChild = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
     },
   };
   return (
-    <MotionOnePageAnimation>
-      <div className="body-container">
-        <motion.ul variants={varianttest} initial="hidden" animate="visible">
-          {imgFootArray.map((item, index) => {
-            return (
-              <motion.li variants={itemo} key={index}>
-                <img src={item.src} className={item.class} />
-              </motion.li>
-            );
-          })}
-          <motion.li variants={itemo}>
-            <div className="image-acc" />
-          </motion.li>
-          <motion.li variants={itemo} className="main-content">
-            <p>
-              Bienvenue dans ma meute de rats, petit élevage familial <br />
-              situé dans le Gers (1h de Toulouse){" "}
-              <Link to="/reservation" className="underline">
-                je vous propose de découvrir ma petite meute !
-              </Link>
-            </p>
-          </motion.li>
-          <motion.li variants={itemo}>
-            <Notice />
-          </motion.li>
-        </motion.ul>
-      </div>
-    </MotionOnePageAnimation>
+    <motion.main
+      variants={onePageAnimation}
+      initial="out"
+      animate="open"
+      exit="exit"
+      className="body-container"
+    >
+      <motion.ul variants={variantFoot} initial="hidden" animate="visible">
+        {imgFootArray.map((item, index) => {
+          return (
+            <motion.li variants={variFootChild} key={index}>
+              <img src={item.src} className={item.class} />
+            </motion.li>
+          );
+        })}
+        <motion.li variants={variFootChild}>
+          <div className="image-acc" />
+        </motion.li>
+        <motion.li variants={variFootChild} className="main-content">
+          <p>
+            Bienvenue dans ma meute de rats, petit élevage familial <br />
+            situé dans le Gers (1h de Toulouse){" "}
+            <Link to="/reservation" className="underline">
+              je vous propose de découvrir ma petite meute !
+            </Link>
+          </p>
+        </motion.li>
+        <motion.li variants={variFootChild}>
+          <Notice />
+        </motion.li>
+      </motion.ul>
+    </motion.main>
   );
 };

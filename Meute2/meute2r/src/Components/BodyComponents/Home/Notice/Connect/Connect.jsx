@@ -36,8 +36,8 @@ export const WriteNotice = ({
   };
 
   return (
-    <div className={writeClass}>
-      <div className="text-write-submit">
+    <article className={writeClass}>
+      <form className="text-write-submit">
         <textarea
           className="notice-input-text"
           name="notice"
@@ -50,20 +50,20 @@ export const WriteNotice = ({
           Poster
         </button>
         <span className={result}>Merci !</span>
-      </div>
-    </div>
+      </form>
+    </article>
   );
 };
 
 export const ForbiddenWrite = ({ forbidClass }) => {
   return (
-    <div className={forbidClass}>
+    <article className={forbidClass}>
       <p>
         Vous avez déjà poster votre avis, une fois fait vous ne pouvez en poster
         un deuxième.
         <br />
         <span>En vous remerciant d'avoir prit le temps !</span>
       </p>
-    </div>
+    </article>
   );
 };

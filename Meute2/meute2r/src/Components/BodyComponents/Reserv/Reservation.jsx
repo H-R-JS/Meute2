@@ -9,24 +9,18 @@ export const Reservation = () => {
 const InReserv = () => {
   return (
     <MotionOnePageAnimation>
-      <div className="reserv-container">
+      <main className="reserv-container">
         <h2 className="reserv-h2">Portée Printemps</h2>
-        <div className="reserv-content">
+        <section className="reserv-content">
           {reservArray.map((item, index) => {
             return (
-              <div key={index} className="reserv-box-content">
-                <div
-                  className="reserv-img"
-                  style={{
-                    backgroundImage: `url(${item.src})`,
-                    backgroundPosition: `${item.position}`,
-                  }}
-                />
-              </div>
+              <figure key={index} className="reserv-box-content">
+                <img className="reserv-img" src={item.src} />
+              </figure>
             );
           })}
-        </div>
-      </div>
+        </section>
+      </main>
     </MotionOnePageAnimation>
   );
 };
@@ -34,17 +28,16 @@ const InReserv = () => {
 const NoReserv = () => {
   return (
     <MotionOnePageAnimation>
-      <div className="reserv-container">
+      <main className="reserv-container">
         <h2>Portée à venir</h2>
-        <div className="reserv-line"></div>
-        <div className="reserv-content">
+        <section className="reserv-content">
           <p>
             Les réservation ne sont pas disponible pour le moment, pour le
             bien-être des rats,{" "}
             <span>nous laissons du temps entre chaque portée .</span>
           </p>
-        </div>
-      </div>
+        </section>
+      </main>
     </MotionOnePageAnimation>
   );
 };

@@ -8,24 +8,29 @@ import {
 export const Prices = () => {
   return (
     <MotionOnePageAnimation>
-      <div className="prices-container">
+      <main className="prices-container">
         <MotionMultipleAnimationImg>
-          <div className="prices-img" />
+          <figure>
+            <img
+              src={require("../../../Images/ratTar.jpeg")}
+              className="prices-img"
+            />
+          </figure>
         </MotionMultipleAnimationImg>
-        <div className="unit-container">
+        <setion className="unit-container">
           <MotionMultipleAnimationText>
-            <div className="unit">
+            <article className="unit">
               <p>Prix par raton couleur(s) classique(s):</p>
               <span>10 €</span>
-            </div>
+            </article>
 
-            <div className="unit">
+            <article className="unit">
               <p>Prix par raton husky et dumbo:</p>
               <span>13 €</span>
-            </div>
+            </article>
           </MotionMultipleAnimationText>
-        </div>
-      </div>
+        </setion>
+      </main>
     </MotionOnePageAnimation>
   );
 };

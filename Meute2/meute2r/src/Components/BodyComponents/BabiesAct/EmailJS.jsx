@@ -28,7 +28,7 @@ export const EmailJS = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail} className="act-form">
-      <div className="post-succes">{succes}</div>
+      <span className="post-succes">{succes}</span>
       <input
         type="email"
         className="champ-email"
