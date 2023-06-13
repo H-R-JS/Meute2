@@ -1,12 +1,21 @@
 import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export const NoticeDataDisplay = ({ getNoticeList, noticeList }) => {
   useEffect(() => {
     getNoticeList();
   }, []);
 
+  const variNoticeDisplayText = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.2, delay: 1 } },
+  };
+
   return (
-    <section className="notice-container">
+    <motion.section
+      variants={variNoticeDisplayText}
+      className="notice-container"
+    >
       {noticeList.map((notice, index) => {
         return (
           <article key={index} className="notice-content">
@@ -15,6 +24,6 @@ export const NoticeDataDisplay = ({ getNoticeList, noticeList }) => {
           </article>
         );
       })}
-    </section>
+    </motion.section>
   );
 };

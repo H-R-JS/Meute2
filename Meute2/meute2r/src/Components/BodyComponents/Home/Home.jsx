@@ -14,12 +14,12 @@ const imgFootArray = [
 
 export const Home = () => {
   const onePageAnimation = {
-    out: {
+    hidden: {
       display: "none",
       opacity: 0,
     },
 
-    open: {
+    visible: {
       display: "flex",
       opacity: 1,
       zIndex: -2,
@@ -37,7 +37,7 @@ export const Home = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.4,
+        delay: 0.3,
         when: "beforeChildren",
         staggerChildren: 0.15,
       },
@@ -53,12 +53,17 @@ export const Home = () => {
   return (
     <motion.main
       variants={onePageAnimation}
-      initial="out"
-      animate="open"
+      initial="hidden"
+      animate="visible"
       exit="exit"
       className="body-container"
     >
-      <motion.ul variants={variantFoot} initial="hidden" animate="visible">
+      <motion.ul
+        variants={variantFoot}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
         {imgFootArray.map((item, index) => {
           return (
             <motion.li variants={variFootChild} key={index}>

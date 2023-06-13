@@ -68,11 +68,17 @@ export const NoticePage = () => {
   };
 
   const variNotice = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, display: "none" },
     visible: {
       opacity: 1,
-      transition: { duration: 0.3, staggerChildren: 0.5, delay: 0.3 },
+      display: "inline-block",
+      transition: {
+        duration: 0.3,
+        staggerChildren: 0.3,
+        delay: 0.3,
+      },
     },
+    exit: { opacity: 0, transition: { duration: 0.2, delay: 0.1 } },
   };
 
   const variNoticeChildrenY = {
@@ -83,19 +89,25 @@ export const NoticePage = () => {
         duration: 0.6,
         delay: 0.2,
         when: "beforeChildren",
-        staggerChildren: 0.2,
+        ease: "easeIn",
       },
     },
+    exit: { scaleY: 0, transition: { duration: 0.3 } },
   };
 
   const variNoticeChildrenX = {
     hidden: { scaleX: 0 },
-    visible: { scaleX: 1, transition: { duration: 0.6 } },
+    visible: {
+      scaleX: 1,
+      transition: { duration: 0.6, when: "beforeChildren", ease: "easeOut" },
+    },
+    exit: { scaleX: 0, transition: { duration: 0.3 } },
   };
 
   const variNoticeText = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 0.2 } },
+    exit: { opacity: 0, transition: { duration: 0.1 } },
   };
 
   return (
@@ -103,6 +115,7 @@ export const NoticePage = () => {
       variants={variNotice}
       initial="hidden"
       animate="visible"
+      exit="exit"
       className="notice-page"
     >
       <NoticeDataDisplay {...{ getNoticeList, noticeList }} />
