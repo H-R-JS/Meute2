@@ -3,7 +3,6 @@
 }
 
 .old-content {
-  background-color: red;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -12,10 +11,10 @@
 }
 
 .li-old {
-  background-color: green;
   width: 000px;
   height: 00px;
 }
+
 .old-text {
   font-size: 24px;
   color: $second-color;
@@ -35,7 +34,6 @@
 }
 
 .info-box {
-  background-color: red;
   position: absolute;
   background-color: rgba(40, 40, 40, 0.9);
   color: $color-white;
@@ -53,42 +51,21 @@
 
 @media screen and (max-width: 1000px) {
   .old-content {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
     top: 150px;
     li {
       margin: 20px 15px;
-    }
-  }
-  .old-text {
-    font-size: 24px;
-    color: $second-color;
-
-    span {
-      color: $main-color;
     }
   }
 
   .old-img {
     width: 280px;
     height: 190px;
-    margin-top: 10px;
   }
 
   .info-box {
-    position: absolute;
-    background-color: rgba(40, 40, 40, 0.9);
-    color: $color-white;
-    font-family: $main-font-family;
     font-size: 16px;
-    text-align: center;
     width: 280px;
     height: 190px;
-    margin-top: 10px;
     z-index: 2;
-    span {
-      color: $main-color;
-    }
   }
 }

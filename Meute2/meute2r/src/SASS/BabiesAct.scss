@@ -5,6 +5,13 @@
   z-index: -2;
 }
 
+.babiesAc-img {
+  width: 800px;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
 .babiesAc-container {
   position: relative;
   left: 150px;
@@ -18,12 +25,6 @@
   span {
     color: $main-color;
   }
-}
-.babiesAc-img {
-  width: 800px;
-  height: 500px;
-  margin-top: 100px;
-  margin-left: 200px;
 }
 
 .act-babies {
@@ -53,18 +54,6 @@
   height: 400px;
 }
 
-.act-form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 30px;
-  .champ-email {
-    text-align: center;
-    width: 250px;
-    padding: 5px;
-  }
-}
-
 .act-sign {
   width: 500px;
   text-align: center;
@@ -78,6 +67,7 @@
     color: $main-color;
   }
 }
+
 .act-form {
   display: flex;
   align-items: center;
@@ -122,49 +112,40 @@
 }
 
 @media screen and (max-width: 1615px) {
-  .babiesAc-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
   .babiesAc-img {
     display: none;
+  }
+
+  .babiesAc-container {
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 700px) {
   .babiesAc-container {
-    position: relative;
     display: flex;
     top: 100px;
     left: 40px;
   }
 
   .babiesAc-port-actu {
-    font-family: $main-font-family;
-    font-size: 22px;
-    color: $second-color;
     margin-left: 30px;
-    span {
-      color: $main-color;
-    }
   }
 
   .act-babies {
     width: 300px;
     height: 200px;
-    .noActu-box {
-      text-align: center;
-      width: 330px;
-      height: 250px;
+  }
+
+  .noActu-box {
+    width: 330px;
+    height: 250px;
+    font-size: 20px;
+    margin: 30px -20px;
+    p {
+      margin: 40px 85px;
       font-size: 20px;
-      margin: 30px -20px;
-      border: 5px solid $main-color;
-      border-radius: 20px;
-      p {
-        margin: 40px 85px;
-        font-size: 20px;
-      }
     }
   }
 
@@ -175,48 +156,22 @@
 
   .act-sign {
     width: 300px;
-    text-align: center;
     margin-top: 60px;
     p {
-      font-family: $main-font-family;
       font-size: 20px;
-      color: $second-color;
-      span {
-        color: $main-color;
-      }
     }
   }
 
   .act-form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     margin-top: 30px;
-    .champ-email {
-      text-align: center;
-      width: 250px;
-      padding: 5px;
-      font-size: 20px;
-      border: 1px solid #666;
-    }
-  }
-  .champ-btn-submit {
-    color: $color-white;
-    background-color: $main-color;
-    font-size: 20px;
-    width: 120px;
-    height: 50px;
-    margin: 30px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: margin-top 0.2s;
-  }
-  .champ-btn-submit:hover {
-    margin-top: 17px;
   }
 
-  .champ-btn-submit:active {
-    background-color: $main-color-hover;
+  .champ-email {
+    font-size: 20px;
+    border: 1px solid #666;
+  }
+
+  .champ-btn-submit {
+    margin: 30px;
   }
 }

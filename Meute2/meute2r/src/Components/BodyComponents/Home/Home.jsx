@@ -72,7 +72,11 @@ export const Home = () => {
           );
         })}
         <motion.li variants={variFootChild}>
-          <div className="image-acc" />
+          <img
+            src={require("../../../Images/ratAcc.jpeg")}
+            alt="Photo de rat debout"
+            className="image-acc"
+          />
         </motion.li>
         <motion.li variants={variFootChild} className="main-content">
           <p>

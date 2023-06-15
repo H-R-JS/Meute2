@@ -24,8 +24,9 @@ export const About = () => {
     },
 
     exit: {
-      backcgroundColor: "red",
+      opacity: 0,
       transition: { duration: 0.2 },
+      transitionEnd: { display: "none" },
     },
   };
 

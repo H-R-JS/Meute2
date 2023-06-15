@@ -72,7 +72,7 @@ export const NavbarPhone = () => {
                   onMouseLeave={() => setMenuDownP(false)}
                   className="nav-li"
                 >
-                  <div className="item-nav-phone drop">{item.title}</div>
+                  <div className="item-nav-phone">{item.title}</div>
                   {menuDownP && <DropDownPPhone />}
                 </li>
               );

@@ -7,16 +7,16 @@ import Media from "react-media";
 export const Header = () => {
   return (
     <header className="header-page">
-      <div className="header-title">
+      <section className="header-title">
         <Link to="/" className="h1-header">
           <h1>Meute2Rats</h1>
         </Link>
-      </div>
-      <div className="menu">
+      </section>
+      <section className="menu">
         <Media query="(max-width: 1000px)">
           {(matches) => (matches ? <NavbarPhone /> : <Navbar />)}
         </Media>
-      </div>
+      </section>
     </header>
   );
 };

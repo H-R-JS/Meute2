@@ -78,7 +78,7 @@ export const BabiesAct = () => {
       className="babiesAc-page"
     >
       <motion.figure variants={variBabiesAct}>
-        <img src={imgBabiesAc} className="babiesAc-img" alt="" />
+        <img src={imgBabiesAc} className="babiesAc-img" alt="Photo de Rat" />
       </motion.figure>
       <motion.section variants={variPortActu} className="babiesAc-container">
         <motion.p

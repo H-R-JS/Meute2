@@ -68,7 +68,6 @@
   }
 
   .reserv-content {
-    display: flex;
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -85,9 +84,6 @@
     margin: 10px 85px;
   }
   .reserv-img {
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
     width: 220px;
     height: 190px;
   }

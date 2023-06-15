@@ -8,12 +8,6 @@
   }
 }
 
-.star {
-  color: $main-color;
-  font-size: 24px;
-  margin-left: 10px;
-}
-
 .box-notice-link {
   position: relative;
   background-color: #fff;
@@ -24,6 +18,12 @@
   .link-notice {
     text-decoration: none;
   }
+}
+
+.star {
+  color: $main-color;
+  font-size: 24px;
+  margin-left: 10px;
 }
 
 .notice-hover-text {
@@ -103,17 +103,17 @@
   color: #fff;
 }
 
-.notice-input-text {
-  font-family: $main-font-family;
-  font-size: 24px;
-  resize: none;
-}
-
 .text-write-submit {
   display: flex;
   justify-content: space-evenly;
   width: 80vw;
   margin-top: 50px;
+}
+
+.notice-input-text {
+  font-family: $main-font-family;
+  font-size: 24px;
+  resize: none;
 }
 
 .btn-submit {
@@ -158,6 +158,16 @@
   display: none;
 }
 
+.write-box {
+  display: "flex";
+  flex-direction: "column";
+  align-items: "center";
+}
+
+.write-box.none {
+  display: none;
+}
+
 .forbid-box {
   display: flex;
   justify-content: center;
@@ -176,26 +186,9 @@
     }
   }
 }
-.write-box {
-  display: "flex";
-  flex-direction: "column";
-  align-items: "center";
-}
 
 .forbid-box.none {
   display: none;
-}
-
-.write-box.none {
-  display: none;
-}
-
-.notice-box-display {
-  position: relative;
-  top: 100px;
-  margin-left: 50px;
-  width: 80%;
-  height: 470px;
 }
 
 .notice-container {
@@ -240,6 +233,7 @@
       font-size: 24px;
     }
   }
+
   .star {
     font-size: 22px;
     margin-left: 5px;
@@ -255,7 +249,7 @@
     margin-top: 15px;
   }
 }
-/// BTN LINK
+///////////////////////////
 @media screen and (max-width: 1600px) {
   .notice-descript-box {
     width: 250px;
@@ -274,15 +268,8 @@
     width: 85%;
   }
 
-  .notice-input-text {
-    font-family: $main-font-family;
-    font-size: 24px;
-    resize: none;
-  }
-
   .text-write-submit {
     width: 60vw;
-    margin-top: 50px;
   }
 
   .btn-submit {
@@ -295,27 +282,15 @@
   .submit-result {
     height: 40px;
     min-width: 73px;
-    padding: 30px;
     margin-left: 10px;
     font-size: 26px;
   }
 
   .forbid-box {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 50px;
-    height: 170px;
     width: 75%;
-    text-align: center;
     p {
       font-size: 24px;
       width: 70%;
-      color: $second-color;
-      font-family: $main-font-family;
-      span {
-        color: $main-color;
-      }
     }
   }
 }
@@ -356,8 +331,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 375px;
+    top: 845px;
     width: 100%;
     height: auto;
     .p1 {
@@ -375,9 +349,6 @@
     top: 625px;
     width: 100%;
     height: 220px;
-    label {
-      display: none;
-    }
   }
 
   .btn-connect {
@@ -399,8 +370,6 @@
   }
 
   .text-write-submit {
-    display: flex;
-    justify-content: space-evenly;
     width: 90vw;
     height: 100px;
     margin-top: 20px;
@@ -424,10 +393,6 @@
   }
 
   .notice-container {
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    height: 58vh;
     width: 100%;
   }
 
@@ -435,7 +400,6 @@
     width: 90%;
     height: auto;
     margin-left: 0px;
-
     h6 {
       font-size: 22px;
     }
