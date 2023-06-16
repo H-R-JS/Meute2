@@ -13,7 +13,10 @@ export const NavbarPhone = () => {
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (!ref.current.contains(e.target)) {
+      if (
+        !ref.current.contains(e.target) ||
+        e.target.href == window.location.href
+      ) {
         controls.start({
           x: -500,
           transition: { duration: 0.2 },

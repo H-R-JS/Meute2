@@ -10,17 +10,20 @@
 }
 
 .header-title {
+  position: relative;
+  top: 0px;
   display: flex;
-  width: 600px;
-  border-bottom: 4px solid $main-color;
+  width: 500px;
+  height: 83px;
+  border-bottom: 3px solid $main-color;
 }
 
 .h1-header {
-  font-size: 50px;
+  font-size: 54px;
   text-decoration: none;
   color: $main-color;
-  margin-top: -90px;
-  margin-left: 110px;
+  margin-top: -75px;
+  margin-left: 105px;
 }
 
 h1 {
@@ -74,8 +77,10 @@ h1 {
   width: 55px;
   height: 40px;
   top: 35px;
+  transform-origin: top center;
   transition: background-color 0.2s;
 }
+
 .li-net {
   position: relative;
   background-color: $main-color;
@@ -93,14 +98,15 @@ h1 {
 
 .dropdown-p-content {
   position: fixed;
-  width: 44px;
+  transform-origin: top center;
 }
 .li-por {
   position: relative;
   background-color: $main-color;
-  width: 84px;
+  width: 85px;
   height: 40px;
   left: -40px;
+  transform-origin: top center;
   .portee-li {
     text-decoration: none;
     font-size: 18px;

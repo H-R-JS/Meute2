@@ -87,9 +87,6 @@ export const Home = () => {
             </Link>
           </p>
         </motion.li>
-        <motion.li variants={variFootChild}>
-          <Notice />
-        </motion.li>
       </motion.ul>
     </motion.main>
   );

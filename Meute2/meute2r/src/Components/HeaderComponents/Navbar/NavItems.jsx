@@ -1,5 +1,3 @@
-import React from "react";
-
 export const NavItems = [
   {
     title: "Réservation",
@@ -19,18 +17,17 @@ export const NavItems = [
     class: "item-nav",
     id: "3",
   },
-
   {
     title: "Portées",
     path: "",
     class: "item-nav g",
     id: "4",
   },
-
   {
     title: "À propos",
     path: "about",
     class: "item-nav",
     id: "5",
   },
+  { title: "Avis", path: "notice", class: "item-nav", id: "6" },
 ];

@@ -1,11 +1,21 @@
 import React from "react";
 import { DropDownNetWork, DropDownPortees } from "./DropDrownList";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 
 export const DropDownR = () => {
+  const variDrop = {
+    hidden: { scaleY: 0 },
+    hover: { scaleY: 1, transition: { duration: 0.2, ease: "easeInOut" } },
+  };
+
   return (
-    <motion.ul className="dropdown-r-content">
+    <motion.ul
+      variants={variDrop}
+      initial="hidden"
+      animate="hover"
+      className="dropdown-r-content"
+    >
       {DropDownNetWork.map((item) => {
         return (
           <motion.li
@@ -27,8 +37,18 @@ export const DropDownR = () => {
 };
 
 export const DropDownP = () => {
+  const variDrop = {
+    hidden: { scaleY: 0 },
+    hover: { scaleY: 1, transition: { duration: 0.2, ease: "easeInOut" } },
+  };
+
   return (
-    <motion.ul className="dropdown-p-content">
+    <motion.ul
+      variants={variDrop}
+      initial="hidden"
+      animate="hover"
+      className="dropdown-p-content"
+    >
       {DropDownPortees.map((item) => {
         return (
           <motion.li
