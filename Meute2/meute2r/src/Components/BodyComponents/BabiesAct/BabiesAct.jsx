@@ -90,6 +90,7 @@ export const BabiesAct = () => {
         <motion.figure variants={variPortActuChildren} className="act-babies">
           <img
             src={require("../../../Images/actuImg.jpg")}
+            alt="Photo de Rats"
             className="actu-box"
           />
         </motion.figure>

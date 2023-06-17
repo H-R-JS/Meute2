@@ -110,41 +110,41 @@
 
 @media screen and (max-width: 1000px) {
   .image-acc {
-    width: 350px;
-    height: 320px;
-    left: 10px;
-    top: 30px;
+    width: 200px;
+    height: 200px;
+    left: 80px;
+    top: 90px;
     z-index: -2;
   }
 
   .image-foot {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     z-index: -2;
   }
 
   .imf1 {
     left: 0px;
-    top: 450px;
+    top: 420px;
     transform: rotate(260deg);
   }
 
   .imf2 {
     left: 105px;
-    top: 480px;
+    top: 460px;
     transform: rotate(300deg);
   }
 
   .imf3 {
     left: 190px;
-    top: 520px;
+    top: 500px;
     transform: rotate(330deg);
   }
 
   .imf4 {
     left: 260px;
-    top: 580px;
-    transform: rotate(340deg);
+    top: 560px;
+    transform: rotate(320deg);
   }
 
   .main-content {

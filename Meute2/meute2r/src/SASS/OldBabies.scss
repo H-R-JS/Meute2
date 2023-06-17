@@ -51,7 +51,10 @@
 
 @media screen and (max-width: 1000px) {
   .old-content {
-    top: 150px;
+    width: 350px;
+    height: auto;
+    top: 100px;
+    left: 0px;
     li {
       margin: 20px 15px;
     }
