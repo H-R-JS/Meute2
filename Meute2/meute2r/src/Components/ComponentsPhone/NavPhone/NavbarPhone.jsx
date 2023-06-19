@@ -15,15 +15,13 @@ export const NavbarPhone = () => {
     const handleClickOutside = (e) => {
       if (
         !ref.current.contains(e.target) ||
-        e.target.href == window.location.href
+        e.target.href === window.location.href
       ) {
         controls.start({
           x: -500,
           transition: { duration: 0.2 },
         });
-        console.log("clicked Outside DIV...");
       } else {
-        console.log("clicked Inside DIV...");
       }
     };
     document.addEventListener("click", handleClickOutside);
@@ -33,8 +31,8 @@ export const NavbarPhone = () => {
   }, []);
   //
   return (
-    <div ref={ref}>
-      <div
+    <article ref={ref}>
+      <span
         onClick={() => {
           controls.start({
             display: "block",
@@ -42,59 +40,51 @@ export const NavbarPhone = () => {
             transition: { duration: 0.2 },
           });
         }}
-        className="div-icon-menu"
+        className="material-symbols-outlined"
+        id="icon-menu-phone"
       >
-        <span className="material-symbols-outlined" id="icon-menu-phone">
-          menu
-        </span>
-      </div>
-      <motion.div
-        className="nav-phone"
+        menu
+      </span>
+      <motion.ul
         initial={{ display: "none", x: -400 }}
         animate={controls}
+        className="nav-phone-content"
       >
-        <ul className="nav-phone-content">
-          {NavItems.map((item) => {
-            if (item.id === "2") {
-              return (
-                <li
-                  key={item.id}
-                  onMouseEnter={() => setMenuDownR(true)}
-                  onMouseLeave={() => setMenuDownR(false)}
-                  className="nav-li"
-                >
-                  <div className="item-nav-phone drop">{item.title}</div>
-                  {menuDownR && <DropDownRPhone />}
-                </li>
-              );
-            } else if (item.id === "4") {
-              return (
-                <li
-                  key={item.id}
-                  onMouseEnter={() => setMenuDownP(true)}
-                  onMouseLeave={() => setMenuDownP(false)}
-                  className="nav-li"
-                >
-                  <div className="item-nav-phone">{item.title}</div>
-                  {menuDownP && <DropDownPPhone />}
-                </li>
-              );
-            }
+        {NavItems.map((item) => {
+          if (item.id === "2") {
             return (
-              <li key={item.id}>
-                <Link to={item.path} className="item-nav-phone">
-                  {item.title}
-                </Link>
+              <li
+                key={item.id}
+                onMouseEnter={() => setMenuDownR(true)}
+                onMouseLeave={() => setMenuDownR(false)}
+                className="nav-li"
+              >
+                <span className="item-nav-phone drop">{item.title}</span>
+                {menuDownR && <DropDownRPhone />}
               </li>
             );
-          })}
-        </ul>
-        <Link to="/">
-          <span className="material-symbols-outlined" id="nav-phone-home">
-            home
-          </span>
-        </Link>
-      </motion.div>
-    </div>
+          } else if (item.id === "4") {
+            return (
+              <li
+                key={item.id}
+                onMouseEnter={() => setMenuDownP(true)}
+                onMouseLeave={() => setMenuDownP(false)}
+                className="nav-li"
+              >
+                <span className="item-nav-phone">{item.title}</span>
+                {menuDownP && <DropDownPPhone />}
+              </li>
+            );
+          }
+          return (
+            <li key={item.id}>
+              <Link to={item.path} className="item-nav-phone">
+                {item.title}
+              </Link>
+            </li>
+          );
+        })}
+      </motion.ul>
+    </article>
   );
 };

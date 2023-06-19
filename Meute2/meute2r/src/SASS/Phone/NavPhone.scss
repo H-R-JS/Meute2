@@ -1,15 +1,13 @@
 @media screen and (max-width: 1000px) {
-  .div-icon-menu {
+  #icon-menu-phone {
+    font-size: 40px;
     position: absolute;
     color: #777;
     left: 5px;
     top: 10px;
-    #icon-menu-phone {
-      font-size: 40px;
-    }
   }
 
-  .nav-phone {
+  .nav-phone-content {
     position: fixed;
     background-color: $main-color;
     top: 0px;
@@ -19,14 +17,14 @@
     z-index: 3;
   }
 
-  .nav-phone-content {
+  ul {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   li {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .li-net {
