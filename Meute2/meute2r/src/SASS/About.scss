@@ -112,27 +112,36 @@
 
 @media screen and (max-width: 1000px) {
   .about-container {
+    justify-content: center;
     height: 100vh;
     margin-top: 0px;
   }
+  .div-container-about {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+  }
 
   .about-content {
+    justify-content: center;
     flex-direction: column;
-    overflow-y: scroll;
-    height: 70vh;
+    width: 80%;
+    padding-top: 195px;
+    height: 600px;
   }
 
   .about-text {
-    width: 300px;
+    width: 89%;
+    min-width: 500px;
     font-size: 20px;
     margin: 0 20px;
     margin-top: 0;
   }
 
   .about-parent {
-    margin-left: 20px;
+    margin-left: 100px;
     margin-bottom: 0px;
-    width: 300px;
+    width: 50%;
   }
 
   .about-h2 {
@@ -147,6 +156,29 @@
 
   .parent {
     background-color: $second-color;
+    width: 400px;
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-h2 {
+    width: 250px;
+    font-size: 24px;
+    top: 0px;
+    left: 0px;
+  }
+
+  .about-content {
+    padding-top: 180px;
+  }
+
+  .about-text {
+    width: 89%;
+    min-width: 000px;
+  }
+
+  .parent {
     width: 280px;
     height: 200px;
   }

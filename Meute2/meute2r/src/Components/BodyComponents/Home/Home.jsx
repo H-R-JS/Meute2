@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Notice } from "./Notice/Notice";
 
 const imgFoot = require("../../../Images/foot.png");
 
@@ -58,27 +57,30 @@ export const Home = () => {
       exit="exit"
       className="body-container"
     >
-      <motion.ul
+      <motion.section
         variants={variantFoot}
         initial="hidden"
         animate="visible"
         exit="exit"
       >
-        {imgFootArray.map((item, index) => {
-          return (
-            <motion.li variants={variFootChild} key={index}>
-              <img src={item.src} className={item.class} />
-            </motion.li>
-          );
-        })}
-        <motion.li variants={variFootChild}>
+        <ul className="ul-foots">
+          {imgFootArray.map((item, index) => {
+            return (
+              <motion.li variants={variFootChild} key={index}>
+                <img src={item.src} className={item.class} />
+              </motion.li>
+            );
+          })}
+        </ul>
+
+        <motion.figure variants={variFootChild}>
           <img
             src={require("../../../Images/ratAcc.jpeg")}
             alt="Photo de rat debout"
             className="image-acc"
           />
-        </motion.li>
-        <motion.li variants={variFootChild} className="main-content">
+        </motion.figure>
+        <motion.article variants={variFootChild} className="main-content">
           <p>
             Bienvenue dans ma meute de rats, petit élevage familial <br />
             situé dans le Gers (1h de Toulouse){" "}
@@ -86,8 +88,8 @@ export const Home = () => {
               je vous propose de découvrir ma petite meute !
             </Link>
           </p>
-        </motion.li>
-      </motion.ul>
+        </motion.article>
+      </motion.section>
     </motion.main>
   );
 };

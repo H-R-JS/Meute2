@@ -53,7 +53,7 @@
   .old-content {
     width: 350px;
     height: auto;
-    top: 100px;
+    top: 200px;
     left: 0px;
     li {
       margin: 20px 15px;
@@ -70,5 +70,11 @@
     width: 280px;
     height: 190px;
     z-index: 2;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .old-content {
+    top: 100px;
   }
 }

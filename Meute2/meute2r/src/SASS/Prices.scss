@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  width: 1800px;
+  width: 100%;
   top: 200px;
 }
 
@@ -63,8 +63,9 @@
 
 @media screen and (max-width: 1000px) {
   .prices-container {
-    width: 300px;
-    top: 0px;
+    justify-content: center;
+    width: 200px;
+    top: 100px;
     z-index: -2;
   }
 
@@ -73,19 +74,34 @@
   }
 
   .unit-container {
-    position: relative;
-    left: -20px;
-    top: 100px;
+    // position: absolute;
+    left: 100px;
+    top: 120px;
   }
 
   .unit {
     text-align: center;
-    font-size: 20px;
-    width: 200px;
+    font-size: 28px;
+    width: 400px;
     height: 200px;
     span {
-      font-size: 50px;
+      font-size: 70px;
       margin-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .unit-container {
+    top: 100px;
+    left: 00px;
+  }
+
+  .unit {
+    font-size: 20px;
+    width: 200px;
+    span {
+      font-size: 50px;
     }
   }
 }

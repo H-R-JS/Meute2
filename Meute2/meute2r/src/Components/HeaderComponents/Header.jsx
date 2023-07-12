@@ -13,7 +13,7 @@ export const Header = () => {
         </Link>
       </section>
       <section className="menu">
-        <Media query="(max-width: 1000px)">
+        <Media query="(max-width: 600px)">
           {(matches) => (matches ? <NavbarPhone /> : <Navbar />)}
         </Media>
       </section>

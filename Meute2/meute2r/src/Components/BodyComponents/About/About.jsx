@@ -101,7 +101,10 @@ export const About = () => {
             className="back-img"
           />
         </motion.figure>
-        <motion.div variants={variAboutChildren2}>
+        <motion.div
+          variants={variAboutChildren2}
+          className="div-container-about"
+        >
           <article className="about-content">
             <section className="about-text">
               <p>
