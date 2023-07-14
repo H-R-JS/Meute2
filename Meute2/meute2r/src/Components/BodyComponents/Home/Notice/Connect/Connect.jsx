@@ -25,15 +25,21 @@ export const WriteNotice = ({
   const [btnSubmit, setBtnSubmit] = useState("btn-submit");
   const [result, setResult] = useState("submit-result none");
 
-  const subAndToggle = () => {
-    if (textSub !== "") {
-      submitNotice();
-      setBtnSubmit("btn-submit none");
-      setResult("submit-result");
-    } else {
-      return null;
+  async function subAndToggle(e) {
+    e.preventDefault();
+    console.log("fsqfqsfqsfsgqg");
+    try {
+      if (textSub !== "") {
+        await submitNotice();
+        setBtnSubmit("btn-submit none");
+        setResult("submit-result");
+      } else {
+        return null;
+      }
+    } catch (err) {
+      console.error(err);
     }
-  };
+  }
 
   return (
     <article className={writeClass}>

@@ -1,6 +1,7 @@
 {
   "name": "meute2r",
   "version": "0.1.0",
+  "homepage": "https://meute2rats.fr/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",

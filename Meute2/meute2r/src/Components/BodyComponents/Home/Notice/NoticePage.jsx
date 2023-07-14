@@ -38,7 +38,6 @@ export const NoticePage = () => {
         text: textSub,
       });
       getNoticeList();
-      console.log("yeeeeees");
     } catch (err) {
       console.error(err);
     }
