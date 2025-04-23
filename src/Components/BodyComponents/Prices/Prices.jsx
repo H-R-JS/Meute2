@@ -69,6 +69,7 @@ export const Prices = () => {
         <img
           src={require("../../../Images/ratTar.jpeg")}
           className="prices-img"
+          alt="rat"
         />
       </motion.figure>
       <motion.section variants={variPrices2} className="unit-container">

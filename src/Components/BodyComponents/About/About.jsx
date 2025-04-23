@@ -91,7 +91,7 @@ export const About = () => {
         {imgFootArray2.map((item, index) => {
           return (
             <motion.figure variants={variAboutChildren1} key={index}>
-              <img src={item.src} className={item.class} />
+              <img src={item.src} className={item.class} alt="rat" />
             </motion.figure>
           );
         })}
@@ -99,6 +99,7 @@ export const About = () => {
           <img
             src={require("../../../Images/ratAbout1.jpg")}
             className="back-img"
+            alt="rat"
           />
         </motion.figure>
         <motion.div
@@ -149,12 +150,12 @@ export const About = () => {
               <h2 className="about-h2">Les Rats reproducteurs</h2>
               <img
                 src={require("../../../Images/parent1.jpg")}
-                alt="Photo de rat"
+                alt="rat"
                 className="parent one"
               />
               <img
                 src={require("../../../Images/parent2.jpg")}
-                alt="Photo de rat"
+                alt="rat"
                 className="parent two"
               />
             </motion.section>

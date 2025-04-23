@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 
 export const NoticeDataDisplay = ({ getNoticeList, noticeList }) => {
   useEffect(() => {
-    getNoticeList();
-  }, []);
+    if (noticeList.length === 0) {
+      getNoticeList();
+    }
+  }, [noticeList]);
 
   const variNoticeDisplayText = {
     hidden: { opacity: 0 },

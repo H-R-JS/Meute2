@@ -28,7 +28,7 @@ export const NavbarPhone = () => {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
+  }, [controls]);
   //
   return (
     <article ref={ref}>

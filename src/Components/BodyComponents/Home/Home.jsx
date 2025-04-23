@@ -67,7 +67,7 @@ export const Home = () => {
           {imgFootArray.map((item, index) => {
             return (
               <motion.li variants={variFootChild} key={index}>
-                <img src={item.src} className={item.class} />
+                <img src={item.src} className={item.class} alt="rat" />
               </motion.li>
             );
           })}
@@ -76,7 +76,7 @@ export const Home = () => {
         <motion.figure variants={variFootChild}>
           <img
             src={require("../../../Images/ratAcc.jpeg")}
-            alt="Photo de rat debout"
+            alt="rat"
             className="image-acc"
           />
         </motion.figure>

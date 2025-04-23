@@ -71,7 +71,7 @@ const InReserv = () => {
               key={index}
               className="reserv-box-content"
             >
-              <img className="reserv-img" src={item.src} />
+              <img className="reserv-img" src={item.src} alt="rat" />
             </motion.figure>
           );
         })}
@@ -80,7 +80,7 @@ const InReserv = () => {
   );
 };
 
-const NoReserv = () => {
+/*const NoReserv = () => {
   return (
     <main className="reserv-container">
       <h2>Portée à venir</h2>
@@ -93,4 +93,4 @@ const NoReserv = () => {
       </section>
     </main>
   );
-};
+};*/

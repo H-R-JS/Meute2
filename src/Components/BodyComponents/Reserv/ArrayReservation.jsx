@@ -1,5 +1,3 @@
-import React from "react";
-
 export const reservArray = [
   { src: require("./ImgReserv/ratf1.jpg"), position: "200% 30%" },
   { src: require("./ImgReserv/ratf2.jpg"), position: "200% 40%" },

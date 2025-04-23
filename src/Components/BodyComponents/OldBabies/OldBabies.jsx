@@ -99,7 +99,7 @@ export const OldBabies = () => {
               >
                 {item.infoBox}
               </motion.section>
-              <img className="old-img" src={item.img} />
+              <img className="old-img" src={item.img} alt="rat" />
             </motion.li>
           );
         })}

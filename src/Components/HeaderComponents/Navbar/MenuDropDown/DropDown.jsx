@@ -1,7 +1,7 @@
 import React from "react";
 import { DropDownNetWork, DropDownPortees } from "./DropDrownList";
 import { Link } from "react-router-dom";
-import { easeOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export const DropDownR = () => {
   const variDrop = {

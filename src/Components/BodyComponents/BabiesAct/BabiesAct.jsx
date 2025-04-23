@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const imgBabiesAc = require("../../../Images/ratPort.jpg");
 
-const NoActu = () => {
+/*const NoActu = () => {
   return (
     <section className="noActu-box">
       <p>
@@ -13,7 +13,7 @@ const NoActu = () => {
       </p>
     </section>
   );
-};
+};*/
 
 export const BabiesAct = () => {
   const onePageAnimation = {
@@ -78,7 +78,7 @@ export const BabiesAct = () => {
       className="babiesAc-page"
     >
       <motion.figure variants={variBabiesAct}>
-        <img src={imgBabiesAc} className="babiesAc-img" alt="Photo de Rat" />
+        <img src={imgBabiesAc} className="babiesAc-img" alt="rat" />
       </motion.figure>
       <motion.section variants={variPortActu} className="babiesAc-container">
         <motion.p
@@ -90,7 +90,7 @@ export const BabiesAct = () => {
         <motion.figure variants={variPortActuChildren} className="act-babies">
           <img
             src={require("../../../Images/actuImg.jpg")}
-            alt="Photo de Rats"
+            alt="rat"
             className="actu-box"
           />
         </motion.figure>
