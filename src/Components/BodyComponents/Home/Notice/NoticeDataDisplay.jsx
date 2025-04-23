@@ -6,7 +6,7 @@ export const NoticeDataDisplay = ({ getNoticeList, noticeList }) => {
     if (noticeList.length === 0) {
       getNoticeList();
     }
-  }, [noticeList]);
+  }, [noticeList, getNoticeList]);
 
   const variNoticeDisplayText = {
     hidden: { opacity: 0 },
