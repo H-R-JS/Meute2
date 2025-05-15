@@ -1,30 +1,27 @@
 {
   "files": {
-    "main.css": "https://meute2rats.fr/static/css/main.8b228c77.css",
-    "main.js": "https://meute2rats.fr/static/js/main.48a4648c.js",
-    "static/media/M_arch_1.jpg": "https://meute2rats.fr/static/media/M_arch_1.4c498fddb22b9bbda12e.jpg",
-    "static/media/actuImg.jpg": "https://meute2rats.fr/static/media/actuImg.a44d47f42d58f1daf4c2.jpg",
-    "static/media/ratm1.jpg": "https://meute2rats.fr/static/media/ratm1.3803f885907672bb1a22.jpg",
-    "static/media/ratTar.jpeg": "https://meute2rats.fr/static/media/ratTar.44cb30c9a252caa0fc6b.jpeg",
-    "static/media/ratm3.jpg": "https://meute2rats.fr/static/media/ratm3.49368ea927cf7ea4e5b1.jpg",
-    "static/media/ratf1.jpg": "https://meute2rats.fr/static/media/ratf1.e12e485bf30e473a70f2.jpg",
-    "static/media/ratm2.jpg": "https://meute2rats.fr/static/media/ratm2.5fa341aa142a8f0e9b22.jpg",
-    "static/media/ratf2.jpg": "https://meute2rats.fr/static/media/ratf2.734eac3709fbbd986baa.jpg",
-    "static/media/ratf3.jpg": "https://meute2rats.fr/static/media/ratf3.910be0c6a1788fbeb630.jpg",
-    "static/media/parent1.jpg": "https://meute2rats.fr/static/media/parent1.60fb7b51b1a2b8e1f62e.jpg",
-    "static/media/ratf4.jpg": "https://meute2rats.fr/static/media/ratf4.2f2a75bba8170ce8632e.jpg",
-    "static/media/parent2.jpg": "https://meute2rats.fr/static/media/parent2.9ecc9a8a794c4f52f62f.jpg",
-    "static/media/ratf5.jpg": "https://meute2rats.fr/static/media/ratf5.8b25ced76065f08d1acc.jpg",
-    "static/media/ratAcc.jpeg": "https://meute2rats.fr/static/media/ratAcc.86dc05411ebb0375137c.jpeg",
-    "static/media/ratPort.jpg": "https://meute2rats.fr/static/media/ratPort.8385b52c548dcaa528cb.jpg",
-    "static/media/foot.png": "https://meute2rats.fr/static/media/foot.e6698790b73a2ea4f8dc.png",
-    "static/media/ratAbout1.jpg": "https://meute2rats.fr/static/media/ratAbout1.d51e6790fd4f5d5781e6.jpg",
-    "index.html": "https://meute2rats.fr/index.html",
-    "main.8b228c77.css.map": "https://meute2rats.fr/static/css/main.8b228c77.css.map",
-    "main.48a4648c.js.map": "https://meute2rats.fr/static/js/main.48a4648c.js.map"
+    "main.css": "https://meute2rats.netlify.app/static/css/main.8b228c77.css",
+    "main.js": "https://meute2rats.netlify.app/static/js/main.0df596bd.js",
+    "static/media/M_arch_1.jpg": "https://meute2rats.netlify.app/static/media/M_arch_1.4c498fddb22b9bbda12e.jpg",
+    "static/media/actuImg.jpg": "https://meute2rats.netlify.app/static/media/actuImg.a44d47f42d58f1daf4c2.jpg",
+    "static/media/ratm1.jpg": "https://meute2rats.netlify.app/static/media/ratm1.3803f885907672bb1a22.jpg",
+    "static/media/ratTar.jpeg": "https://meute2rats.netlify.app/static/media/ratTar.44cb30c9a252caa0fc6b.jpeg",
+    "static/media/ratm3.jpg": "https://meute2rats.netlify.app/static/media/ratm3.49368ea927cf7ea4e5b1.jpg",
+    "static/media/ratf1.jpg": "https://meute2rats.netlify.app/static/media/ratf1.e12e485bf30e473a70f2.jpg",
+    "static/media/ratm2.jpg": "https://meute2rats.netlify.app/static/media/ratm2.5fa341aa142a8f0e9b22.jpg",
+    "static/media/ratf2.jpg": "https://meute2rats.netlify.app/static/media/ratf2.734eac3709fbbd986baa.jpg",
+    "static/media/ratf3.jpg": "https://meute2rats.netlify.app/static/media/ratf3.910be0c6a1788fbeb630.jpg",
+    "static/media/parent1.jpg": "https://meute2rats.netlify.app/static/media/parent1.60fb7b51b1a2b8e1f62e.jpg",
+    "static/media/ratf4.jpg": "https://meute2rats.netlify.app/static/media/ratf4.2f2a75bba8170ce8632e.jpg",
+    "static/media/parent2.jpg": "https://meute2rats.netlify.app/static/media/parent2.9ecc9a8a794c4f52f62f.jpg",
+    "static/media/ratf5.jpg": "https://meute2rats.netlify.app/static/media/ratf5.8b25ced76065f08d1acc.jpg",
+    "static/media/ratAcc.jpeg": "https://meute2rats.netlify.app/static/media/ratAcc.86dc05411ebb0375137c.jpeg",
+    "static/media/ratPort.jpg": "https://meute2rats.netlify.app/static/media/ratPort.8385b52c548dcaa528cb.jpg",
+    "static/media/foot.png": "https://meute2rats.netlify.app/static/media/foot.e6698790b73a2ea4f8dc.png",
+    "static/media/ratAbout1.jpg": "https://meute2rats.netlify.app/static/media/ratAbout1.d51e6790fd4f5d5781e6.jpg",
+    "index.html": "https://meute2rats.netlify.app/index.html",
+    "main.8b228c77.css.map": "https://meute2rats.netlify.app/static/css/main.8b228c77.css.map",
+    "main.0df596bd.js.map": "https://meute2rats.netlify.app/static/js/main.0df596bd.js.map"
   },
-  "entrypoints": [
-    "static/css/main.8b228c77.css",
-    "static/js/main.48a4648c.js"
-  ]
+  "entrypoints": ["static/css/main.8b228c77.css", "static/js/main.0df596bd.js"]
 }
