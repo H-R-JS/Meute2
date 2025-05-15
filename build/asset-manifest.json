@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://meute2rats.netlify.app/static/css/main.8b228c77.css",
-    "main.js": "https://meute2rats.netlify.app/static/js/main.0df596bd.js",
+    "main.css": "https://meute2rats.netlify.app/static/css/main.f3957cf4.css",
+    "main.js": "https://meute2rats.netlify.app/static/js/main.1d5d4f32.js",
     "static/media/M_arch_1.jpg": "https://meute2rats.netlify.app/static/media/M_arch_1.4c498fddb22b9bbda12e.jpg",
     "static/media/actuImg.jpg": "https://meute2rats.netlify.app/static/media/actuImg.a44d47f42d58f1daf4c2.jpg",
     "static/media/ratm1.jpg": "https://meute2rats.netlify.app/static/media/ratm1.3803f885907672bb1a22.jpg",
@@ -20,8 +20,11 @@
     "static/media/foot.png": "https://meute2rats.netlify.app/static/media/foot.e6698790b73a2ea4f8dc.png",
     "static/media/ratAbout1.jpg": "https://meute2rats.netlify.app/static/media/ratAbout1.d51e6790fd4f5d5781e6.jpg",
     "index.html": "https://meute2rats.netlify.app/index.html",
-    "main.8b228c77.css.map": "https://meute2rats.netlify.app/static/css/main.8b228c77.css.map",
-    "main.0df596bd.js.map": "https://meute2rats.netlify.app/static/js/main.0df596bd.js.map"
+    "main.f3957cf4.css.map": "https://meute2rats.netlify.app/static/css/main.f3957cf4.css.map",
+    "main.1d5d4f32.js.map": "https://meute2rats.netlify.app/static/js/main.1d5d4f32.js.map"
   },
-  "entrypoints": ["static/css/main.8b228c77.css", "static/js/main.0df596bd.js"]
+  "entrypoints": [
+    "static/css/main.f3957cf4.css",
+    "static/js/main.1d5d4f32.js"
+  ]
 }
